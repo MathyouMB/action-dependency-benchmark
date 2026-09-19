@@ -8,4 +8,5 @@ This repo serves as the actual artifact for the research I'm doing regarding ide
 uv run ruff format .
 uv run ruff check .
 uv run python src/benchmark/models/runner.py
+uv run pytest .
 ```
