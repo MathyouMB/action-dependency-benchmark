@@ -2,3 +2,8 @@
 __pycache__/
 *.py[cod]
 .ruff_cache/
+
+
+# temporary files
+prompts/demo.md
+data/tasks/webarena_000284/webarena_000284_v0001.json
