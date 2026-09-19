@@ -5,12 +5,12 @@ import pytest
 
 from benchmark.models import runner as runner_module
 from benchmark.models.runner import GREEN, RED, main, parse_args, validate_config
-from benchmark.models.runners.base import Instance, Runner
+from benchmark.models.runners.base import Instance, Runner, TaskResult
 
 
 class FakeRunner(Runner):
-    def predict(self, instance: Instance) -> str:
-        return f"predicted for {instance.instance_id}"
+    def predict(self, instance: Instance) -> TaskResult:
+        return TaskResult(predicted_ids=["f1"], expected_ids=instance.supporting_fact_ids)
 
 
 def test_validate_config_raises_if_the_file_does_not_exist(tmp_path):
@@ -47,8 +47,11 @@ def test_parse_args_exits_with_a_red_error_when_config_is_missing(monkeypatch, c
     assert "--config is required" in out
 
 
-def test_main_prints_a_green_success_message(monkeypatch, capsys, tmp_path):
+def test_main_prints_a_green_success_message_and_writes_a_result_file(
+    monkeypatch, capsys, tmp_path
+):
     monkeypatch.setitem(runner_module.RUNNERS, "fake", FakeRunner)
+    monkeypatch.setattr(runner_module, "DEFAULT_RESULTS_DIR", tmp_path / "results")
     config = tmp_path / "config.json"
     config.write_text(json.dumps({"runner": "fake"}))
     monkeypatch.setattr(sys, "argv", ["runner.py", "--config", str(config)])
@@ -57,10 +60,17 @@ def test_main_prints_a_green_success_message(monkeypatch, capsys, tmp_path):
 
     out = capsys.readouterr().out
     assert GREEN in out
-    assert (
-        f"predicted for {runner_module.Instance.from_file(runner_module.SAMPLE_TASK).instance_id}"
-        in out
-    )
+    assert "predicted_ids=['f1']" in out
+
+    written = list((tmp_path / "results" / "config").glob("*.jsonl"))
+    assert len(written) == 1
+    record = json.loads(written[0].read_text().splitlines()[0])
+    assert record["config_name"] == "config"
+    assert record["runner"] == "fake"
+    assert record["predicted_ids"] == ["f1"]
+    assert record["instance_id"] == runner_module.Instance.from_file(
+        runner_module.SAMPLE_TASK
+    ).instance_id
 
 
 def test_main_exits_with_a_red_error_for_a_missing_config_file(monkeypatch, capsys, tmp_path):
