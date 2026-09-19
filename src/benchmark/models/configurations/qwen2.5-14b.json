@@ -1,0 +1,14 @@
+{
+  "name": "qwen2.5-14b",
+  "runner": "ollama",
+  "prompt": "src/benchmark/prompts/demo.md",
+  "args": {
+    "model": "qwen2.5:14b",
+    "host": "http://localhost:11434",
+    "timeout_s": 900,
+    "options": {
+      "temperature": 0,
+      "num_ctx": 16384
+    }
+  }
+}

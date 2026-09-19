@@ -10,7 +10,10 @@ from typing import Any
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from benchmark.models.runners.base import Instance, Runner, TaskResult
+from benchmark.models.runners.deepseek_r1_ollama import DeepSeekR1OllamaRunner
 from benchmark.models.runners.gpt_oss_ollama import GptOssOllamaRunner
+from benchmark.models.runners.ollama_chat import OllamaChatRunner
+from benchmark.models.runners.qwen3_ollama import Qwen3OllamaRunner
 from benchmark.models.view import RED, RESET, RunView
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -19,6 +22,9 @@ DEFAULT_RESULTS_DIR = REPO_ROOT / "results"
 
 RUNNERS: dict[str, type[Runner]] = {
     "gpt_oss_ollama": GptOssOllamaRunner,
+    "deepseek_r1_ollama": DeepSeekR1OllamaRunner,
+    "qwen3_ollama": Qwen3OllamaRunner,
+    "ollama": OllamaChatRunner,
 }
 
 
