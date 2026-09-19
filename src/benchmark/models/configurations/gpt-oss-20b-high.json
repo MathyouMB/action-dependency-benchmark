@@ -1,0 +1,15 @@
+{
+  "name": "gpt-oss-20b-high",
+  "runner": "gpt_oss_ollama",
+  "prompt": "src/benchmark/prompts/demo.md",
+  "args": {
+    "model": "gpt-oss:20b",
+    "host": "http://localhost:11434",
+    "think": "high",
+    "timeout_s": 900,
+    "options": {
+      "temperature": 0,
+      "num_ctx": 16384
+    }
+  }
+}
