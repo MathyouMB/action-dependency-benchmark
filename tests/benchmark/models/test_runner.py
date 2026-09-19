@@ -98,9 +98,7 @@ def test_main_writes_one_result_line_per_instance(monkeypatch, capsys, tmp_path)
     write_task(tasks, "webarena_000002_v0001", supporting=["f2"])
     config = tmp_path / "config.json"
     config.write_text(json.dumps({"runner": "fake"}))
-    monkeypatch.setattr(
-        sys, "argv", ["runner.py", "--config", str(config), "--tasks", str(tasks)]
-    )
+    monkeypatch.setattr(sys, "argv", ["runner.py", "--config", str(config), "--tasks", str(tasks)])
 
     main()
 
@@ -129,9 +127,7 @@ def test_main_records_a_runner_error_without_losing_the_rest_of_the_run(
     write_task(tasks, "webarena_000002_v0001")
     config = tmp_path / "config.json"
     config.write_text(json.dumps({"runner": "exploding"}))
-    monkeypatch.setattr(
-        sys, "argv", ["runner.py", "--config", str(config), "--tasks", str(tasks)]
-    )
+    monkeypatch.setattr(sys, "argv", ["runner.py", "--config", str(config), "--tasks", str(tasks)])
 
     main()
 

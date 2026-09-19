@@ -43,11 +43,26 @@ class TaskResult:
     expected_ids: list[str] | None = None
     total_duration_s: float | None = None
     error: str | None = None
+    precision: float = field(init=False, default=0.0)
+    recall: float = field(init=False, default=0.0)
+    f1: float = field(init=False, default=0.0)
     meta: dict[str, Any] = field(default_factory=dict)
 
     def __post_init__(self) -> None:
         if self.predicted_ids is not None:
             self.predicted_ids = sorted(self.predicted_ids)
+
+        predicted = set(self.predicted_ids or [])
+        expected = set(self.expected_ids or [])
+        hits = len(predicted & expected)
+
+        self.precision = round(hits / len(predicted), 4) if predicted else float(not expected)
+        self.recall = round(hits / len(expected), 4) if expected else float(not predicted)
+        self.f1 = (
+            round(2 * self.precision * self.recall / (self.precision + self.recall), 4)
+            if self.precision + self.recall
+            else 0.0
+        )
 
 
 class Runner:
