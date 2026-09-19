@@ -4,13 +4,36 @@ import sys
 import pytest
 
 from benchmark.models import runner as runner_module
-from benchmark.models.runner import GREEN, RED, main, parse_args, validate_config
+from benchmark.models.runner import GREEN, RED, load_instances, main, parse_args, validate_config
 from benchmark.models.runners.base import Instance, Runner, TaskResult
 
 
 class FakeRunner(Runner):
     def predict(self, instance: Instance) -> TaskResult:
         return TaskResult(predicted_ids=["f1"], expected_ids=instance.supporting_fact_ids)
+
+
+class ExplodingRunner(Runner):
+    def predict(self, instance: Instance) -> TaskResult:
+        raise RuntimeError("connection refused")
+
+
+def write_task(root, instance_id, supporting=("f1",)):
+    directory = root / instance_id.rsplit("_v", 1)[0]
+    directory.mkdir(parents=True, exist_ok=True)
+    path = directory / f"{instance_id}.json"
+    path.write_text(
+        json.dumps(
+            {
+                "instance_id": instance_id,
+                "proposed_action": {"text": "Open the product page"},
+                "state": [{"id": "f1", "text": "a"}, {"id": "f2", "text": "b"}],
+                "supporting_fact_ids": list(supporting),
+                "webarena_data": {"intent": "an intent"},
+            }
+        )
+    )
+    return path
 
 
 def test_validate_config_raises_if_the_file_does_not_exist(tmp_path):
@@ -47,30 +70,79 @@ def test_parse_args_exits_with_a_red_error_when_config_is_missing(monkeypatch, c
     assert "--config is required" in out
 
 
-def test_main_prints_a_green_success_message_and_writes_a_result_file(
-    monkeypatch, capsys, tmp_path
-):
+def test_load_instances_accepts_a_single_task_file(tmp_path):
+    path = write_task(tmp_path, "webarena_000001_v0001")
+
+    instances = load_instances(path)
+
+    assert [i.instance_id for i in instances] == ["webarena_000001_v0001"]
+
+
+def test_load_instances_finds_every_task_file_under_a_directory(tmp_path):
+    write_task(tmp_path, "webarena_000001_v0001")
+    write_task(tmp_path, "webarena_000002_v0001")
+
+    instances = load_instances(tmp_path)
+
+    assert [i.instance_id for i in instances] == [
+        "webarena_000001_v0001",
+        "webarena_000002_v0001",
+    ]
+
+
+def test_main_writes_one_result_line_per_instance(monkeypatch, capsys, tmp_path):
     monkeypatch.setitem(runner_module.RUNNERS, "fake", FakeRunner)
     monkeypatch.setattr(runner_module, "DEFAULT_RESULTS_DIR", tmp_path / "results")
+    tasks = tmp_path / "tasks"
+    write_task(tasks, "webarena_000001_v0001", supporting=["f1"])
+    write_task(tasks, "webarena_000002_v0001", supporting=["f2"])
     config = tmp_path / "config.json"
     config.write_text(json.dumps({"runner": "fake"}))
-    monkeypatch.setattr(sys, "argv", ["runner.py", "--config", str(config)])
+    monkeypatch.setattr(
+        sys, "argv", ["runner.py", "--config", str(config), "--tasks", str(tasks)]
+    )
 
     main()
 
     out = capsys.readouterr().out
     assert GREEN in out
-    assert "predicted_ids=['f1']" in out
+    assert "webarena_000001_v0001" in out
+    assert "webarena_000002_v0001" in out
 
     written = list((tmp_path / "results" / "config").glob("*.jsonl"))
     assert len(written) == 1
-    record = json.loads(written[0].read_text().splitlines()[0])
-    assert record["config_name"] == "config"
-    assert record["runner"] == "fake"
-    assert record["predicted_ids"] == ["f1"]
-    assert record["instance_id"] == runner_module.Instance.from_file(
-        runner_module.SAMPLE_TASK
-    ).instance_id
+    records = [json.loads(line) for line in written[0].read_text().splitlines()]
+    assert [r["instance_id"] for r in records] == [
+        "webarena_000001_v0001",
+        "webarena_000002_v0001",
+    ]
+    assert all(r["predicted_ids"] == ["f1"] for r in records)
+
+
+def test_main_records_a_runner_error_without_losing_the_rest_of_the_run(
+    monkeypatch, capsys, tmp_path
+):
+    monkeypatch.setitem(runner_module.RUNNERS, "exploding", ExplodingRunner)
+    monkeypatch.setattr(runner_module, "DEFAULT_RESULTS_DIR", tmp_path / "results")
+    tasks = tmp_path / "tasks"
+    write_task(tasks, "webarena_000001_v0001")
+    write_task(tasks, "webarena_000002_v0001")
+    config = tmp_path / "config.json"
+    config.write_text(json.dumps({"runner": "exploding"}))
+    monkeypatch.setattr(
+        sys, "argv", ["runner.py", "--config", str(config), "--tasks", str(tasks)]
+    )
+
+    main()
+
+    out = capsys.readouterr().out
+    assert RED in out
+
+    written = list((tmp_path / "results" / "config").glob("*.jsonl"))
+    records = [json.loads(line) for line in written[0].read_text().splitlines()]
+    assert len(records) == 2
+    assert all(r["predicted_ids"] is None for r in records)
+    assert all("connection refused" in r["error"] for r in records)
 
 
 def test_main_exits_with_a_red_error_for_a_missing_config_file(monkeypatch, capsys, tmp_path):
