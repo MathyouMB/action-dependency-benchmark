@@ -4,8 +4,9 @@ import sys
 import pytest
 
 from benchmark.models import runner as runner_module
-from benchmark.models.runner import GREEN, RED, load_instances, main, parse_args, validate_config
+from benchmark.models.runner import load_instances, main, parse_args, validate_config
 from benchmark.models.runners.base import Instance, Runner, TaskResult
+from benchmark.models.view import GREEN, RED
 
 
 class FakeRunner(Runner):

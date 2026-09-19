@@ -50,6 +50,7 @@ class GptOssOllamaRunner(Runner):
             expected_ids=instance.supporting_fact_ids,
             total_duration_s=total_duration_ns / 1e9 if total_duration_ns is not None else None,
             meta={
+                "why": parsed.get("justification"),
                 "thinking": message.get("thinking"),
                 "eval_count": response_body.get("eval_count"),
                 "prompt_eval_count": response_body.get("prompt_eval_count"),

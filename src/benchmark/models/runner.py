@@ -1,6 +1,7 @@
 import argparse
 import json
 import sys
+import time
 from dataclasses import asdict
 from datetime import UTC, datetime
 from pathlib import Path
@@ -10,10 +11,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from benchmark.models.runners.base import Instance, Runner, TaskResult
 from benchmark.models.runners.gpt_oss_ollama import GptOssOllamaRunner
-
-GREEN = "\033[32m"
-RED = "\033[31m"
-RESET = "\033[0m"
+from benchmark.models.view import RED, RESET, RunView
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_TASKS_DIR = REPO_ROOT / "data" / "tasks"
@@ -105,9 +103,10 @@ def main() -> None:
     output_path = default_output_path(config["name"])
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
-    print(f"{config['name']} ({config['runner']}) over {len(instances)} instance(s)")
+    view = RunView(config["name"], config["runner"], len(instances))
+    run_started = time.monotonic()
     with output_path.open("w") as handle:
-        for instance in instances:
+        for index, instance in enumerate(instances, start=1):
             result = predict_safely(runner, instance)
             record = {
                 "instance_id": instance.instance_id,
@@ -119,9 +118,8 @@ def main() -> None:
             handle.write(json.dumps(record) + "\n")
             handle.flush()
 
-            color = RED if result.error else GREEN
-            outcome = result.error or result.predicted_ids
-            print(f"  {color}{instance.instance_id}  {outcome}{RESET}")
+            view.print_instance(index, instance, result)
+    view.print_summary(time.monotonic() - run_started)
 
     print(f"wrote {output_path}")
 
