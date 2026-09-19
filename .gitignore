@@ -7,3 +7,4 @@ __pycache__/
 # temporary files
 src/benchmark/prompts/demo.md
 src/benchmark/data/tasks/webarena_000284/webarena_000284_v0001.json
+results
