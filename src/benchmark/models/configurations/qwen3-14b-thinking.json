@@ -1,0 +1,15 @@
+{
+  "name": "qwen3-14b-thinking",
+  "runner": "qwen3_ollama",
+  "prompt": "src/benchmark/prompts/demo.md",
+  "args": {
+    "model": "qwen3:14b",
+    "host": "http://localhost:11434",
+    "think": true,
+    "timeout_s": 900,
+    "options": {
+      "temperature": 0,
+      "num_ctx": 16384
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "deepseek-r1-8b",
+  "runner": "deepseek_r1_ollama",
+  "prompt": "src/benchmark/prompts/demo.md",
+  "args": {
+    "model": "deepseek-r1:8b",
+    "host": "http://localhost:11434",
+    "think": true,
+    "timeout_s": 900,
+    "options": {
+      "temperature": 0,
+      "num_ctx": 16384
+    }
+  }
+}
