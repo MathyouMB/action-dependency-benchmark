@@ -8,6 +8,11 @@ from typing import Any
 from benchmark.models.runners.base import Instance, Runner, TaskResult
 
 
+def _seconds(nanoseconds: int | None) -> float | None:
+    """Ollama times every phase in nanoseconds; a result reads better in seconds."""
+    return nanoseconds / 1e9 if nanoseconds is not None else None
+
+
 class OllamaChatRunner(Runner):
     """Shared /api/chat plumbing for Ollama-backed runners.
 
@@ -59,17 +64,19 @@ class OllamaChatRunner(Runner):
         message = response_body.get("message", {})
         parsed = self.parse_content(message.get("content", "{}"))
 
-        total_duration_ns = response_body.get("total_duration")
-
         return TaskResult(
             predicted_ids=parsed.get("dependencies", []),
             expected_ids=instance.supporting_fact_ids,
-            total_duration_s=total_duration_ns / 1e9 if total_duration_ns is not None else None,
+            total_duration_s=_seconds(response_body.get("total_duration")),
+            load_duration_s=_seconds(response_body.get("load_duration")),
+            prompt_eval_count=response_body.get("prompt_eval_count"),
+            prompt_eval_cached_count=response_body.get("prompt_eval_cached_count"),
+            prompt_eval_duration_s=_seconds(response_body.get("prompt_eval_duration")),
+            eval_count=response_body.get("eval_count"),
+            eval_duration_s=_seconds(response_body.get("eval_duration")),
             meta={
                 "why": parsed.get("justification"),
                 "thinking": message.get("thinking"),
-                "eval_count": response_body.get("eval_count"),
-                "prompt_eval_count": response_body.get("prompt_eval_count"),
                 "think": self.think,
                 "model": self.model,
             },

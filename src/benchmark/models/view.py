@@ -192,10 +192,8 @@ class RunView:
         parts = []
         if result.total_duration_s is not None:
             parts.append(f"{_format_duration(result.total_duration_s)} of wall clock")
-        prompt_tokens = result.meta.get("prompt_eval_count")
-        if prompt_tokens is not None:
-            parts.append(f"{prompt_tokens:,} prompt tokens")
-        output_tokens = result.meta.get("eval_count")
-        if output_tokens is not None:
-            parts.append(f"{output_tokens:,} output tokens")
+        if result.prompt_eval_count is not None:
+            parts.append(f"{result.prompt_eval_count:,} prompt tokens")
+        if result.eval_count is not None:
+            parts.append(f"{result.eval_count:,} output tokens")
         return " · ".join(parts) if parts else "n/a"

@@ -39,14 +39,20 @@ class Instance:
 class TaskResult:
     """What every model needs to output for one instance."""
 
-    predicted_ids: list[str] | None
-    expected_ids: list[str] | None = None
-    total_duration_s: float | None = None
-    error: str | None = None
-    precision: float = field(init=False, default=0.0)
-    recall: float = field(init=False, default=0.0)
-    f1: float = field(init=False, default=0.0)
-    meta: dict[str, Any] = field(default_factory=dict)
+    predicted_ids: list[str] | None  # facts the model said the action depends on
+    expected_ids: list[str] | None = None  # facts the task says it depends on
+    total_duration_s: float | None = None  # the whole reply, load and prefill included
+    load_duration_s: float | None = None  # getting the model into memory, ~0 once warm
+    prompt_eval_count: int | None = None  # input tokens prefilled
+    prompt_eval_cached_count: int | None = None  # how many of those were cache hits
+    prompt_eval_duration_s: float | None = None  # time spent prefilling them
+    eval_count: int | None = None  # output tokens generated, thinking included
+    eval_duration_s: float | None = None  # time spent generating them
+    error: str | None = None  # why this instance has no prediction
+    precision: float = field(init=False, default=0.0)  # of the predicted, how many were right
+    recall: float = field(init=False, default=0.0)  # of the expected, how many were found
+    f1: float = field(init=False, default=0.0)  # the harmonic mean of the two
+    meta: dict[str, Any] = field(default_factory=dict)  # anything else the runner keeps
 
     def __post_init__(self) -> None:
         if self.predicted_ids is not None:
