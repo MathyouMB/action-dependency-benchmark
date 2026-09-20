@@ -14,6 +14,7 @@ class Instance:
     """One scenario: what the user asked, what the agent saw, what it proposes to do."""
 
     instance_id: str
+    scenario_id: str  # the task this is a version of, e.g. webarena_000284
     task: str
     state: list[dict[str, Any]]
     proposed_action: str
@@ -24,6 +25,7 @@ class Instance:
         data = json.loads(Path(path).read_text())
         return cls(
             instance_id=data["instance_id"],
+            scenario_id=data["scenario_id"],
             task=data["webarena_data"]["intent"],
             state=data["state"],
             proposed_action=data["proposed_action"]["text"],

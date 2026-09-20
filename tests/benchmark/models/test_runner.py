@@ -27,6 +27,7 @@ def write_task(root, instance_id, supporting=("f1",)):
         json.dumps(
             {
                 "instance_id": instance_id,
+                "scenario_id": instance_id.rsplit("_v", 1)[0],
                 "proposed_action": {"text": "Open the product page"},
                 "state": [{"id": "f1", "text": "a"}, {"id": "f2", "text": "b"}],
                 "supporting_fact_ids": list(supporting),
@@ -108,7 +109,7 @@ def test_main_writes_one_result_line_per_instance(monkeypatch, capsys, tmp_path)
     assert "webarena_000001_v0001" in out
     assert "webarena_000002_v0001" in out
 
-    written = list((tmp_path / "results" / "config").glob("*.jsonl"))
+    written = list((tmp_path / "results" / "runs" / "config").glob("*.jsonl"))
     assert len(written) == 1
     records = [json.loads(line) for line in written[0].read_text().splitlines()]
     assert [r["instance_id"] for r in records] == [
@@ -116,6 +117,30 @@ def test_main_writes_one_result_line_per_instance(monkeypatch, capsys, tmp_path)
         "webarena_000002_v0001",
     ]
     assert all(r["predicted_ids"] == ["f1"] for r in records)
+
+
+def test_main_writes_each_result_under_its_task_and_version(monkeypatch, capsys, tmp_path):
+    monkeypatch.setitem(runner_module.RUNNERS, "fake", FakeRunner)
+    monkeypatch.setattr(runner_module, "DEFAULT_RESULTS_DIR", tmp_path / "results")
+    tasks = tmp_path / "tasks"
+    write_task(tasks, "webarena_000001_v0001", supporting=["f1"])
+    write_task(tasks, "webarena_000001_v0002", supporting=["f2"])
+    config = tmp_path / "config.json"
+    config.write_text(json.dumps({"runner": "fake"}))
+    monkeypatch.setattr(sys, "argv", ["runner.py", "--config", str(config), "--tasks", str(tasks)])
+
+    main()
+
+    run_file = next((tmp_path / "results" / "runs" / "config").glob("*.jsonl"))
+    lines = [json.loads(line) for line in run_file.read_text().splitlines()]
+    scenario = tmp_path / "results" / "tasks" / "webarena_000001"
+
+    expected_ids = ["webarena_000001_v0001", "webarena_000001_v0002"]
+    for instance_id, line in zip(expected_ids, lines, strict=True):
+        # the run's stamp names the per-task file too, so the two layouts line up
+        path = scenario / instance_id / "config" / f"{run_file.stem}.json"
+        assert json.loads(path.read_text()) == line
+        assert line["instance_id"] == instance_id
 
 
 def test_main_records_a_runner_error_without_losing_the_rest_of_the_run(
@@ -135,7 +160,7 @@ def test_main_records_a_runner_error_without_losing_the_rest_of_the_run(
     out = capsys.readouterr().out
     assert RED in out
 
-    written = list((tmp_path / "results" / "config").glob("*.jsonl"))
+    written = list((tmp_path / "results" / "runs" / "config").glob("*.jsonl"))
     records = [json.loads(line) for line in written[0].read_text().splitlines()]
     assert len(records) == 2
     assert all(r["predicted_ids"] is None for r in records)

@@ -68,9 +68,21 @@ def load_instances(tasks_path: str | Path) -> list[Instance]:
     return [Instance.from_file(path) for path in sorted(tasks_path.rglob("*.json"))]
 
 
-def default_output_path(config_name: str) -> Path:
-    stamp = datetime.now(UTC).strftime("%Y%m%dT%H%M%SZ")
-    return DEFAULT_RESULTS_DIR / config_name / f"{stamp}.jsonl"
+def run_output_path(config_name: str, stamp: str) -> Path:
+    """Every instance of one run, a record per line."""
+    return DEFAULT_RESULTS_DIR / "runs" / config_name / f"{stamp}.jsonl"
+
+
+def task_output_path(instance: Instance, config_name: str, stamp: str) -> Path:
+    """One instance on its own, filed under the task it is a version of."""
+    return (
+        DEFAULT_RESULTS_DIR
+        / "tasks"
+        / instance.scenario_id
+        / instance.instance_id
+        / config_name
+        / f"{stamp}.json"
+    )
 
 
 def predict_safely(runner: Runner, instance: Instance) -> TaskResult:
@@ -106,7 +118,8 @@ def main() -> None:
         raise SystemExit(1) from None
 
     """Step 4. evoke the runner on every scenario, recording each as it finishes."""
-    output_path = default_output_path(config["name"])
+    stamp = datetime.now(UTC).strftime("%Y%m%dT%H%M%SZ")
+    output_path = run_output_path(config["name"], stamp)
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     view = RunView(config["name"], config["runner"], len(instances))
@@ -123,6 +136,10 @@ def main() -> None:
             }
             handle.write(json.dumps(record) + "\n")
             handle.flush()
+
+            task_path = task_output_path(instance, config["name"], stamp)
+            task_path.parent.mkdir(parents=True, exist_ok=True)
+            task_path.write_text(json.dumps(record, indent=2) + "\n")
 
             view.print_instance(index, instance, result)
     view.print_summary(time.monotonic() - run_started)
