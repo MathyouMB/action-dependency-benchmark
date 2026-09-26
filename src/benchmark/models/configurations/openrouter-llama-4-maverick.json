@@ -1,0 +1,13 @@
+{
+  "name": "openrouter-llama-4-maverick",
+  "runner": "openrouter",
+  "prompt": "src/benchmark/prompts/demo.md",
+  "args": {
+    "model": "meta-llama/llama-4-maverick",
+    "timeout_s": 900,
+    "params": {
+      "temperature": 0,
+      "seed": 0
+    }
+  }
+}
