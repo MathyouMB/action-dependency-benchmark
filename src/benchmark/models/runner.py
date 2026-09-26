@@ -9,10 +9,12 @@ from typing import Any
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
+from benchmark.env import load_env_file
 from benchmark.models.runners.base import Instance, Runner, TaskResult
 from benchmark.models.runners.deepseek_r1_ollama import DeepSeekR1OllamaRunner
 from benchmark.models.runners.gpt_oss_ollama import GptOssOllamaRunner
 from benchmark.models.runners.ollama_chat import OllamaChatRunner
+from benchmark.models.runners.openrouter_chat import OpenRouterChatRunner
 from benchmark.models.runners.qwen3_ollama import Qwen3OllamaRunner
 from benchmark.models.view import RED, RESET, RunView
 
@@ -25,6 +27,7 @@ RUNNERS: dict[str, type[Runner]] = {
     "deepseek_r1_ollama": DeepSeekR1OllamaRunner,
     "qwen3_ollama": Qwen3OllamaRunner,
     "ollama": OllamaChatRunner,
+    "openrouter": OpenRouterChatRunner,
 }
 
 
@@ -98,6 +101,7 @@ def predict_safely(runner: Runner, instance: Instance) -> TaskResult:
 
 def main() -> None:
     """Step 1. validate all arguments are present."""
+    load_env_file()
     args = parse_args()
 
     """Step 2. validate all the argument values are valid."""

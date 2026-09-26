@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Any
 
 PLACEHOLDER_PATTERN = re.compile(r"\{\{(\w+)\}\}")
+CODE_FENCE_PATTERN = re.compile(r"^\s*```(?:json)?\s*(.*?)\s*```\s*$", re.DOTALL)
 
 
 @dataclass

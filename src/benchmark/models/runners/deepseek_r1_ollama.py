@@ -1,12 +1,10 @@
 from __future__ import annotations
 
 import json
-import re
 from typing import Any
 
+from benchmark.models.runners.base import CODE_FENCE_PATTERN
 from benchmark.models.runners.ollama_chat import OllamaChatRunner
-
-CODE_FENCE_PATTERN = re.compile(r"^\s*```(?:json)?\s*(.*?)\s*```\s*$", re.DOTALL)
 
 
 class DeepSeekR1OllamaRunner(OllamaChatRunner):

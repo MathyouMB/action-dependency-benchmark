@@ -4,8 +4,14 @@ import sys
 import pytest
 
 from benchmark.models import runner as runner_module
-from benchmark.models.runner import load_instances, main, parse_args, validate_config
+from benchmark.models.runner import (
+    load_instances,
+    main,
+    parse_args,
+    validate_config,
+)
 from benchmark.models.runners.base import Instance, Runner, TaskResult
+from benchmark.models.runners.openrouter_chat import OpenRouterChatRunner
 from benchmark.models.view import GREEN, RED
 
 
@@ -178,3 +184,21 @@ def test_main_exits_with_a_red_error_for_a_missing_config_file(monkeypatch, caps
     out = capsys.readouterr().out
     assert RED in out
     assert "config file not found" in out
+
+
+def test_build_runner_knows_the_openrouter_runner(tmp_path, monkeypatch):
+    monkeypatch.setenv("OPENROUTER_API_KEY", "sk-or-test")
+    prompt = tmp_path / "prompt.md"
+    prompt.write_text("{{task}} {{state}} {{proposed_action}}")
+
+    built = runner_module.build_runner(
+        {
+            "name": "x",
+            "runner": "openrouter",
+            "prompt": str(prompt),
+            "args": {"model": "openai/gpt-oss-120b"},
+        }
+    )
+
+    assert isinstance(built, OpenRouterChatRunner)
+
