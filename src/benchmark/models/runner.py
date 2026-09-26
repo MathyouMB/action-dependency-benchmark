@@ -16,6 +16,7 @@ from benchmark.models.runners.gpt_oss_ollama import GptOssOllamaRunner
 from benchmark.models.runners.ollama_chat import OllamaChatRunner
 from benchmark.models.runners.openrouter_chat import OpenRouterChatRunner
 from benchmark.models.runners.qwen3_ollama import Qwen3OllamaRunner
+from benchmark.models.runners.typesafe_jev import TypeSafeJevRunner
 from benchmark.models.view import RED, RESET, RunView
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -28,6 +29,7 @@ RUNNERS: dict[str, type[Runner]] = {
     "qwen3_ollama": Qwen3OllamaRunner,
     "ollama": OllamaChatRunner,
     "openrouter": OpenRouterChatRunner,
+    "typesafe_jev": TypeSafeJevRunner,
 }
 
 

@@ -1,5 +1,6 @@
 import json
 import sys
+from pathlib import Path
 
 import pytest
 
@@ -164,3 +165,74 @@ def test_main_exits_with_a_red_error_for_a_missing_template(monkeypatch, capsys,
     out = capsys.readouterr().out
     assert RED in out
     assert "nope.md" in out
+
+
+JEV_TEMPLATE = {
+    "state": {
+        "task": "{{task}}",
+        "observed_state": "{{state_lines}}",
+        "proposed_action": "{{proposed_action}}",
+        "exclusions": ["Do not include irrelevant attributes."],
+    },
+    "question_key": "{{fact_id}}_dependency",
+    "question": {
+        "type": "noul",
+        "instructions": "Is fact {{fact_id}} a dependency of the proposed action?",
+        "criteria": {"true": "{{fact_id}} was read.", "false": "{{fact_id}} was not read."},
+    },
+}
+
+
+def write_jev_template(root):
+    path = root / "jev.json"
+    path.write_text(json.dumps(JEV_TEMPLATE))
+    return path
+
+
+def test_render_builds_the_jev_payload_for_a_json_template(tmp_path):
+    instance = write_instance(tmp_path)
+    template = write_jev_template(tmp_path)
+
+    payload = json.loads(render(instance, template))
+
+    assert payload["state"]["task"] == "Book the highest-rated hotel with free wifi"
+    assert payload["state"]["observed_state"] == [
+        "f1: Hotel Alba has free wifi",
+        "f2: Hotel Cedar is rated 4.6",
+    ]
+    assert list(payload["questions"]) == ["f1_dependency", "f2_dependency"]
+    assert payload["questions"]["f2_dependency"]["instructions"] == (
+        "Is fact f2 a dependency of the proposed action?"
+    )
+
+
+def test_render_does_not_leak_the_answer_key_into_the_jev_payload(tmp_path):
+    instance = write_instance(tmp_path)
+    template = write_jev_template(tmp_path)
+
+    rendered = render(instance, template)
+
+    assert "supporting_fact_ids" not in rendered
+
+
+def test_resolve_out_path_uses_the_template_suffix(tmp_path):
+    instance = write_instance(tmp_path)
+
+    path = resolve_out_path(None, instance, suffix=".json")
+
+    assert path.name == "webarena_000001_v0001.json"
+    assert path.parent.name == "rendered"
+
+
+def test_main_writes_the_jev_payload_as_json(monkeypatch, capsys, tmp_path):
+    instance = write_instance(tmp_path)
+    template = write_jev_template(tmp_path)
+    monkeypatch.setattr(
+        sys, "argv", ["render_prompt.py", str(instance), "--prompt", str(template)]
+    )
+
+    main()
+
+    out = capsys.readouterr().out
+    written = json.loads(Path(out.split("wrote ")[1].strip()).read_text())
+    assert list(written["questions"]) == ["f1_dependency", "f2_dependency"]

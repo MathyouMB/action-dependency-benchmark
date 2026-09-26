@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Any
 
 PLACEHOLDER_PATTERN = re.compile(r"\{\{(\w+)\}\}")
+WHOLE_PLACEHOLDER_PATTERN = re.compile(r"^\{\{(\w+)\}\}$")
 CODE_FENCE_PATTERN = re.compile(r"^\s*```(?:json)?\s*(.*?)\s*```\s*$", re.DOTALL)
 
 
@@ -52,6 +53,7 @@ class TaskResult:
     eval_count: int | None = None  # output tokens generated, thinking included
     eval_duration_s: float | None = None  # time spent generating them
     error: str | None = None  # why this instance has no prediction
+    answers: dict[str, Any] | None = None # Jev only
     precision: float = field(init=False, default=0.0)  # of the predicted, how many were right
     recall: float = field(init=False, default=0.0)  # of the expected, how many were found
     f1: float = field(init=False, default=0.0)  # the harmonic mean of the two
@@ -72,6 +74,35 @@ class TaskResult:
             if self.precision + self.recall
             else 0.0
         )
+
+
+def _fill(template: Any, values: dict[str, Any]) -> Any:
+    """Walk a parsed JSON structure, filling `{{placeholders}}` as it goes."""
+    if isinstance(template, dict):
+        return {key: _fill(value, values) for key, value in template.items()}
+    if isinstance(template, list):
+        return [_fill(item, values) for item in template]
+    if not isinstance(template, str):
+        return template
+
+    whole = WHOLE_PLACEHOLDER_PATTERN.match(template)
+    if whole:
+        return values.get(whole.group(1), template)
+    return PLACEHOLDER_PATTERN.sub(lambda m: str(values.get(m.group(1), m.group(0))), template)
+
+
+def render_json(template: Any, values: dict[str, Any]) -> Any:
+    """`template` with every `{{placeholder}}` filled, keeping JSON types.
+
+    A placeholder that is a whole value becomes the value itself - so
+    `"{{state_lines}}"` yields a list, not a string. One inside a longer string
+    is substituted as text.
+    """
+    wanted = set(PLACEHOLDER_PATTERN.findall(json.dumps(template)))
+    missing = sorted(wanted - set(values))
+    if missing:
+        raise ValueError(f"template has unfilled placeholder(s): {', '.join(missing)}")
+    return _fill(template, values)
 
 
 class Runner:

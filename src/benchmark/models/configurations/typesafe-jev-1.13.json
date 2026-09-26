@@ -1,0 +1,10 @@
+{
+  "name": "typesafe-jev-1.13",
+  "runner": "typesafe_jev",
+  "prompt": "src/benchmark/prompts/jev.json",
+  "args": {
+    "model": "jev-1.13.0",
+    "threshold": 0.25,
+    "timeout_s": 120
+  }
+}

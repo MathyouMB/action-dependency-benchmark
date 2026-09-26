@@ -1,10 +1,12 @@
 import json
 import sys
+from pathlib import Path
 
 import pytest
 
 from benchmark.models import runner as runner_module
 from benchmark.models.runner import (
+    build_runner,
     load_instances,
     main,
     parse_args,
@@ -12,6 +14,7 @@ from benchmark.models.runner import (
 )
 from benchmark.models.runners.base import Instance, Runner, TaskResult
 from benchmark.models.runners.openrouter_chat import OpenRouterChatRunner
+from benchmark.models.runners.typesafe_jev import TypeSafeJevRunner, build_request
 from benchmark.models.view import GREEN, RED
 
 
@@ -202,3 +205,56 @@ def test_build_runner_knows_the_openrouter_runner(tmp_path, monkeypatch):
 
     assert isinstance(built, OpenRouterChatRunner)
 
+
+
+REPO_SRC = Path(__file__).resolve().parents[3] / "src"
+JEV_TEMPLATE = REPO_SRC / "benchmark" / "prompts" / "jev.json"
+JEV_CONFIG = REPO_SRC / "benchmark" / "models" / "configurations" / "typesafe-jev-1.13.json"
+
+
+def test_build_runner_returns_the_jev_class_for_the_typesafe_jev_runner(monkeypatch):
+    monkeypatch.setenv("TYPESAFE_API_KEY", "ts-test")
+    config = json.loads(JEV_CONFIG.read_text())
+    config["prompt"] = str(JEV_TEMPLATE)
+
+    runner = build_runner(config)
+
+    assert isinstance(runner, TypeSafeJevRunner)
+    assert runner.model == "jev-1.13.0"
+    assert runner.threshold == 0.25
+
+
+def test_the_shipped_config_points_at_the_shipped_template():
+    config = json.loads(JEV_CONFIG.read_text())
+
+    assert config["runner"] == "typesafe_jev"
+    assert config["name"] == "typesafe-jev-1.13"
+    assert (REPO_SRC.parent / config["prompt"]).is_file()
+
+
+def test_the_shipped_template_renders_a_question_for_every_fact():
+    template = json.loads(JEV_TEMPLATE.read_text())
+    instance = Instance(
+        instance_id="webarena_000284_v0001",
+        scenario_id="webarena_000284",
+        task="buy the cheapest shoe rack that holds 12 pairs",
+        state=[
+            {"id": "f1", "text": "MiniStack holds 9 pairs"},
+            {"id": "f2", "text": "MiniStack costs $57.11"},
+            {"id": "f3", "text": "ShoeNest holds 20 pairs"},
+        ],
+        proposed_action="Open the product page for ShoeNest",
+        supporting_fact_ids=["f1", "f3"],
+    )
+
+    body, keys = build_request(template, instance)
+
+    assert list(body["questions"]) == ["f1_dependency", "f2_dependency", "f3_dependency"]
+    assert all(q["type"] == "noul" for q in body["questions"].values())
+    assert all("criteria" in q for q in body["questions"].values())
+    assert body["state"]["observed_state"] == [
+        "f1: MiniStack holds 9 pairs",
+        "f2: MiniStack costs $57.11",
+        "f3: ShoeNest holds 20 pairs",
+    ]
+    assert keys["f3_dependency"] == "f3"

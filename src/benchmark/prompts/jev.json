@@ -1,0 +1,23 @@
+{
+  "state": {
+    "task": "{{task}}",
+    "observed_state": "{{state_lines}}",
+    "proposed_action": "{{proposed_action}}",
+    "dependency_definition": "A dependency is a fact that the reasoning had to read in order to land on the proposed action rather than a different one. It is not only a fact that would flip the answer if edited on its own.",
+    "decision_rule": "Determine which facts were required by the decision process. If the task contains a requirement that determines which options are eligible, the requirement attribute must be checked for every option. If the task also contains a comparison that selects among eligible options, the comparison attribute is read only for options that satisfy the requirement. The dependencies are all requirement facts that had to be checked plus all comparison facts that had to be read for eligible options.",
+    "exclusions": [
+      "Do not include the comparison attribute of an option that failed the task's requirement.",
+      "Do not include attributes that the task does not use to determine the selected option.",
+      "Do not include facts that only make the proposed action technically possible to execute, such as a button being present or a page being open."
+    ]
+  },
+  "question_key": "{{fact_id}}_dependency",
+  "question": {
+    "type": "noul",
+    "instructions": "Is fact {{fact_id}} a dependency of the proposed action?",
+    "criteria": {
+      "true": "Fact {{fact_id}} had to be read as part of the reasoning required to determine the proposed action. This includes requirement facts that must be checked for options and comparison facts that must be read for options that satisfy the requirement.",
+      "false": "Fact {{fact_id}} did not have to be read to determine the proposed action. This includes comparison facts for options that already failed a requirement, attributes the task does not use, and facts needed only to technically execute the action."
+    }
+  }
+}
