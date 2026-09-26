@@ -1,0 +1,13 @@
+{
+  "name": "openrouter-gpt-4.1-nano",
+  "runner": "openrouter",
+  "prompt": "src/benchmark/prompts/demo.md",
+  "args": {
+    "model": "openai/gpt-4.1-nano",
+    "timeout_s": 900,
+    "params": {
+      "temperature": 0,
+      "seed": 0
+    }
+  }
+}
