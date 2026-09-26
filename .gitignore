@@ -2,9 +2,16 @@
 __pycache__/
 *.py[cod]
 .ruff_cache/
+.env
 
 
 # temporary files
 src/benchmark/prompts/demo.md
-src/benchmark/data/tasks/webarena_000284
+src/benchmark/data/tasks/
 results
+src/tools
+tests/tools
+docs
+.superpowers
+src/benchmark/prompts/rendered/
+src/benchmark/prompts/rendered/
