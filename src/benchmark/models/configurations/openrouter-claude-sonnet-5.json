@@ -1,0 +1,13 @@
+{
+  "name": "openrouter-claude-sonnet-5",
+  "runner": "openrouter",
+  "prompt": "src/benchmark/prompts/demo.md",
+  "args": {
+    "model": "anthropic/claude-sonnet-5",
+    "timeout_s": 900,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "params": {}
+  }
+}
