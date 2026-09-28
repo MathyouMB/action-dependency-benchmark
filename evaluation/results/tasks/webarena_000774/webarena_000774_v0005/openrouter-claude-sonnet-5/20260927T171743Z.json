@@ -1,0 +1,52 @@
+{
+  "instance_id": "webarena_000774_v0005",
+  "config_name": "openrouter-claude-sonnet-5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:18:05Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f12",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12"
+  ],
+  "total_duration_s": 4.40337637499033,
+  "load_duration_s": null,
+  "prompt_eval_count": 1320,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 368,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Only Pending reviews are eligible (689 and 313 fail because they are Approved/Not Approved, so their star ratings f2 and f4 are never consulted). Among the Pending reviews (351, 680, 353, 349), their star ratings are checked to determine which have less than 4 stars: 351(3), 680(5, excluded), 353(1), 349(1) \u2014 leading to deletion of 349, 351, 353.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-sonnet-5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790529481-lhP6ToV5tc2W5B17PDHk"
+  }
+}

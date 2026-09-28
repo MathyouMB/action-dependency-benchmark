@@ -1,0 +1,44 @@
+{
+  "instance_id": "webarena_000284_v0001",
+  "config_name": "openrouter-gpt-6-sol",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T18:03:48Z",
+  "predicted_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7"
+  ],
+  "total_duration_s": 3.5363569999899482,
+  "load_duration_s": null,
+  "prompt_eval_count": 750,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 243,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Capacity is checked for every option. Only ShoeNest and StackRack hold at least 12 pairs, and ShoeNest is cheaper. The prices of MiniStack and StepStack are not consulted.",
+    "thinking": "**Enumerating capacities and dependencies**\n\nI need to figure out the capacities for MiniStack, ShoeNest, StackRack, and StepStack for specific identifiers: f1, f3, f5, f7. I'll also pass on details for the ShoeNest and StackRack, while considering the prices for f4 and f6. It looks like assessing the dependencies might require an order that includes f1, f3, f4, f5, f6, and f7. I want to include every relevant fact ID from steps 2 and 3 in a structured way.",
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "openai/gpt-6-sol",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790532224-ERiUOUvgOvvQYz0YOWhj"
+  }
+}

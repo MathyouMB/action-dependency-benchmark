@@ -1,0 +1,39 @@
+{
+  "instance_id": "webarena_000284_v0001",
+  "config_name": "qwen3-8b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-20T23:01:58Z",
+  "predicted_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7"
+  ],
+  "total_duration_s": 11.165234041,
+  "load_duration_s": 3.078014583,
+  "prompt_eval_count": 784,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": 1.715597,
+  "eval_count": 167,
+  "eval_duration_s": 6.358529,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Storage capacity read for all four options; only ShoeNest and StackRack passed the 12-pair requirement. ShoeNest's price f4 and StackRack's price f6 were read for comparison. The other facts were not used in the decision.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:8b"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "instance_id": "webarena_000284_v0004",
+  "config_name": "qwen2.5-14b",
+  "runner": "ollama",
+  "timestamp": "2026-09-21T04:01:11Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f7"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7"
+  ],
+  "total_duration_s": 13.025400625,
+  "load_duration_s": 0.008172666,
+  "prompt_eval_count": 794,
+  "prompt_eval_cached_count": 79,
+  "prompt_eval_duration_s": 3.765148,
+  "eval_count": 134,
+  "eval_duration_s": 9.206354,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.8333,
+  "f1": 0.9091,
+  "meta": {
+    "why": "Storage capacity read for all four options; price read only for the two eligible ones. MiniStack and StepStack are ruled out by storage capacity, and their prices are not compared.",
+    "thinking": null,
+    "think": null,
+    "model": "qwen2.5:14b"
+  }
+}

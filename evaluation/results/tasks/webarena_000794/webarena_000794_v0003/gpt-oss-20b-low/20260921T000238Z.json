@@ -1,0 +1,43 @@
+{
+  "instance_id": "webarena_000794_v0003",
+  "config_name": "gpt-oss-20b-low",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-21T00:03:15Z",
+  "predicted_ids": [
+    "f10",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 13.459835875,
+  "load_duration_s": 0.005511083,
+  "prompt_eval_count": 899,
+  "prompt_eval_cached_count": 63,
+  "prompt_eval_duration_s": 1.148717,
+  "eval_count": 352,
+  "eval_duration_s": 12.282487,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Requirement reads status for all orders; comparison reads dates only for those that passed the requirement. The canceled orders\u2019 dates are never consulted.",
+    "thinking": "We need options: orders. List all orders: #315, #308, #296, #280, #271. Requirement: status not canceled? We need most recent non-canceled. So requirement: status is not Canceled. Facts: f2, f4, f6, f8, f10. Pass: 315 canceled fail, 308 processing pass, 296 processing pass, 280 canceled fail, 271 pending pass. Comparison: most recent date. Dates: f1, f3, f5, f7, f9. For passed options: 308,296,271. Need comparison attribute: date fact id. So f3, f5, f9. Dependencies: all requirement facts f2,f4,f6,f8,f10 plus comparison facts f3,f5,f9. Return JSON.",
+    "think": "low",
+    "model": "gpt-oss:20b"
+  }
+}

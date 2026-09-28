@@ -1,0 +1,48 @@
+{
+  "instance_id": "webarena_000794_v0003",
+  "config_name": "openrouter-claude-sonnet-5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:18:19Z",
+  "predicted_ids": [
+    "f10",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 5.425596832996234,
+  "load_duration_s": null,
+  "prompt_eval_count": 1270,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 500,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Status facts (f2,f4,f6,f8,f10) are read to determine which orders are non-canceled and thus eligible. Among the eligible orders (#308, #296, #271), their placement dates (f3,f5,f9) are compared to find the most recent, which is #308. The date/status facts for canceled orders (#315, #280) are irrelevant once excluded.",
+    "thinking": "Filtering out 315 and 280 since they're canceled, that leaves 308, 296, and 271 as valid candidates. Comparing their associated dates, I'm checking which one is most recent to determine the best pick among the passing options.\n\n",
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-sonnet-5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790529494-cYPHgEa5PntauXV79spm"
+  }
+}

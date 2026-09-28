@@ -1,0 +1,48 @@
+{
+  "instance_id": "webarena_000774_v0001",
+  "config_name": "openrouter-llama-4-maverick",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T19:31:14Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 3.314241457999742,
+  "load_duration_s": null,
+  "prompt_eval_count": 833,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 213,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Status 'Pending' is checked for all reviews; rating is read only for the ones that are 'Pending'. Review 699 is not considered because it is 'Approved', and its rating f6 is not read. Review 396 is 'Pending' but its rating f2 is read, even though it doesn't affect the decision because it has more than 4 stars.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "meta-llama/llama-4-maverick",
+    "provider": "DeepInfra",
+    "generation_id": "gen-1790451071-P2eN9UlfZHh944UGQndR"
+  }
+}

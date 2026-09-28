@@ -1,0 +1,41 @@
+{
+  "instance_id": "webarena_000431_v0004",
+  "config_name": "openrouter-gpt-4.1-nano",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T19:15:42Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "total_duration_s": 2.0766924999988987,
+  "load_duration_s": null,
+  "prompt_eval_count": 782,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 240,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "All options are available for purchase; the lowest per unit price is determined by dividing total price by quantity. The candle set costs $20.28 for 4 units ($5.07 per unit), the wall sconces cost $6.66 for 2 units ($3.33 per unit), and the taper candles cost $24.84 for 4 units ($6.21 per unit). The lowest per unit price is for the White Starfish Wall Candle Sconces, which is why the decision is based on the prices (f1, f3, f5) and their quantities (f2, f4, f6).",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1-nano",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790450140-YjYaxHdt1D5rbaxzHa4o"
+  }
+}

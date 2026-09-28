@@ -1,0 +1,46 @@
+{
+  "instance_id": "webarena_000714_v0001",
+  "config_name": "gpt-oss-20b-low",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-20T23:58:08Z",
+  "predicted_ids": [
+    "f1",
+    "f13",
+    "f14",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f9",
+    "f11",
+    "f13",
+    "f14"
+  ],
+  "total_duration_s": 9.689406583,
+  "load_duration_s": 0.016465667,
+  "prompt_eval_count": 956,
+  "prompt_eval_cached_count": 84,
+  "prompt_eval_duration_s": 1.134767,
+  "eval_count": 239,
+  "eval_duration_s": 8.516550999,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.7273,
+  "f1": 0.8421,
+  "meta": {
+    "why": "All four posts are in the gadgets forum, so the requirement fact for each is read. The comparison fact (all\u2011time score) is read for each eligible post. No other facts are needed.",
+    "thinking": "We need options: posts in gadgets forum: 71093,20276,83944,19459. Step1 list in order appears: 71093,20276,83944,19459. Step2 requirement: being in gadgets forum. facts: f1,f3,f5,f13. All pass. Step3 comparison: all-time score: f2,f4,f6,f14. Dependencies all these. Return JSON.",
+    "think": "low",
+    "model": "gpt-oss:20b"
+  }
+}

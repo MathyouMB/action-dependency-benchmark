@@ -1,0 +1,55 @@
+{
+  "instance_id": "webarena_000238_v0001",
+  "config_name": "openrouter-gpt-6-luna",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T17:53:02Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f13",
+    "f15",
+    "f17",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f13",
+    "f15",
+    "f17"
+  ],
+  "total_duration_s": 4.543061875003332,
+  "load_duration_s": null,
+  "prompt_eval_count": 1040,
+  "prompt_eval_cached_count": 1037,
+  "prompt_eval_duration_s": null,
+  "eval_count": 508,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Checked the category of every listed product for PS4 Accessories. Compared prices only for the three eligible products; the ASTRO Gaming A50 is the most expensive. Prices of products outside the category are irrelevant.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "openai/gpt-6-luna",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790445178-V1n3SpZwQjRZP2oPfvmD"
+  }
+}

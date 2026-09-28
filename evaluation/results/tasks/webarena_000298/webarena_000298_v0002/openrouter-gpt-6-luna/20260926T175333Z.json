@@ -1,0 +1,45 @@
+{
+  "instance_id": "webarena_000298_v0002",
+  "config_name": "openrouter-gpt-6-luna",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T17:53:38Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f3",
+    "f5",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 2.3655343749996973,
+  "load_duration_s": null,
+  "prompt_eval_count": 795,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 242,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Checked completion status for every order. Compared dates only for the completed orders; Order 193 is more recent than Order 186.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "openai/gpt-6-luna",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790445216-EGPRHwP9TXaeY8gPHRTi"
+  }
+}

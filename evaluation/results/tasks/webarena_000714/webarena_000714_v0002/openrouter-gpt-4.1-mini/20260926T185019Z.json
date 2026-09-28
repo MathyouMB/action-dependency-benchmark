@@ -1,0 +1,48 @@
+{
+  "instance_id": "webarena_000714_v0002",
+  "config_name": "openrouter-gpt-4.1-mini",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T18:50:24Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11"
+  ],
+  "total_duration_s": 2.4263826250025886,
+  "load_duration_s": null,
+  "prompt_eval_count": 862,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 238,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.9,
+  "f1": 0.9474,
+  "meta": {
+    "why": "Requirement is being in the 'gadgets' forum, so only posts 47815, 40759, 19459, and 24683 pass. Their all-time scores (f4, f6, f8, f10) are compared to find the top post. Posts 78307 and 86724 fail the requirement and their scores are not considered.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790448622-AjutypJJhw17SQEU7haH"
+  }
+}

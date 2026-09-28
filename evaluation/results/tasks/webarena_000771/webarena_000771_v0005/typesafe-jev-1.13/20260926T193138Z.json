@@ -1,0 +1,83 @@
+{
+  "instance_id": "webarena_000771_v0005",
+  "config_name": "typesafe-jev-1.13",
+  "runner": "typesafe_jev",
+  "timestamp": "2026-09-26T19:31:48Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 0.21455462500307476,
+  "load_duration_s": null,
+  "prompt_eval_count": 1959,
+  "prompt_eval_cached_count": null,
+  "prompt_eval_duration_s": null,
+  "eval_count": 185,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": {
+    "f1_dependency": {
+      "type": "noul",
+      "noul": 0.4
+    },
+    "f2_dependency": {
+      "type": "noul",
+      "noul": 0.16
+    },
+    "f3_dependency": {
+      "type": "noul",
+      "noul": 0.3
+    },
+    "f4_dependency": {
+      "type": "noul",
+      "noul": 0.17
+    },
+    "f5_dependency": {
+      "type": "noul",
+      "noul": 0.5
+    },
+    "f6_dependency": {
+      "type": "noul",
+      "noul": 0.37
+    },
+    "f7_dependency": {
+      "type": "noul",
+      "noul": 0.92
+    },
+    "f8_dependency": {
+      "type": "noul",
+      "noul": 0.51
+    },
+    "f9_dependency": {
+      "type": "noul",
+      "noul": 0.91
+    },
+    "f10_dependency": {
+      "type": "noul",
+      "noul": 0.64
+    }
+  },
+  "precision": 0.875,
+  "recall": 0.875,
+  "f1": 0.875,
+  "meta": {
+    "model": "jev-1.13.0",
+    "threshold": 0.25
+  }
+}

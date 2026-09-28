@@ -1,0 +1,43 @@
+{
+  "instance_id": "webarena_000284_v0002",
+  "config_name": "openrouter-gpt-4.1",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T18:47:48Z",
+  "predicted_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8"
+  ],
+  "total_duration_s": 1.5309239170019282,
+  "load_duration_s": null,
+  "prompt_eval_count": 751,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 143,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Storage capacity read for all four options; price read only for the three eligible ones. StackRack's price f2 is never compared.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790448466-jsrU5V3rqyOaSLZOfKu9"
+  }
+}

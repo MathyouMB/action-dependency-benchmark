@@ -1,0 +1,39 @@
+{
+  "instance_id": "webarena_000431_v0004",
+  "config_name": "qwen2.5-14b",
+  "runner": "ollama",
+  "timestamp": "2026-09-21T04:05:15Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "total_duration_s": 18.661359625,
+  "load_duration_s": 0.004654333,
+  "prompt_eval_count": 821,
+  "prompt_eval_cached_count": 73,
+  "prompt_eval_duration_s": 3.456038,
+  "eval_count": 232,
+  "eval_duration_s": 15.156535,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "All products are eligible based on the given state; the comparison is based on the per unit price, which requires reading both the total cost and the number of units for each product.",
+    "thinking": null,
+    "think": null,
+    "model": "qwen2.5:14b"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "instance_id": "webarena_000298_v0002",
+  "config_name": "gpt-oss-20b-low",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-20T23:14:32Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f3",
+    "f5",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 9.706113833,
+  "load_duration_s": 0.018193708,
+  "prompt_eval_count": 856,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": 1.405377,
+  "eval_count": 254,
+  "eval_duration_s": 8.258897999,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "The requirement is status completed, so f1, f3, f5 are read to rule out those orders, while f7 and f9 are read and pass. The comparison is most recent date, so f8 and f10 are read for the two eligible orders. No other facts are consulted.",
+    "thinking": "We need options: orders 983,969,157,193,186. Requirement: status completed. So facts: f1 status processing fail, f3 processing fail, f5 pending fail, f7 completed pass, f9 completed pass. Comparison: most recent placed date among eligible: f8 for 193, f10 for 186. So dependencies: f1,f3,f5,f7,f9,f8,f10.",
+    "think": "low",
+    "model": "gpt-oss:20b"
+  }
+}

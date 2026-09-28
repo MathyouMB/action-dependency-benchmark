@@ -1,0 +1,40 @@
+{
+  "instance_id": "webarena_000771_v0002",
+  "config_name": "qwen3-8b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T00:15:51Z",
+  "predicted_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f7",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "total_duration_s": 9.109341458,
+  "load_duration_s": 0.005772583,
+  "prompt_eval_count": 874,
+  "prompt_eval_cached_count": 50,
+  "prompt_eval_duration_s": 1.994722,
+  "eval_count": 191,
+  "eval_duration_s": 7.080733,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.625,
+  "f1": 0.7692,
+  "meta": {
+    "why": "The requirement is to approve reviews with four stars or higher. All reviews are checked for their rating. Only reviews with four stars or higher are eligible. The comparison is not needed as the task only requires approval of eligible reviews. Reviews with lower ratings are excluded.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:8b"
+  }
+}

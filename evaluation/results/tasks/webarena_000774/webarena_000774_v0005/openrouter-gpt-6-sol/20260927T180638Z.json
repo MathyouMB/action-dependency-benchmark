@@ -1,0 +1,52 @@
+{
+  "instance_id": "webarena_000774_v0005",
+  "config_name": "openrouter-gpt-6-sol",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T18:07:00Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f12",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12"
+  ],
+  "total_duration_s": 4.722436791998916,
+  "load_duration_s": null,
+  "prompt_eval_count": 863,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 344,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Status determines which reviews are pending. Ratings are read only for pending reviews: 349, 351, and 353 have fewer than 4 stars, while 680 does not. The ratings of 689 and 313 are not needed.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "openai/gpt-6-sol",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790532415-z70bnuhVBlbdOLeE4zWo"
+  }
+}

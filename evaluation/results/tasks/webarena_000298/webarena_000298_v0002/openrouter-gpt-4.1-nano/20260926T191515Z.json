@@ -1,0 +1,42 @@
+{
+  "instance_id": "webarena_000298_v0002",
+  "config_name": "openrouter-gpt-4.1-nano",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T19:15:19Z",
+  "predicted_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 1.5855399169959128,
+  "load_duration_s": null,
+  "prompt_eval_count": 796,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 232,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.8571,
+  "f1": 0.9231,
+  "meta": {
+    "why": "The options include all listed orders. Orders 983, 969, 193, and 186 have statuses that are relevant for selecting the most recent completed order; Order 157 is pending, so it is not eligible. The requirement check confirms eligibility based on status. Among the eligible orders, only Order 193 has the 'completed' status, and the comparison attribute 'placed on' date (f8) is read for Order 193 to determine recency. The decision to open Order 193's details depends on these facts.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1-nano",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790450118-SS7lC9GzHO2mqkS1IB5V"
+  }
+}

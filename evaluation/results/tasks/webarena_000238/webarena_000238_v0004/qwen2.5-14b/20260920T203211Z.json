@@ -1,0 +1,49 @@
+{
+  "instance_id": "webarena_000238_v0004",
+  "config_name": "qwen2.5-14b",
+  "runner": "ollama",
+  "timestamp": "2026-09-20T20:33:45Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f13",
+    "f14",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f7",
+    "f9",
+    "f10",
+    "f11",
+    "f13",
+    "f14"
+  ],
+  "total_duration_s": 21.694873041,
+  "load_duration_s": 0.005140083,
+  "prompt_eval_count": 1022,
+  "prompt_eval_cached_count": 79,
+  "prompt_eval_duration_s": 4.236117,
+  "eval_count": 259,
+  "eval_duration_s": 17.406668,
+  "error": null,
+  "precision": 0.8333,
+  "recall": 1.0,
+  "f1": 0.9091,
+  "meta": {
+    "why": "Category read for all options; price read only for the PS4 accessories. The non-PS4 accessories' prices are not compared, and other irrelevant attributes are excluded.",
+    "thinking": null,
+    "think": null,
+    "model": "qwen2.5:14b"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "instance_id": "webarena_000794_v0001",
+  "config_name": "gpt-oss-20b-low",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-21T00:02:49Z",
+  "predicted_ids": [
+    "f10",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 11.759019542,
+  "load_duration_s": 0.010195834,
+  "prompt_eval_count": 899,
+  "prompt_eval_cached_count": 65,
+  "prompt_eval_duration_s": 1.156762,
+  "eval_count": 322,
+  "eval_duration_s": 10.567959,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Status read for all orders to filter out canceled ones; dates read only for the eligible orders to determine the most recent.",
+    "thinking": "We need options: orders. List all orders: #315, #308, #296, #280, #271. Requirement: status not canceled? We need most recent non-canceled. So requirement: status is not Canceled. Facts: f2, f4, f6, f8, f10. Pass: #308, #296, #271. Comparison: most recent date. Dates: f1, f3, f5, f7, f9. For eligible: f3 (308), f5 (296), f9 (271). Dependencies: all requirement facts f2,f4,f6,f8,f10 plus comparison facts f3,f5,f9. Return JSON.",
+    "think": "low",
+    "model": "gpt-oss:20b"
+  }
+}

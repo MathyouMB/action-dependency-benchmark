@@ -1,0 +1,45 @@
+{
+  "instance_id": "webarena_000794_v0005",
+  "config_name": "openrouter-gpt-4.1-mini",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T18:51:07Z",
+  "predicted_ids": [
+    "f10",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 2.2037950830053887,
+  "load_duration_s": null,
+  "prompt_eval_count": 839,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 262,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "The requirement is that the order is non-canceled, so the status facts f2, f4, f6, f8, f10 are read for all orders. Orders #000000315 and #000000280 are canceled and fail. Among the non-canceled orders (#000000308, #000000296, #000000271), the most recent is chosen by comparing their placement dates f3, f5, f9. Thus, all these facts are dependencies.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790448665-BJ0KXHUElPj4LAqtiZFJ"
+  }
+}

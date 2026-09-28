@@ -1,0 +1,48 @@
+{
+  "instance_id": "webarena_000794_v0001",
+  "config_name": "openrouter-claude-sonnet-5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:18:09Z",
+  "predicted_ids": [
+    "f10",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 3.8620093339995947,
+  "load_duration_s": null,
+  "prompt_eval_count": 1270,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 356,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Each order's status is checked against the non-canceled requirement (f2, f4, f6, f8, f10). Among the non-canceled orders (#000000308, #000000296, #000000271), their placement dates (f3, f5, f9) are compared to find the most recent, which is #000000308 (2023-06-03). The canceled orders' dates (f1, f7) are irrelevant once excluded.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-sonnet-5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790529486-3ye0QbkTt9ISCpe7obUU"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "instance_id": "webarena_000794_v0004",
+  "config_name": "qwen3-14b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T03:52:15Z",
+  "predicted_ids": [
+    "f10",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8"
+  ],
+  "expected_ids": [
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 21.924013417,
+  "load_duration_s": 0.00455075,
+  "prompt_eval_count": 947,
+  "prompt_eval_cached_count": 174,
+  "prompt_eval_duration_s": 3.719498,
+  "eval_count": 283,
+  "eval_duration_s": 18.15692,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.875,
+  "f1": 0.9333,
+  "meta": {
+    "why": "The requirement is that the order must be non-canceled, which is checked using the status facts (f2, f4, f6, f8, f10). The comparison is based on the order date (most recent), which is checked using f3 and f5 for the eligible orders.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:14b"
+  }
+}

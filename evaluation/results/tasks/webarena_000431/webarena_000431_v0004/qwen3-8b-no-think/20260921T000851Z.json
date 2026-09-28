@@ -1,0 +1,39 @@
+{
+  "instance_id": "webarena_000431_v0004",
+  "config_name": "qwen3-8b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T00:09:26Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "total_duration_s": 9.372468542,
+  "load_duration_s": 0.004590375,
+  "prompt_eval_count": 808,
+  "prompt_eval_cached_count": 52,
+  "prompt_eval_duration_s": 1.822839,
+  "eval_count": 203,
+  "eval_duration_s": 7.518119,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "All options are eligible as they have prices. The comparison is based on per unit price, so the per unit price of each option is read. The White Starfish Wall Candle Sconces has the lowest per unit price.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:8b"
+  }
+}

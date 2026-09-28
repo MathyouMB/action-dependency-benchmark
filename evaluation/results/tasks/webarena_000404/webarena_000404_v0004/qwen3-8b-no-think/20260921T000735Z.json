@@ -1,0 +1,45 @@
+{
+  "instance_id": "webarena_000404_v0004",
+  "config_name": "qwen3-8b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T00:08:36Z",
+  "predicted_ids": [
+    "f1",
+    "f11",
+    "f12",
+    "f3",
+    "f5",
+    "f7",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12"
+  ],
+  "total_duration_s": 10.392214834,
+  "load_duration_s": 0.004408709,
+  "prompt_eval_count": 986,
+  "prompt_eval_cached_count": 44,
+  "prompt_eval_duration_s": 2.259937,
+  "eval_count": 218,
+  "eval_duration_s": 8.059776,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.6364,
+  "f1": 0.7778,
+  "meta": {
+    "why": "All options must belong to the books forum. Favorite translated novels f5 fails the requirement. The comparison reads the date of the newest post, which is What are you reading this week? f12.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:8b"
+  }
+}

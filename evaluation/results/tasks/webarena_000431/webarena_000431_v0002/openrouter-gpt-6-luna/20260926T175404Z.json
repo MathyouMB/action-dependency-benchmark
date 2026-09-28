@@ -1,0 +1,43 @@
+{
+  "instance_id": "webarena_000431_v0002",
+  "config_name": "openrouter-gpt-6-luna",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T17:54:20Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "total_duration_s": 8.691072415997041,
+  "load_duration_s": null,
+  "prompt_eval_count": 781,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 1072,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "All three options have a stated unit count, so their per-unit prices can be compared. The prices per unit are $5.85, $8.56, and $7.17 respectively; White Starfish Wall Candle Sconces is lowest.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "openai/gpt-6-luna",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790445251-x7glYc9zOMvrNKd05rgO"
+  }
+}

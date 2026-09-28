@@ -1,0 +1,54 @@
+{
+  "instance_id": "webarena_000774_v0002",
+  "config_name": "openrouter-claude-opus-5.5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:05:51Z",
+  "predicted_ids": [
+    "f1",
+    "f11",
+    "f12",
+    "f13",
+    "f14",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f11",
+    "f12",
+    "f13",
+    "f14"
+  ],
+  "total_duration_s": 5.4791797080106335,
+  "load_duration_s": null,
+  "prompt_eval_count": 1372,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 321,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Status (the Pending requirement) was checked for all seven reviews. Only 351, 353, 895 and 349 are Pending, so only their star ratings were checked against the under-4-stars threshold. 895 has 4 stars and is excluded, which leaves 349, 351 and 353. The ratings of the non-pending reviews (f2, f6, f10) were never consulted.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-opus-5.5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790528745-ZPgTFaKeN2y4ugB5Iltq"
+  }
+}

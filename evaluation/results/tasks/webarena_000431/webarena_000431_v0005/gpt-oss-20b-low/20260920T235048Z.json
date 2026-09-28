@@ -1,0 +1,39 @@
+{
+  "instance_id": "webarena_000431_v0005",
+  "config_name": "gpt-oss-20b-low",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-20T23:52:18Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "total_duration_s": 12.673618458,
+  "load_duration_s": 0.005004917,
+  "prompt_eval_count": 841,
+  "prompt_eval_cached_count": 60,
+  "prompt_eval_duration_s": 1.350295,
+  "eval_count": 340,
+  "eval_duration_s": 11.2929,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "All three products are eligible; the per\u2011unit price is read for each. The unit counts (f2,f4,f6) are required to compute the per\u2011unit price but are not compared across options. No other attributes are relevant.",
+    "thinking": "We need to list options: three products. Requirement: lowest per unit price? Actually task: add product with lowest per unit price. Requirement: none? All eligible. So requirement passes for all. Comparison: per unit price: f1 19.08/2=9.54, f3 27.68/4=6.92, f5 18.72/4=4.68. So comparison facts: f1, f3, f5. Dependencies: all requirement facts: f1,f2,f3,f4,f5,f6. Comparison facts: f1,f3,f5. So dependencies list: f1,f2,f3,f4,f5,f6. Justification.",
+    "think": "low",
+    "model": "gpt-oss:20b"
+  }
+}

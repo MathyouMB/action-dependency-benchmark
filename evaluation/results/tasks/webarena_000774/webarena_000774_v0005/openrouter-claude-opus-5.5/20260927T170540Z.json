@@ -1,0 +1,52 @@
+{
+  "instance_id": "webarena_000774_v0005",
+  "config_name": "openrouter-claude-opus-5.5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:06:05Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f12",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12"
+  ],
+  "total_duration_s": 4.959593667008448,
+  "load_duration_s": null,
+  "prompt_eval_count": 1322,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 312,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "The requirement is Pending status, so status was read for all six reviews. 689 (Approved) and 313 (Not Approved) are ruled out, and their ratings (f2, f4) are never consulted. The second condition, fewer than 4 stars, was checked against the ratings of the four pending reviews. 351, 353 and 349 qualify for deletion, while 680 (5 stars) is excluded.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-opus-5.5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790528760-2OzFZf59CoRp34jBvZ5s"
+  }
+}

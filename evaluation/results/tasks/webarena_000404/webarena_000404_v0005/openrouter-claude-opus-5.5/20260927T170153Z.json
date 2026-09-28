@@ -1,0 +1,56 @@
+{
+  "instance_id": "webarena_000404_v0005",
+  "config_name": "openrouter-claude-opus-5.5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:02:30Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f12",
+    "f13",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12",
+    "f13"
+  ],
+  "total_duration_s": 7.425690208008746,
+  "load_duration_s": null,
+  "prompt_eval_count": 1459,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 477,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "The forum was checked for all seven posts. Only the five posts in the books forum had their posting dates compared, and 'What are you reading this week?' (2023-06-15 07:00) is the newest of them. The dates of the technology post (f6) and the movies post (f14) are never consulted, even though f14 is the latest date overall.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-opus-5.5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790528543-vTKhTrJWPA12BItKYywk"
+  }
+}

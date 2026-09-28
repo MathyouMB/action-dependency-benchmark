@@ -1,0 +1,49 @@
+{
+  "instance_id": "webarena_000404_v0004",
+  "config_name": "qwen3-14b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T03:35:49Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f12",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12"
+  ],
+  "total_duration_s": 23.347174333,
+  "load_duration_s": 0.005798875,
+  "prompt_eval_count": 986,
+  "prompt_eval_cached_count": 44,
+  "prompt_eval_duration_s": 4.162568,
+  "eval_count": 310,
+  "eval_duration_s": 19.13498,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "All posts in the 'books' forum are eligible, except 'Favorite translated novels' which is in the 'gaming' forum. The comparison is based on the posting date, and the newest post is 'What are you reading this week?' posted on 2023-06-15 10:00.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:14b"
+  }
+}

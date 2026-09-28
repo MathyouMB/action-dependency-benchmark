@@ -1,0 +1,45 @@
+{
+  "instance_id": "webarena_000771_v0002",
+  "config_name": "openrouter-gpt-4.1-nano",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T19:16:17Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f2",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "total_duration_s": 1.9032357499963837,
+  "load_duration_s": null,
+  "prompt_eval_count": 825,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 293,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 0.75,
+  "recall": 0.75,
+  "f1": 0.75,
+  "meta": {
+    "why": "The decision depends on the review ratings and statuses. Ratings are read for all options, but only reviews with a rating of 4 stars or higher are considered for approval. The status of review 895 is already approved, so it is not a candidate for approval. The statuses of reviews 347, 953, and 821 are pending, and their ratings determine whether they qualify for approval. The ratings for reviews 347, 953, and 352 are 4, 2, and 5 stars respectively. Only reviews 347 and 352 meet the 4-star or higher criterion, and their statuses are pending, making them eligible for approval. The decision to approve reviews 347 and 352 depends on their ratings (f1 and f5) and their pending status (f2 and f6).",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1-nano",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790450175-PPGi9q5jsCIn9VhzNfa7"
+  }
+}

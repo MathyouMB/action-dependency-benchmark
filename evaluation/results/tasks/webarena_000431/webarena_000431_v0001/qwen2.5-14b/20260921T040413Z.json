@@ -1,0 +1,39 @@
+{
+  "instance_id": "webarena_000431_v0001",
+  "config_name": "qwen2.5-14b",
+  "runner": "ollama",
+  "timestamp": "2026-09-21T04:04:29Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "total_duration_s": 16.1233905,
+  "load_duration_s": 0.008448208,
+  "prompt_eval_count": 823,
+  "prompt_eval_cached_count": 46,
+  "prompt_eval_duration_s": 3.526264,
+  "eval_count": 201,
+  "eval_duration_s": 12.543707,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "All options pass the requirement as no specific requirement is mentioned other than being available in the open tabs. The comparison is based on the cost per unit, which is derived from the cost and unit count for each option.",
+    "thinking": null,
+    "think": null,
+    "model": "qwen2.5:14b"
+  }
+}

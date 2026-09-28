@@ -1,0 +1,53 @@
+{
+  "instance_id": "webarena_000774_v0002",
+  "config_name": "openrouter-gpt-6-luna",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T17:56:27Z",
+  "predicted_ids": [
+    "f1",
+    "f11",
+    "f12",
+    "f13",
+    "f14",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f11",
+    "f12",
+    "f13",
+    "f14"
+  ],
+  "total_duration_s": 5.257926291997137,
+  "load_duration_s": null,
+  "prompt_eval_count": 897,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 624,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Pending status was checked for every review. Ratings were checked only for pending reviews; the reviews with 2, 3, and 1 stars meet the less-than-4 condition, while the 4-star review does not.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "openai/gpt-6-luna",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790445382-ElKB2VpAM5JV8hMwHViP"
+  }
+}

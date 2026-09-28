@@ -1,0 +1,44 @@
+{
+  "instance_id": "webarena_000774_v0001",
+  "config_name": "gpt-oss-20b-low",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-21T00:01:12Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f2",
+    "f3",
+    "f4",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 12.132806167,
+  "load_duration_s": 0.00861775,
+  "prompt_eval_count": 889,
+  "prompt_eval_cached_count": 70,
+  "prompt_eval_duration_s": 1.073607,
+  "eval_count": 321,
+  "eval_duration_s": 11.019871,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.8889,
+  "f1": 0.9412,
+  "meta": {
+    "why": "All reviews are pending, so status facts f1, f3, f7, f9 are read for each option. Since all pass the requirement, their ratings are compared, reading f2, f4, f8, f10. No other facts are consulted.",
+    "thinking": "We need options: reviews 396,351,353,349. Requirement: status Pending. Comparison: rating <4. So step1 list options in order: 396,351,353,349. Step2: check status fact ids: f1 for 396, f3 for 351, f7 for 353, f9 for 349. Pass? 396 pending pass, 351 pending pass, 353 pending pass, 349 pending pass. Step3: comparison rating facts: f2 for 396, f4 for 351, f8 for 353, f10 for 349. But only those that passed requirement: all passed. So all comparison reads. Dependencies: all fact ids: f1,f2,f3,f4,f7,f8,f9,f10. Justification.",
+    "think": "low",
+    "model": "gpt-oss:20b"
+  }
+}

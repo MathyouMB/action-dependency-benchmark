@@ -1,0 +1,54 @@
+{
+  "instance_id": "webarena_000714_v0001",
+  "config_name": "openrouter-claude-sonnet-5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:16:47Z",
+  "predicted_ids": [
+    "f1",
+    "f11",
+    "f13",
+    "f14",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f9",
+    "f11",
+    "f13",
+    "f14"
+  ],
+  "total_duration_s": 5.723373291999451,
+  "load_duration_s": null,
+  "prompt_eval_count": 1311,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 477,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "All options' forum membership was checked to filter to the gadgets forum; those failing (apple, electronics, android) had their scores never consulted. Among the gadgets posts (71093, 20276, 83944, 19459), scores were compared to find the highest (933 vs 937 etc.), leading to selection of 19459 with score 937.",
+    "thinking": "Looking at the gadgets forum candidates, only three pass the requirement: 71093, 20276, 83944, and 19459 (33399, 49984, and 24009 fail due to apple, electronics, and android issues respectively). I'll compare these passers by score using fields f2, f4, f6, and f14.\n\n",
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-sonnet-5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790529402-ceZ7MlW6nn2GoIGDzHC0"
+  }
+}

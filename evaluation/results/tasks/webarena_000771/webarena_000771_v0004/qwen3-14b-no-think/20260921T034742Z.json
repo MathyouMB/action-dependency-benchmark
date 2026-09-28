@@ -1,0 +1,49 @@
+{
+  "instance_id": "webarena_000771_v0004",
+  "config_name": "qwen3-14b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T03:48:56Z",
+  "predicted_ids": [
+    "f1",
+    "f11",
+    "f12",
+    "f13",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f11",
+    "f12",
+    "f13"
+  ],
+  "total_duration_s": 20.031800458,
+  "load_duration_s": 0.006292625,
+  "prompt_eval_count": 956,
+  "prompt_eval_cached_count": 49,
+  "prompt_eval_duration_s": 4.241151,
+  "eval_count": 245,
+  "eval_duration_s": 15.753352,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Requirement check for each option based on star rating and status. Only options with 4-star or higher rating are eligible. Comparison reads include the status of eligible options. Facts not relevant to the task or options that failed the requirement are excluded.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:14b"
+  }
+}

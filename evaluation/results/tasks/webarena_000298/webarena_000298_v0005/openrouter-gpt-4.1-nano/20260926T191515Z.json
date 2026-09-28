@@ -1,0 +1,45 @@
+{
+  "instance_id": "webarena_000298_v0005",
+  "config_name": "openrouter-gpt-4.1-nano",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T19:15:24Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "total_duration_s": 1.6428622919993359,
+  "load_duration_s": null,
+  "prompt_eval_count": 796,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 249,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "The requirement check for each order confirms whether it is completed, pending, or cancelled, which determines eligibility. The comparison reads for the eligible completed orders identify the most recent one based on the placement date. The decision depends on the status facts to filter eligible orders and the date facts to select the most recent completed order.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1-nano",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790450123-lARAOOcBlKKUtxxA1SJN"
+  }
+}

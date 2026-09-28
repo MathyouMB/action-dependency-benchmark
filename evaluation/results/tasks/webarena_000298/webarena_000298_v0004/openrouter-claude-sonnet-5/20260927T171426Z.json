@@ -1,0 +1,46 @@
+{
+  "instance_id": "webarena_000298_v0004",
+  "config_name": "openrouter-claude-sonnet-5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:14:38Z",
+  "predicted_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f9"
+  ],
+  "total_duration_s": 3.034408916995744,
+  "load_duration_s": null,
+  "prompt_eval_count": 1196,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 226,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Status checked for all five orders to determine eligibility (completed). Only orders 410 and 205 passed, so their dates were compared to find the most recent. Dates for 341, 838, and 505 were never needed since those orders failed the completed requirement.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-sonnet-5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790529275-q3fGX98KlfhBStSJixRH"
+  }
+}

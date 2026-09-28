@@ -1,0 +1,50 @@
+{
+  "instance_id": "webarena_000238_v0004",
+  "config_name": "openrouter-llama-4-maverick",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T19:24:22Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f13",
+    "f14",
+    "f2",
+    "f3",
+    "f5",
+    "f7",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f7",
+    "f9",
+    "f10",
+    "f11",
+    "f13",
+    "f14"
+  ],
+  "total_duration_s": 30.54961366600037,
+  "load_duration_s": null,
+  "prompt_eval_count": 963,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 283,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Category read for all options to check if they are PS4 accessories; price read for the eligible ones to compare. Other categories and prices are irrelevant.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "meta-llama/llama-4-maverick",
+    "provider": "DigitalOcean",
+    "generation_id": "gen-1790450632-yPEWALdAfWU5aMYmOdHU"
+  }
+}

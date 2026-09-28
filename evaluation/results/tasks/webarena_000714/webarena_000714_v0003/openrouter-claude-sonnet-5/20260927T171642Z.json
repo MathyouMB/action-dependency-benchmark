@@ -1,0 +1,58 @@
+{
+  "instance_id": "webarena_000714_v0003",
+  "config_name": "openrouter-claude-sonnet-5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:16:59Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f12",
+    "f13",
+    "f15",
+    "f16",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12",
+    "f13",
+    "f15",
+    "f16"
+  ],
+  "total_duration_s": 6.806778915997711,
+  "load_duration_s": null,
+  "prompt_eval_count": 1355,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 603,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "The forum field was checked for every post to determine eligibility (gadgets only). Among the eligible gadgets posts (50714, 82436, 81638, 19459, 39741), their all-time scores were compared to find the highest (19459 with 1043). Scores for non-gadgets posts (21985, 25608, 28392) were never needed since those posts were already excluded by the forum requirement.",
+    "thinking": "I'm filtering the options down to those posted in the gadgets forum, checking each one's outcome, and finding that f3, f7, f9, f11, and f15 passed while the others failed\u2014so now I need to compare scores among just those passing entries.\n\n",
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-sonnet-5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790529413-HEe0e9TgJd3x1vGxPeSN"
+  }
+}

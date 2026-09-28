@@ -1,0 +1,50 @@
+{
+  "instance_id": "webarena_000714_v0005",
+  "config_name": "qwen2.5-14b",
+  "runner": "ollama",
+  "timestamp": "2026-09-21T04:12:33Z",
+  "predicted_ids": [
+    "f1",
+    "f11",
+    "f15",
+    "f19",
+    "f5",
+    "f6",
+    "f7"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f11",
+    "f12",
+    "f13",
+    "f15",
+    "f16",
+    "f17",
+    "f19",
+    "f20"
+  ],
+  "total_duration_s": 17.8412095,
+  "load_duration_s": 0.005681208,
+  "prompt_eval_count": 1129,
+  "prompt_eval_cached_count": 68,
+  "prompt_eval_duration_s": 4.806455,
+  "eval_count": 207,
+  "eval_duration_s": 12.99248,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.4375,
+  "f1": 0.6087,
+  "meta": {
+    "why": "Posts in the gadgets forum are considered; only the all-time score of post 19459 is relevant for the decision.",
+    "thinking": null,
+    "think": null,
+    "model": "qwen2.5:14b"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "instance_id": "webarena_000431_v0001",
+  "config_name": "gpt-oss-20b-low",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-20T23:51:06Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "total_duration_s": 17.945030042,
+  "load_duration_s": 0.005526917,
+  "prompt_eval_count": 843,
+  "prompt_eval_cached_count": 64,
+  "prompt_eval_duration_s": 1.256995,
+  "eval_count": 449,
+  "eval_duration_s": 16.660537,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "All three products are eligible (requirement just existence). Per\u2011unit price is compared using cost and unit facts for each, so all six facts are read.",
+    "thinking": "We need to list options: Tall Pink Taper Candles Gradient Candle Set, White Starfish Wall Candle Sconces, Spaas White Taper Candles. Requirement: per unit price? Actually need lowest per unit price. Requirement is that product exists. All have price and units. So all pass. Comparison: per unit price: f1 cost 11.88, units 4 => per unit 2.97. f3 cost 10.34, units 2 => 5.17. f5 cost 24.44, units 4 => 6.11. So lowest is f1. So dependencies: f1, f2, f3, f4, f5, f6. But requirement check uses f1, f3, f5? Actually requirement is just existence; we read f1, f3, f5. But we also need units? Not for requirement. But we might read units to compute per unit price. So requirement reads f1, f3, f5. Comparison reads f1, f2, f3, f4, f5, f6. So dependencies: all six. Provide JSON.",
+    "think": "low",
+    "model": "gpt-oss:20b"
+  }
+}

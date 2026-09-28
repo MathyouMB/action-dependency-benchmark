@@ -1,0 +1,51 @@
+{
+  "instance_id": "webarena_000714_v0001",
+  "config_name": "openrouter-gpt-4.1-mini",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T18:50:22Z",
+  "predicted_ids": [
+    "f1",
+    "f11",
+    "f13",
+    "f14",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f9",
+    "f11",
+    "f13",
+    "f14"
+  ],
+  "total_duration_s": 2.831021750003856,
+  "load_duration_s": null,
+  "prompt_eval_count": 896,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 371,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "The task requires thumbs down the top 1 post ever in gadgets. The requirement is being in the gadgets forum, so posts 71093, 20276, 83944, and 19459 pass (f1, f3, f5, f13). Posts 33399, 49984, and 24009 fail the requirement (f7, f9, f11). The comparison is the all-time score, so the scores of the passing posts are read (f2, f4, f6, f14). The action chooses post 19459, which has a score of 937, but this is not the highest score among gadgets posts (83944 has 933, 71093 has 898, 20276 has 691). The dependencies include all requirement facts for all options and the comparison facts for the passing options, plus the facts that show the failing options to exclude them.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790448619-AMOTLTXBhV7s2HhLHecx"
+  }
+}

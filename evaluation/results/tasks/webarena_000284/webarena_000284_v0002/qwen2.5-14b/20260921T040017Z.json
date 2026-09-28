@@ -1,0 +1,41 @@
+{
+  "instance_id": "webarena_000284_v0002",
+  "config_name": "qwen2.5-14b",
+  "runner": "ollama",
+  "timestamp": "2026-09-21T04:00:43Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8"
+  ],
+  "total_duration_s": 13.56239175,
+  "load_duration_s": 0.005699833,
+  "prompt_eval_count": 796,
+  "prompt_eval_cached_count": 75,
+  "prompt_eval_duration_s": 3.506428,
+  "eval_count": 149,
+  "eval_duration_s": 10.017234,
+  "error": null,
+  "precision": 0.8571,
+  "recall": 0.8571,
+  "f1": 0.8571,
+  "meta": {
+    "why": "Storage capacity read for all options; price read only for the two eligible ones. StackRack's and MiniStack's prices are not compared as they do not meet the storage requirement.",
+    "thinking": null,
+    "think": null,
+    "model": "qwen2.5:14b"
+  }
+}

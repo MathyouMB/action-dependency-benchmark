@@ -1,0 +1,41 @@
+{
+  "instance_id": "webarena_000431_v0002",
+  "config_name": "openrouter-gpt-4.1",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T18:48:17Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "total_duration_s": 1.5535622500028694,
+  "load_duration_s": null,
+  "prompt_eval_count": 782,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 187,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Unit count read for all three products to determine per unit price eligibility; price read for all three to compare per unit price. All facts about price and unit count are dependencies.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790448496-iVuxE9aoWHEsch7uGP51"
+  }
+}

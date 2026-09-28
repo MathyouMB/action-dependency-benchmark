@@ -1,0 +1,41 @@
+{
+  "instance_id": "webarena_000284_v0003",
+  "config_name": "qwen3-8b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-20T04:19:29Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8"
+  ],
+  "total_duration_s": 6.6089495,
+  "load_duration_s": 0.005002916,
+  "prompt_eval_count": 782,
+  "prompt_eval_cached_count": 781,
+  "prompt_eval_duration_s": 0.025279,
+  "eval_count": 174,
+  "eval_duration_s": 6.55115,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Storage capacity read for all four options; price read only for the three eligible ones. ClosetTower's capacity f5 fails the requirement, so its price f6 is never compared. The task never mentions anything about other attributes, so they are excluded.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:8b"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "instance_id": "webarena_000771_v0004",
+  "config_name": "gpt-oss-20b-low",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-21T00:00:50Z",
+  "predicted_ids": [
+    "f1",
+    "f11",
+    "f13",
+    "f2",
+    "f3",
+    "f5",
+    "f7",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f11",
+    "f12",
+    "f13"
+  ],
+  "total_duration_s": 14.073290875,
+  "load_duration_s": 0.005810125,
+  "prompt_eval_count": 954,
+  "prompt_eval_cached_count": 72,
+  "prompt_eval_duration_s": 1.132753,
+  "eval_count": 412,
+  "eval_duration_s": 12.91401,
+  "error": null,
+  "precision": 0.875,
+  "recall": 0.6364,
+  "f1": 0.7369,
+  "meta": {
+    "why": "The requirement is a rating of at least 4 and a status of Pending. All reviews are checked for these facts; only reviews 352 and 347 meet both. The comparison reads are the ratings of the eligible reviews. No other facts are consulted.",
+    "thinking": "We need options: reviews 583,360,352,347,408,862,326. Requirement: rating >=4 and status Pending? Actually task: approve reviews with four stars or higher to display. So requirement: rating >=4 AND status Pending. So check each.\n\nf1 rating 1 fail. f2 status Pending but rating fail. f3 rating 4 pass, status Approved fail requirement. f5 rating4 pass status Pending pass. f7 rating4 pass status Pending pass. f9 rating2 fail. f11 rating5 pass status Approved fail. f13 rating3 fail.\n\nSo options list in order: 583,360,352,347,408,862,326.\n\nRequirement facts: f1, f2, f3, f5, f7, f9, f11, f13. Pass/Fail accordingly.\n\nComparison facts: for those that passed: 352 rating f5, 347 rating f7. Also need status? no.\n\nReturn dependencies: all requirement facts plus comparison facts: f1,f2,f3,f5,f7,f9,f11,f13,f5,f7. duplicates okay but list unique? Probably list all. Provide as array.\n\nLet's craft JSON.",
+    "think": "low",
+    "model": "gpt-oss:20b"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "instance_id": "webarena_000771_v0003",
+  "config_name": "qwen2.5-14b",
+  "runner": "ollama",
+  "timestamp": "2026-09-21T04:14:49Z",
+  "predicted_ids": [
+    "f1",
+    "f11",
+    "f12",
+    "f13",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f11",
+    "f12",
+    "f13"
+  ],
+  "total_duration_s": 18.2447205,
+  "load_duration_s": 0.004943292,
+  "prompt_eval_count": 969,
+  "prompt_eval_cached_count": 70,
+  "prompt_eval_duration_s": 4.214932,
+  "eval_count": 216,
+  "eval_duration_s": 14.015126,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.9091,
+  "f1": 0.9524,
+  "meta": {
+    "why": "Rating read for all options; status read only for the eligible ones. Reviews with ratings below 4 stars are not considered, and pending status is only checked for eligible reviews.",
+    "thinking": null,
+    "think": null,
+    "model": "qwen2.5:14b"
+  }
+}

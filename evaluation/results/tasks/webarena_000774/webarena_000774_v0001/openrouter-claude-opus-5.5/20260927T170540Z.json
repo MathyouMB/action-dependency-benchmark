@@ -1,0 +1,50 @@
+{
+  "instance_id": "webarena_000774_v0001",
+  "config_name": "openrouter-claude-opus-5.5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:05:45Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 4.758726624990231,
+  "load_duration_s": null,
+  "prompt_eval_count": 1271,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 272,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Pending status was read for all five reviews. Review 699 is Approved, so it is ruled out and its star rating (f6) is never consulted. Star ratings were read for the four pending reviews. 396 has 5 stars, so it is kept. 351, 353 and 349 have fewer than 4 stars, so they are deleted.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-opus-5.5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790528740-NNVEUlEKT4vqEEhZwmMb"
+  }
+}

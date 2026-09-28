@@ -1,0 +1,56 @@
+{
+  "instance_id": "webarena_000238_v0002",
+  "config_name": "openrouter-claude-opus-5.5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:00:41Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f13",
+    "f15",
+    "f17",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f9",
+    "f10",
+    "f11",
+    "f13",
+    "f15",
+    "f17"
+  ],
+  "total_duration_s": 7.324391458998434,
+  "load_duration_s": null,
+  "prompt_eval_count": 1649,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 654,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "The category was read for all nine products. Only three are in PS4 Accessories: the charging dock, the ASTRO headset and the PowerA station. Their prices were compared, and the ASTRO headset wins at $346.70. The prices of the non-PS4 items, such as the $1751.87 Elgato Stream Deck, are never consulted because those items fail the category requirement.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-opus-5.5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790528434-pXTA122qIp5sOpMFmV0k"
+  }
+}

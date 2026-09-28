@@ -1,0 +1,41 @@
+{
+  "instance_id": "webarena_000298_v0003",
+  "config_name": "gpt-oss-20b-low",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-20T23:49:06Z",
+  "predicted_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f9"
+  ],
+  "total_duration_s": 9.894860792,
+  "load_duration_s": 0.006538375,
+  "prompt_eval_count": 856,
+  "prompt_eval_cached_count": 67,
+  "prompt_eval_duration_s": 1.020202,
+  "eval_count": 287,
+  "eval_duration_s": 8.850809,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "The requirement is that the order status be completed, so the status facts f1, f3, f5, f7, and f9 are read for all orders. Only orders 706 and 657 pass the requirement, so their placement dates f4 and f6 are read for the comparison of most recent. The other facts are not consulted for comparison.",
+    "thinking": "We need options: orders 343,706,657,233,478. Requirement: status completed. So facts: f1 status cancelled, f3 completed, f5 completed, f7 processing, f9 pending. Step2: list each with fact id and pass/fail. Step3: for passed ones (706,657) comparison attribute: most recent placed date. Facts: f4 date for 706, f6 date for 657. Dependencies: f1,f3,f5,f7,f9,f4,f6.",
+    "think": "low",
+    "model": "gpt-oss:20b"
+  }
+}

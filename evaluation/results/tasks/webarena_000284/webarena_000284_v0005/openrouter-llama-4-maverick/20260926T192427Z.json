@@ -1,0 +1,42 @@
+{
+  "instance_id": "webarena_000284_v0005",
+  "config_name": "openrouter-llama-4-maverick",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T19:25:05Z",
+  "predicted_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8"
+  ],
+  "total_duration_s": 13.365152541999123,
+  "load_duration_s": null,
+  "prompt_eval_count": 753,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 132,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Storage capacity read for all four options; cost read only for the two eligible ones.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "meta-llama/llama-4-maverick",
+    "provider": "DigitalOcean",
+    "generation_id": "gen-1790450692-9h4gt90F7mSLSkihk4jA"
+  }
+}

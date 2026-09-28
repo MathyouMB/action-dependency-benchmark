@@ -1,0 +1,43 @@
+{
+  "instance_id": "webarena_000794_v0002",
+  "config_name": "qwen3-8b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T00:17:53Z",
+  "predicted_ids": [
+    "f10",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 13.15206925,
+  "load_duration_s": 0.004244708,
+  "prompt_eval_count": 947,
+  "prompt_eval_cached_count": 79,
+  "prompt_eval_duration_s": 2.125661,
+  "eval_count": 293,
+  "eval_duration_s": 11.003336,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "The requirement is that the order is non-canceled, so canceled orders are excluded. The comparison is to select the most recent non-canceled order, so the placement date is read for eligible orders. Only orders with status 'Processing' or 'Pending' are eligible, and the most recent one is selected.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:8b"
+  }
+}

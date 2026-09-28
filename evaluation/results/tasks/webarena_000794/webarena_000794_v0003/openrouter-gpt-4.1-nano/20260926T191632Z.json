@@ -1,0 +1,39 @@
+{
+  "instance_id": "webarena_000794_v0003",
+  "config_name": "openrouter-gpt-4.1-nano",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T19:16:42Z",
+  "predicted_ids": [
+    "f2",
+    "f4"
+  ],
+  "expected_ids": [
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 5.547564208995027,
+  "load_duration_s": null,
+  "prompt_eval_count": 839,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 281,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.25,
+  "f1": 0.4,
+  "meta": {
+    "why": "The task requires changing the address for the most recent non-canceled order. The requirement check filters out canceled orders (f2: Canceled) and includes only processing or pending orders. Among these, the most recent non-canceled order is #000000308 (f3: Order date), and its status (f4) confirms it is processing, making it eligible for address change. Orders #000000315 and #000000280 are canceled, so they are excluded. Order #000000271 is pending, but less recent than #000000308, so it is not selected. The comparison reads focus on order #000000308's date and status to determine eligibility and recency.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1-nano",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790450200-X4Jbl6tHy1B1dWCoroLN"
+  }
+}

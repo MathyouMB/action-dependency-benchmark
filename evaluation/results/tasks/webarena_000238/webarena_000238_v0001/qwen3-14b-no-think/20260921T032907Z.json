@@ -1,0 +1,49 @@
+{
+  "instance_id": "webarena_000238_v0001",
+  "config_name": "qwen3-14b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T03:29:37Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f13",
+    "f15",
+    "f17",
+    "f3",
+    "f5",
+    "f7",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f13",
+    "f15",
+    "f17"
+  ],
+  "total_duration_s": 29.47624575,
+  "load_duration_s": 4.58877225,
+  "prompt_eval_count": 1102,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": 4.955957,
+  "eval_count": 335,
+  "eval_duration_s": 19.923486,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.8333,
+  "f1": 0.9091,
+  "meta": {
+    "why": "All options are checked for eligibility based on their category. Only the ASTRO Gaming A50 Wireless Headset + Base Station Gen 4 is selected for comparison based on its price, as it is the most expensive PS4 accessory.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:14b"
+  }
+}

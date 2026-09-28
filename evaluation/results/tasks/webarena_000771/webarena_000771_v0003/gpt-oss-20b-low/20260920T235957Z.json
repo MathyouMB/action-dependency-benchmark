@@ -1,0 +1,45 @@
+{
+  "instance_id": "webarena_000771_v0003",
+  "config_name": "gpt-oss-20b-low",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-21T00:00:36Z",
+  "predicted_ids": [
+    "f1",
+    "f11",
+    "f13",
+    "f3",
+    "f5",
+    "f7",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f11",
+    "f12",
+    "f13"
+  ],
+  "total_duration_s": 10.78707725,
+  "load_duration_s": 0.005102666,
+  "prompt_eval_count": 954,
+  "prompt_eval_cached_count": 73,
+  "prompt_eval_duration_s": 1.13672,
+  "eval_count": 311,
+  "eval_duration_s": 9.623956,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.6364,
+  "f1": 0.7778,
+  "meta": {
+    "why": "The requirement is a 4\u2011star or higher rating, so the rating fact for every review is read. Only the reviews that pass the requirement have their rating fact used for comparison. The rating facts for the rejected reviews are never consulted. All rating facts are therefore dependencies.",
+    "thinking": "We need options: reviews 496,706,565,347,835,352,454. Requirement: rating >=4. So facts f1,f3,f5,f7,f9,f11,f13. Pass? 496 yes,706 no,565 yes,347 yes,835 no,352 yes,454 no. Comparison: rating fact for passed ones: f1,f5,f7,f11. Dependencies: all requirement facts plus comparison facts. So list: f1,f3,f5,f7,f9,f11,f13 plus f1,f5,f7,f11. Unique: f1,f3,f5,f7,f9,f11,f13. Return JSON.",
+    "think": "low",
+    "model": "gpt-oss:20b"
+  }
+}

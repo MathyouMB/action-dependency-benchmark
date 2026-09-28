@@ -1,0 +1,43 @@
+{
+  "instance_id": "webarena_000298_v0005",
+  "config_name": "gpt-oss-20b-medium",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-21T00:27:46Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "total_duration_s": 28.854185416,
+  "load_duration_s": 0.005191958,
+  "prompt_eval_count": 856,
+  "prompt_eval_cached_count": 65,
+  "prompt_eval_duration_s": 1.077546,
+  "eval_count": 891,
+  "eval_duration_s": 27.750673,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Status read for all orders; date read only for the completed ones. The pending and cancelled orders are excluded before comparing dates.",
+    "thinking": "We need to produce JSON with keys: options, requirement_check, comparison_reads, dependencies, justification.\n\nTask: Open the order details page for the most recent completed order.\n\nState facts: f1: Order 737 has status completed\nf2: Order 737 was placed on April 30, 2026\nf3: Order 361 has status pending\nf4: Order 361 was placed on June 16, 2026\nf5: Order 859 has status completed\nf6: Order 859 was placed on February 10, 2026\nf7: Order 467 has status completed\nf8: Order 467 was placed on April 6, 2026\nf9: Order 914 has status cancelled\nf10: Order 914 was placed on March 5, 2026\n\nWe need to list every option named anywhere in the state. Options are orders: 737, 361, 859, 467, 914. Order of appearance: f1 (737), f3 (361), f5 (859), f7 (467), f9 (914). So options list: [\"Order 737\", \"Order 361\", \"Order 859\", \"Order 467\", \"Order 914\"].\n\nRequirement: status completed. For each option, we need the fact id that gives its requirement attribute. For each order, the status fact: f1 for 737, f3 for 361, f5 for 859, f7 for 467, f9 for 914. Determine pass/fail: completed passes, pending fails, cancelled fails. So:\n\nOrder 737: f1 pass\nOrder 361: f3 fail\nOrder 859: f5 pass\nOrder 467: f7 pass\nOrder 914: f9 fail\n\nNow for each that passed, we need comparison attribute: most recent date. The date fact id: f2 for 737, f4 for 361, f6 for 859, f8 for 467, f10 for 914. But we only consider those that passed: 737, 859, 467. So comparison_reads: f2, f6, f8.\n\nDependencies: all fact ids from step 2 (f1, f3, f5, f7, f9) plus step 3 (f2, f6, f8). So dependencies list: [\"f1\",\"f3\",\"f5\",\"f7\",\"f9\",\"f2\",\"f6\",\"f8\"].\n\nJustification: explain that status read for all orders; date read only for eligible ones. Provide explanation.\n\nReturn JSON object with keys: options, requirement_check, comparison_reads, dependencies, justification.\n\nMake sure formatting matches example: arrays of strings. requirement_check entries like \"Alba g1 pass\" etc. So we need \"Order 737 f1 pass\" etc.\n\nLet's craft.\n\noptions: [\"Order 737\", \"Order 361\", \"Order 859\", \"Order 467\", \"Order 914\"]\n\nrequirement_check: [\"Order 737 f1 pass\", \"Order 361 f3 fail\", \"Order 859 f5 pass\", \"Order 467 f7 pass\", \"Order 914 f9 fail\"]\n\ncomparison_reads: [\"f2\", \"f6\", \"f8\"]\n\ndependencies: [\"f1\",\"f3\",\"f5\",\"f7\",\"f9\",\"f2\",\"f6\",\"f8\"]\n\njustification: \"Status read for all orders; date read only for the completed ones. The pending and cancelled orders are excluded before comparing dates.\"\n\nReturn JSON.",
+    "think": "medium",
+    "model": "gpt-oss:20b"
+  }
+}

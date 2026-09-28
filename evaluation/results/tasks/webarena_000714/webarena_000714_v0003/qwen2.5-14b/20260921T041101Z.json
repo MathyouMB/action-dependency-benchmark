@@ -1,0 +1,53 @@
+{
+  "instance_id": "webarena_000714_v0003",
+  "config_name": "qwen2.5-14b",
+  "runner": "ollama",
+  "timestamp": "2026-09-21T04:11:58Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f12",
+    "f13",
+    "f15",
+    "f16",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12",
+    "f13",
+    "f15",
+    "f16"
+  ],
+  "total_duration_s": 23.968338042,
+  "load_duration_s": 0.006231084,
+  "prompt_eval_count": 1041,
+  "prompt_eval_cached_count": 68,
+  "prompt_eval_duration_s": 4.433498,
+  "eval_count": 310,
+  "eval_duration_s": 19.493566,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Posts are filtered by forum (gadgets) and then compared by all-time score. Posts not in gadgets forum are excluded.",
+    "thinking": null,
+    "think": null,
+    "model": "qwen2.5:14b"
+  }
+}

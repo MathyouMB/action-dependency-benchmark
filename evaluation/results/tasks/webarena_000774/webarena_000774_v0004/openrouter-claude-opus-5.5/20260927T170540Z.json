@@ -1,0 +1,56 @@
+{
+  "instance_id": "webarena_000774_v0004",
+  "config_name": "openrouter-claude-opus-5.5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:06:00Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f13",
+    "f14",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f13",
+    "f14"
+  ],
+  "total_duration_s": 5.051728125006775,
+  "load_duration_s": null,
+  "prompt_eval_count": 1372,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 340,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "The status of every review is read to find the pending ones. Reviews 476 and 519 are Not Approved, so they are excluded and their ratings (f4, f12) are never checked. Among the five pending reviews, the star rating is read to apply the under-4-stars filter. That leaves 351, 349 and 353 for deletion. Reviews 360 (4 stars) and 832 (5 stars) are kept.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-opus-5.5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790528755-2PAQ9r7M0lqiAZ1Xg1JC"
+  }
+}

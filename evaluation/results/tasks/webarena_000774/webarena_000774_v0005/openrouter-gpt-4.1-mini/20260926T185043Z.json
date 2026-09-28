@@ -1,0 +1,49 @@
+{
+  "instance_id": "webarena_000774_v0005",
+  "config_name": "openrouter-gpt-4.1-mini",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T18:50:55Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f12",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12"
+  ],
+  "total_duration_s": 2.3129401670012157,
+  "load_duration_s": null,
+  "prompt_eval_count": 864,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 257,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Requirement is status 'Pending' (f1, f3, f5, f7, f9, f11). Only reviews with 'Pending' status are eligible. Comparison is star rating less than 4 (f6, f8, f10, f12) for eligible reviews. Reviews 351, 353, 349 have pending status and ratings less than 4, so they are deleted. Review 680 is pending but has 5 stars, so not deleted.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790448653-ZnDsUvZrVvz9t8BgFgnt"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "instance_id": "webarena_000284_v0005",
+  "config_name": "qwen2.5-14b",
+  "runner": "ollama",
+  "timestamp": "2026-09-20T20:30:37Z",
+  "predicted_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8"
+  ],
+  "total_duration_s": 11.62414575,
+  "load_duration_s": 0.007680791,
+  "prompt_eval_count": 795,
+  "prompt_eval_cached_count": 75,
+  "prompt_eval_duration_s": 4.149377999,
+  "eval_count": 123,
+  "eval_duration_s": 7.430306,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Storage capacity read for all options; price read only for the two eligible ones.",
+    "thinking": null,
+    "think": null,
+    "model": "qwen2.5:14b"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "instance_id": "webarena_000284_v0004",
+  "config_name": "openrouter-gemini-3.7-flash",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T18:17:20Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7"
+  ],
+  "total_duration_s": 4.631481167001766,
+  "load_duration_s": null,
+  "prompt_eval_count": 782,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 583,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Capacity checked for all four shoe storage options to filter for at least 12 pairs. Price read only for the two qualifying options (CedarBox and StackRack) to determine the least expensive one. The prices of MiniStack (f4) and StepStack (f8) are excluded because they failed the capacity requirement.",
+    "thinking": "**Identifying Decision Dependencies**\n\nI am focused on understanding the factors that led to selecting the CedarBox. My current thoughts are on its capacity of 21 pairs and its price of $28.17, as these are key considerations for the chosen shoe storage.\n\n",
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "google/gemini-3.7-flash",
+    "provider": "Google",
+    "generation_id": "gen-1790446635-3lif9d0qaP9XcckH3XDA"
+  }
+}

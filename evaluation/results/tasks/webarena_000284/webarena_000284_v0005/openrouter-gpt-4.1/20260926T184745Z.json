@@ -1,0 +1,41 @@
+{
+  "instance_id": "webarena_000284_v0005",
+  "config_name": "openrouter-gpt-4.1",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T18:47:52Z",
+  "predicted_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8"
+  ],
+  "total_duration_s": 1.4335892500021146,
+  "load_duration_s": null,
+  "prompt_eval_count": 751,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 169,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Storage capacity facts f1, f3, f5, f7 are read for all options to check eligibility (minimum 12 pairs). Price facts f4 and f8 are read only for the eligible options (PairKeeper and StepStack). ShoeNest and MiniStack prices are not read since they fail the requirement.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790448471-H50gd77jYIw4LLWRj2Xz"
+  }
+}

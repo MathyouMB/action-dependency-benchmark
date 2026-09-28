@@ -1,0 +1,52 @@
+{
+  "instance_id": "webarena_000774_v0002",
+  "config_name": "openrouter-llama-4-maverick",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T19:31:17Z",
+  "predicted_ids": [
+    "f1",
+    "f11",
+    "f12",
+    "f13",
+    "f14",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f11",
+    "f12",
+    "f13",
+    "f14"
+  ],
+  "total_duration_s": 2.578652999996848,
+  "load_duration_s": null,
+  "prompt_eval_count": 905,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 204,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Status read for all reviews to check if pending; rating read only for the pending ones to compare. Non-pending reviews' ratings are not compared.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "meta-llama/llama-4-maverick",
+    "provider": "DeepInfra",
+    "generation_id": "gen-1790451074-V0InTJgF0rw5dNlLLZzF"
+  }
+}

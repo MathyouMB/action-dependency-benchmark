@@ -1,0 +1,50 @@
+{
+  "instance_id": "webarena_000238_v0002",
+  "config_name": "qwen3-8b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T00:05:03Z",
+  "predicted_ids": [
+    "f1",
+    "f11",
+    "f13",
+    "f15",
+    "f16",
+    "f17",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f9",
+    "f10",
+    "f11",
+    "f13",
+    "f15",
+    "f17"
+  ],
+  "total_duration_s": 17.506263375,
+  "load_duration_s": 0.005659666,
+  "prompt_eval_count": 1100,
+  "prompt_eval_cached_count": 58,
+  "prompt_eval_duration_s": 2.508975,
+  "eval_count": 395,
+  "eval_duration_s": 14.953598,
+  "error": null,
+  "precision": 0.9091,
+  "recall": 0.8333,
+  "f1": 0.8696,
+  "meta": {
+    "why": "The requirement is to select from the PS4 Accessories category. All options in the PS4 Accessories category are eligible. The comparison is to select the most expensive. The most expensive item is Elgato Stream Deck, but the action is to open the product page for ASTRO Gaming A50 Wireless Headset + Base Station Gen 4, which is the second most expensive. The dependency includes the category and price facts for all eligible options and the price of the selected option.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:8b"
+  }
+}

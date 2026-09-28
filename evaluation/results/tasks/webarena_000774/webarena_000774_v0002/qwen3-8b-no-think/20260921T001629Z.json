@@ -1,0 +1,49 @@
+{
+  "instance_id": "webarena_000774_v0002",
+  "config_name": "qwen3-8b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T00:16:52Z",
+  "predicted_ids": [
+    "f1",
+    "f11",
+    "f12",
+    "f14",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f11",
+    "f12",
+    "f13",
+    "f14"
+  ],
+  "total_duration_s": 11.70671775,
+  "load_duration_s": 0.006123542,
+  "prompt_eval_count": 959,
+  "prompt_eval_cached_count": 46,
+  "prompt_eval_duration_s": 2.378513,
+  "eval_count": 233,
+  "eval_duration_s": 9.28388,
+  "error": null,
+  "precision": 0.9091,
+  "recall": 0.9091,
+  "f1": 0.9091,
+  "meta": {
+    "why": "The requirement is that the review has status 'Pending'. The comparison is that the review has less than 4 stars. The dependency list includes all facts that determine which reviews are pending and their star ratings.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:8b"
+  }
+}

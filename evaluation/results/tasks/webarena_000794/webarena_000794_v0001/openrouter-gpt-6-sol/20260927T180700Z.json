@@ -1,0 +1,48 @@
+{
+  "instance_id": "webarena_000794_v0001",
+  "config_name": "openrouter-gpt-6-sol",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T18:07:04Z",
+  "predicted_ids": [
+    "f10",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 4.074087166998652,
+  "load_duration_s": null,
+  "prompt_eval_count": 838,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 340,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Status determines whether each order is eligible. The dates of the three non-canceled orders identify #000000308 as the most recent; the dates of canceled orders are not needed.",
+    "thinking": "**Organizing order statuses**\n\nI need to enumerate all orders in the sequence of 315, 308, 296, 280, and 271. The statuses being considered are pass for non-canceled orders 308, 296, and 271, with dates f3, f5, and f9. There's also a focus on statuses f2, f4, f6, f8, and f10. I should determine the dependency ordered for f2 through f10, collecting all fact IDs from previous steps and arranging them in ascending order. I'll provide concise justification for this organization.",
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "openai/gpt-6-sol",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790532420-sKA1yM7zq2SqXKgrqzC7"
+  }
+}

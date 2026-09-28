@@ -1,0 +1,48 @@
+{
+  "instance_id": "webarena_000714_v0003",
+  "config_name": "openrouter-gpt-4.1-mini",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T18:50:27Z",
+  "predicted_ids": [
+    "f10",
+    "f12",
+    "f16",
+    "f3",
+    "f4",
+    "f8"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12",
+    "f13",
+    "f15",
+    "f16"
+  ],
+  "total_duration_s": 2.6905353749971255,
+  "load_duration_s": null,
+  "prompt_eval_count": 932,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 282,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.4615,
+  "f1": 0.6315,
+  "meta": {
+    "why": "The requirement is that the post must be in the 'gadgets' forum (f3 checked for each post). Only posts 50714, 82436, 81638, 19459, and 39741 pass. The comparison is based on the all-time score (f4, f8, f10, f12, f16) among these eligible posts. Post 19459 has the highest score (1043) among gadgets posts, so it is selected for thumbs down.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790448624-bXL4TQMVBkSCxYOYsFfg"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "instance_id": "webarena_000238_v0005",
+  "config_name": "openrouter-gpt-4.1-nano",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T19:15:05Z",
+  "predicted_ids": [
+    "f10"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12",
+    "f13",
+    "f15",
+    "f16",
+    "f17",
+    "f18",
+    "f19",
+    "f20"
+  ],
+  "total_duration_s": 2.9364082920001238,
+  "load_duration_s": null,
+  "prompt_eval_count": 1087,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 367,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.0556,
+  "f1": 0.1053,
+  "meta": {
+    "why": "All options are in the 'PS4 Accessories' category, so they meet the requirement. The comparison is based on the price, and the most expensive item among the eligible options is the 'ASTRO Gaming A50 Wireless Headset + Base Station Gen 4' at $321.72, which is why the product page for this item is opened.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1-nano",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790450102-gp55HhNitVKJ7kKflhOs"
+  }
+}

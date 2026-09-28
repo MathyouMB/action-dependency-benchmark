@@ -1,0 +1,40 @@
+{
+  "instance_id": "webarena_000771_v0001",
+  "config_name": "qwen3-14b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T03:48:02Z",
+  "predicted_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f7",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 19.993949125,
+  "load_duration_s": 0.0095525,
+  "prompt_eval_count": 874,
+  "prompt_eval_cached_count": 25,
+  "prompt_eval_duration_s": 3.922593,
+  "eval_count": 247,
+  "eval_duration_s": 16.009535,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.625,
+  "f1": 0.7692,
+  "meta": {
+    "why": "Only reviews with 4 stars or higher are eligible. Reviews 396, 352, and 347 meet the requirement, but 699 and 756 are excluded due to their 2-star ratings. The comparison attribute (rating) is only checked for the eligible reviews (396, 352, 347), but the action only approves 347 and 352, which are both 5-star reviews. Review 396 is already approved, so it is not part of the action.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:14b"
+  }
+}

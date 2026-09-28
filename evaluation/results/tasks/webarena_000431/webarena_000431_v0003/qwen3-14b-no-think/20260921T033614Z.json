@@ -1,0 +1,39 @@
+{
+  "instance_id": "webarena_000431_v0003",
+  "config_name": "qwen3-14b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T03:37:02Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "total_duration_s": 16.899245875,
+  "load_duration_s": 0.004918125,
+  "prompt_eval_count": 808,
+  "prompt_eval_cached_count": 52,
+  "prompt_eval_duration_s": 3.370507,
+  "eval_count": 219,
+  "eval_duration_s": 13.500421,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "All options are eligible as they are all present in the open tabs. The per unit price is calculated using the total price and number of units for each option. The comparison is based on the per unit price, which requires reading the total price and number of units for each option.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:14b"
+  }
+}

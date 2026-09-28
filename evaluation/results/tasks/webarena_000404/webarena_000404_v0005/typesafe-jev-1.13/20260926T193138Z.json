@@ -1,0 +1,108 @@
+{
+  "instance_id": "webarena_000404_v0005",
+  "config_name": "typesafe-jev-1.13",
+  "runner": "typesafe_jev",
+  "timestamp": "2026-09-26T19:31:43Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f12",
+    "f13",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12",
+    "f13"
+  ],
+  "total_duration_s": 0.24269400000048336,
+  "load_duration_s": null,
+  "prompt_eval_count": 2629,
+  "prompt_eval_cached_count": null,
+  "prompt_eval_duration_s": null,
+  "eval_count": 261,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": {
+    "f1_dependency": {
+      "type": "noul",
+      "noul": 0.78
+    },
+    "f2_dependency": {
+      "type": "noul",
+      "noul": 0.89
+    },
+    "f3_dependency": {
+      "type": "noul",
+      "noul": 0.79
+    },
+    "f4_dependency": {
+      "type": "noul",
+      "noul": 0.92
+    },
+    "f5_dependency": {
+      "type": "noul",
+      "noul": 0.6
+    },
+    "f6_dependency": {
+      "type": "noul",
+      "noul": 0.28
+    },
+    "f7_dependency": {
+      "type": "noul",
+      "noul": 0.81
+    },
+    "f8_dependency": {
+      "type": "noul",
+      "noul": 0.89
+    },
+    "f9_dependency": {
+      "type": "noul",
+      "noul": 0.76
+    },
+    "f10_dependency": {
+      "type": "noul",
+      "noul": 0.86
+    },
+    "f11_dependency": {
+      "type": "noul",
+      "noul": 0.88
+    },
+    "f12_dependency": {
+      "type": "noul",
+      "noul": 0.94
+    },
+    "f13_dependency": {
+      "type": "noul",
+      "noul": 0.35
+    },
+    "f14_dependency": {
+      "type": "noul",
+      "noul": 0.16
+    }
+  },
+  "precision": 0.9231,
+  "recall": 1.0,
+  "f1": 0.96,
+  "meta": {
+    "model": "jev-1.13.0",
+    "threshold": 0.25
+  }
+}

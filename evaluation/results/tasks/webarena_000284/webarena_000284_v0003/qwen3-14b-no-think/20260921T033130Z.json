@@ -1,0 +1,41 @@
+{
+  "instance_id": "webarena_000284_v0003",
+  "config_name": "qwen3-14b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T03:32:10Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8"
+  ],
+  "total_duration_s": 13.683915458,
+  "load_duration_s": 0.004917875,
+  "prompt_eval_count": 782,
+  "prompt_eval_cached_count": 54,
+  "prompt_eval_duration_s": 3.196346,
+  "eval_count": 174,
+  "eval_duration_s": 10.458196,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Requirement check for storage capacity of at least 12 pairs was performed for all options. ClosetTower was ruled out due to insufficient capacity. Comparison attribute (price) was read for the three options that passed the requirement check.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:14b"
+  }
+}

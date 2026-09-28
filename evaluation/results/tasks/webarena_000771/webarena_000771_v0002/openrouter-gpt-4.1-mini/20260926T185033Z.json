@@ -1,0 +1,45 @@
+{
+  "instance_id": "webarena_000771_v0002",
+  "config_name": "openrouter-gpt-4.1-mini",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T18:50:37Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "total_duration_s": 2.1284818749991246,
+  "load_duration_s": null,
+  "prompt_eval_count": 825,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 283,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "The requirement is a rating of four stars or higher, so the rating facts f1, f3, f5, f7, and f9 are read for all reviews. Only reviews 347, 352, and 895 pass this requirement. The comparison attribute is the status to decide if the review is pending or already approved, so the status facts f2, f6, and f8 are read for the passing reviews. Reviews 953 and 821 fail the rating requirement, so their status facts f4 and f10 are not read. The action approves reviews 347 and 352, which were pending, but does not change review 895, which is already approved.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790448635-hEssN6RMuiYj6hqaPzOI"
+  }
+}

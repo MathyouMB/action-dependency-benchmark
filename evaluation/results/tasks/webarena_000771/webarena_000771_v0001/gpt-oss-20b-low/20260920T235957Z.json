@@ -1,0 +1,40 @@
+{
+  "instance_id": "webarena_000771_v0001",
+  "config_name": "gpt-oss-20b-low",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-21T00:00:06Z",
+  "predicted_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 8.907300166,
+  "load_duration_s": 0.011280875,
+  "prompt_eval_count": 888,
+  "prompt_eval_cached_count": 75,
+  "prompt_eval_duration_s": 1.049277,
+  "eval_count": 246,
+  "eval_duration_s": 7.820935,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.625,
+  "f1": 0.7692,
+  "meta": {
+    "why": "The requirement is a 4\u2011star or higher rating, so the rating facts for all reviews are read. Only the ratings for the eligible reviews (396,352,347) are then used for comparison. The ratings for the ineligible reviews (699,756) are never compared. The status facts are irrelevant to the decision.",
+    "thinking": "We need options: reviews 396,699,756,352,347. Requirement: rating >=4. Step2 facts: f1, f3, f5, f8, f9. Pass: 396 pass,699 fail,756 fail,352 pass,347 pass. Step3 comparison for passed: rating facts f1,f8,f9. Dependencies: f1,f3,f5,f8,f9.",
+    "think": "low",
+    "model": "gpt-oss:20b"
+  }
+}

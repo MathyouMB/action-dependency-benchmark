@@ -1,0 +1,51 @@
+{
+  "instance_id": "webarena_000771_v0004",
+  "config_name": "openrouter-gpt-4.1-mini",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T18:50:41Z",
+  "predicted_ids": [
+    "f1",
+    "f11",
+    "f12",
+    "f13",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f11",
+    "f12",
+    "f13"
+  ],
+  "total_duration_s": 2.1857992919976823,
+  "load_duration_s": null,
+  "prompt_eval_count": 894,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 246,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "All reviews are checked for star rating to meet the requirement of 4 stars or higher. Only those passing the requirement have their status read to decide if they are approved or pending. The action to approve reviews 347 and 352 depends on their star ratings (f7, f5) and their current status (f8, f6). Other facts are read to confirm eligibility and to exclude others.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790448639-yI7yhPOWk5O3mSyjF1lq"
+  }
+}

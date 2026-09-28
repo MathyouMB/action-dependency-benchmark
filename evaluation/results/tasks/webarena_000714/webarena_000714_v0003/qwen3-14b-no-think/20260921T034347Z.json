@@ -1,0 +1,53 @@
+{
+  "instance_id": "webarena_000714_v0003",
+  "config_name": "qwen3-14b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T03:44:54Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f12",
+    "f13",
+    "f15",
+    "f16",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12",
+    "f13",
+    "f15",
+    "f16"
+  ],
+  "total_duration_s": 25.205435458,
+  "load_duration_s": 0.00582575,
+  "prompt_eval_count": 1028,
+  "prompt_eval_cached_count": 47,
+  "prompt_eval_duration_s": 4.543089,
+  "eval_count": 318,
+  "eval_duration_s": 20.641853,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Only posts in the 'gadgets' forum are eligible. The all-time score of each eligible post is read to determine which one to thumbs down. Posts in other forums are excluded, and their scores are not considered.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:14b"
+  }
+}

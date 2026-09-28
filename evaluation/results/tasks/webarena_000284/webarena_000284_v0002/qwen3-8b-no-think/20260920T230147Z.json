@@ -1,0 +1,41 @@
+{
+  "instance_id": "webarena_000284_v0002",
+  "config_name": "qwen3-8b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-20T23:02:06Z",
+  "predicted_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8"
+  ],
+  "total_duration_s": 8.315595167,
+  "load_duration_s": 0.003796917,
+  "prompt_eval_count": 783,
+  "prompt_eval_cached_count": 54,
+  "prompt_eval_duration_s": 1.726083,
+  "eval_count": 177,
+  "eval_duration_s": 6.570927,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Requirement read for all four options; StepStack, ClosetTower, and MiniStack pass the storage requirement. StepStack's price f4, ClosetTower's price f6, and MiniStack's price f8 are read for comparison. StepStack is chosen as the cheapest among the eligible options.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:8b"
+  }
+}

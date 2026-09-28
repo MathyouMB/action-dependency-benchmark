@@ -1,0 +1,44 @@
+{
+  "instance_id": "webarena_000284_v0005",
+  "config_name": "openrouter-claude-opus-5.5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:01:29Z",
+  "predicted_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8"
+  ],
+  "total_duration_s": 5.922375875001308,
+  "load_duration_s": null,
+  "prompt_eval_count": 1182,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 289,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Capacity was read for all four products. Only PairKeeper (13) and StepStack (21) hold at least 12 pairs. Price was compared only for those two, and PairKeeper at $70.16 is cheaper than StepStack at $88.82. The prices of ShoeNest (f2) and MiniStack (f6) are never consulted because both products fail the capacity requirement.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-opus-5.5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790528484-McKCRVmKdh9GgTRJaEUr"
+  }
+}

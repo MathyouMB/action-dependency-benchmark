@@ -1,0 +1,52 @@
+{
+  "instance_id": "webarena_000714_v0002",
+  "config_name": "openrouter-claude-sonnet-5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:16:53Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11"
+  ],
+  "total_duration_s": 5.266644167000777,
+  "load_duration_s": null,
+  "prompt_eval_count": 1273,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 338,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Forum membership must be checked for all six posts to determine eligibility (gadgets only); posts 78307 and 86724 fail this requirement, so their scores f2 and f12 are never consulted. Among the four eligible gadgets posts, their all-time scores are compared, and 19459 has the highest score (857), making it the winner.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-sonnet-5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790529407-2GRy4QTgi2OTjtZeVq71"
+  }
+}

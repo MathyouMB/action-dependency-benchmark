@@ -1,0 +1,53 @@
+{
+  "instance_id": "webarena_000714_v0003",
+  "config_name": "qwen3-8b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T00:14:27Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f12",
+    "f13",
+    "f14",
+    "f15",
+    "f16",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12",
+    "f13",
+    "f15",
+    "f16"
+  ],
+  "total_duration_s": 14.968732959,
+  "load_duration_s": 0.004321084,
+  "prompt_eval_count": 1028,
+  "prompt_eval_cached_count": 47,
+  "prompt_eval_duration_s": 2.38249,
+  "eval_count": 336,
+  "eval_duration_s": 12.549856,
+  "error": null,
+  "precision": 0.9231,
+  "recall": 0.9231,
+  "f1": 0.9231,
+  "meta": {
+    "why": "The task requires selecting a post in the 'gadgets' forum. Only posts in the 'gadgets' forum are eligible. The comparison is based on all-time score. The decision to thumbs down post 19459 depends on its forum and score.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:8b"
+  }
+}

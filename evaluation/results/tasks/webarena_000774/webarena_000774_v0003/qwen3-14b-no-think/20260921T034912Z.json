@@ -1,0 +1,41 @@
+{
+  "instance_id": "webarena_000774_v0003",
+  "config_name": "qwen3-14b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T03:50:07Z",
+  "predicted_ids": [
+    "f10",
+    "f2",
+    "f4",
+    "f6",
+    "f8"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 18.039656958,
+  "load_duration_s": 0.005332,
+  "prompt_eval_count": 878,
+  "prompt_eval_cached_count": 46,
+  "prompt_eval_duration_s": 3.78801,
+  "eval_count": 222,
+  "eval_duration_s": 14.234121,
+  "error": null,
+  "precision": 0.8,
+  "recall": 0.4444,
+  "f1": 0.5714,
+  "meta": {
+    "why": "The requirement is to delete reviews with less than 4 stars. The status of the reviews is not relevant to the requirement, so it is not considered. Only the star ratings are checked. Reviews 349, 351, and 353 have ratings below 4 stars and are deleted. Review 780 has a 5-star rating and is not deleted. Review 496 has a 3-star rating but is not deleted because it is not in the 'Pending' status.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:14b"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "instance_id": "webarena_000298_v0002",
+  "config_name": "qwen3-8b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T00:07:05Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f3",
+    "f5",
+    "f7",
+    "f8"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 10.443842042,
+  "load_duration_s": 0.005383667,
+  "prompt_eval_count": 849,
+  "prompt_eval_cached_count": 47,
+  "prompt_eval_duration_s": 1.962766,
+  "eval_count": 224,
+  "eval_duration_s": 8.444102999,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.8571,
+  "f1": 0.9231,
+  "meta": {
+    "why": "The requirement is 'completed' status, so only orders 193 and 186 are eligible. The comparison is 'most recent', so the placement date is read for these two. The status of 193 and 186 is needed to determine eligibility, and the date of 193 is read for comparison.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:8b"
+  }
+}

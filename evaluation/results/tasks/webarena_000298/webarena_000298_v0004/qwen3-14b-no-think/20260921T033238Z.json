@@ -1,0 +1,39 @@
+{
+  "instance_id": "webarena_000298_v0004",
+  "config_name": "qwen3-14b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T03:33:42Z",
+  "predicted_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f9"
+  ],
+  "total_duration_s": 15.778859125,
+  "load_duration_s": 0.0049745,
+  "prompt_eval_count": 850,
+  "prompt_eval_cached_count": 49,
+  "prompt_eval_duration_s": 3.6126,
+  "eval_count": 200,
+  "eval_duration_s": 12.134599,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.7143,
+  "f1": 0.8333,
+  "meta": {
+    "why": "Only orders with status 'completed' are eligible. Among them, the most recent is chosen based on the date they were placed. Order 410 and 205 are eligible, and their dates (f4 and f6) are used for comparison. Other facts are not relevant to the decision.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:14b"
+  }
+}

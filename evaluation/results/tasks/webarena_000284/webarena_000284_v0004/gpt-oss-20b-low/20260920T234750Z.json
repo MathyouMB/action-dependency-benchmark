@@ -1,0 +1,39 @@
+{
+  "instance_id": "webarena_000284_v0004",
+  "config_name": "gpt-oss-20b-low",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-20T23:48:28Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7"
+  ],
+  "total_duration_s": 8.518820959,
+  "load_duration_s": 0.005068417,
+  "prompt_eval_count": 811,
+  "prompt_eval_cached_count": 71,
+  "prompt_eval_duration_s": 0.970725,
+  "eval_count": 248,
+  "eval_duration_s": 7.524091,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "The requirement is the storage capacity; all four options are checked against f1, f3, f5, f7. Only CedarBox and StackRack pass. The comparison is price, so f2 and f6 are read. No other facts are needed.",
+    "thinking": "We need to list options: CedarBox, MiniStack, StackRack, StepStack. Requirement: holds at least 12 pairs. Facts: f1, f3, f5, f7. Pass: CedarBox f1 pass, MiniStack f3 fail, StackRack f5 pass, StepStack f7 fail. Comparison: cheapest among eligible: CedarBox f2, StackRack f6. Dependencies: f1,f3,f5,f7,f2,f6.",
+    "think": "low",
+    "model": "gpt-oss:20b"
+  }
+}

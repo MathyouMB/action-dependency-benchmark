@@ -1,0 +1,45 @@
+{
+  "instance_id": "webarena_000794_v0004",
+  "config_name": "openrouter-gpt-4.1-mini",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T18:51:05Z",
+  "predicted_ids": [
+    "f10",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 2.0277961249958025,
+  "load_duration_s": null,
+  "prompt_eval_count": 839,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 235,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "The requirement is that the order is non-canceled, so orders with status 'Canceled' (f2, f8) fail. The comparison is by most recent order date among non-canceled orders, so dates f3, f5, and f9 are read to pick the most recent eligible order (#000000308).",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790448663-sx0BusFyuwZXyoYK8FLO"
+  }
+}

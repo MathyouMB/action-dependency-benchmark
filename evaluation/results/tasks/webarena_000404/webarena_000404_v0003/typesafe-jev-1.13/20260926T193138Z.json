@@ -1,0 +1,150 @@
+{
+  "instance_id": "webarena_000404_v0003",
+  "config_name": "typesafe-jev-1.13",
+  "runner": "typesafe_jev",
+  "timestamp": "2026-09-26T19:31:42Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f12",
+    "f13",
+    "f15",
+    "f16",
+    "f19",
+    "f21",
+    "f22",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12",
+    "f13",
+    "f15",
+    "f16",
+    "f17",
+    "f19",
+    "f21",
+    "f22"
+  ],
+  "total_duration_s": 0.24223950000305194,
+  "load_duration_s": null,
+  "prompt_eval_count": 3844,
+  "prompt_eval_cached_count": null,
+  "prompt_eval_duration_s": null,
+  "eval_count": 413,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": {
+    "f1_dependency": {
+      "type": "noul",
+      "noul": 0.53
+    },
+    "f2_dependency": {
+      "type": "noul",
+      "noul": 0.14
+    },
+    "f3_dependency": {
+      "type": "noul",
+      "noul": 0.68
+    },
+    "f4_dependency": {
+      "type": "noul",
+      "noul": 0.78
+    },
+    "f5_dependency": {
+      "type": "noul",
+      "noul": 0.69
+    },
+    "f6_dependency": {
+      "type": "noul",
+      "noul": 0.77
+    },
+    "f7_dependency": {
+      "type": "noul",
+      "noul": 0.78
+    },
+    "f8_dependency": {
+      "type": "noul",
+      "noul": 0.8
+    },
+    "f9_dependency": {
+      "type": "noul",
+      "noul": 0.68
+    },
+    "f10_dependency": {
+      "type": "noul",
+      "noul": 0.74
+    },
+    "f11_dependency": {
+      "type": "noul",
+      "noul": 0.86
+    },
+    "f12_dependency": {
+      "type": "noul",
+      "noul": 0.88
+    },
+    "f13_dependency": {
+      "type": "noul",
+      "noul": 0.39
+    },
+    "f14_dependency": {
+      "type": "noul",
+      "noul": 0.18
+    },
+    "f15_dependency": {
+      "type": "noul",
+      "noul": 0.59
+    },
+    "f16_dependency": {
+      "type": "noul",
+      "noul": 0.66
+    },
+    "f17_dependency": {
+      "type": "noul",
+      "noul": 0.21
+    },
+    "f18_dependency": {
+      "type": "noul",
+      "noul": 0.15
+    },
+    "f19_dependency": {
+      "type": "noul",
+      "noul": 0.27
+    },
+    "f20_dependency": {
+      "type": "noul",
+      "noul": 0.22
+    },
+    "f21_dependency": {
+      "type": "noul",
+      "noul": 0.69
+    },
+    "f22_dependency": {
+      "type": "noul",
+      "noul": 0.73
+    }
+  },
+  "precision": 1.0,
+  "recall": 0.9444,
+  "f1": 0.9714,
+  "meta": {
+    "model": "jev-1.13.0",
+    "threshold": 0.25
+  }
+}

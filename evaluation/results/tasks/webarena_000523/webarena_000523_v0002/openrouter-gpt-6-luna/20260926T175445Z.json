@@ -1,0 +1,63 @@
+{
+  "instance_id": "webarena_000523_v0002",
+  "config_name": "openrouter-gpt-6-luna",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T17:55:02Z",
+  "predicted_ids": [
+    "f10",
+    "f11",
+    "f12",
+    "f13",
+    "f14",
+    "f15",
+    "f16",
+    "f18",
+    "f19",
+    "f2",
+    "f20",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f13",
+    "f14",
+    "f15",
+    "f16",
+    "f17",
+    "f19"
+  ],
+  "total_duration_s": 7.059982124999806,
+  "load_duration_s": null,
+  "prompt_eval_count": 1048,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 824,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 0.7059,
+  "recall": 0.8,
+  "f1": 0.75,
+  "meta": {
+    "why": "Star status was checked for every repository to determine eligibility. Star counts were compared for all repositories not already starred; counts for the repositories that failed the requirement were not consulted.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "openai/gpt-6-luna",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790445295-HmRIVNnjiaoxRmvo7Ulw"
+  }
+}

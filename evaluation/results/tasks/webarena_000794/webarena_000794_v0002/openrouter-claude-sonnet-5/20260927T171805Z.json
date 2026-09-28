@@ -1,0 +1,50 @@
+{
+  "instance_id": "webarena_000794_v0002",
+  "config_name": "openrouter-claude-sonnet-5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:18:14Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 4.626379541005008,
+  "load_duration_s": null,
+  "prompt_eval_count": 1270,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 413,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 0.8,
+  "recall": 1.0,
+  "f1": 0.8889,
+  "meta": {
+    "why": "Status facts (f2,f4,f6,f8,f10) are read for every order to filter out canceled ones. Date facts (f1,f3,f5,f7,f9) are read for all orders as part of determining which one is most recent, but only among non-canceled ones does the date actually matter for selecting #000000308 as most recent eligible order (placed 2023-06-03, more recent than #000000296 2023-05-26 and #000000271 2023-04-26).",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-sonnet-5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790529489-awPwna5efyYpfyABmHMZ"
+  }
+}

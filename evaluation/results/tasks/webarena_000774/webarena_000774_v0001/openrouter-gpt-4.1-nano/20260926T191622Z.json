@@ -1,0 +1,48 @@
+{
+  "instance_id": "webarena_000774_v0001",
+  "config_name": "openrouter-gpt-4.1-nano",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T19:16:23Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 1.6451778330010711,
+  "load_duration_s": null,
+  "prompt_eval_count": 829,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 195,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 0.9,
+  "recall": 1.0,
+  "f1": 0.9474,
+  "meta": {
+    "why": "The requirement check confirms that all listed reviews are pending. The comparison reads provide the star ratings for these pending reviews, which are used to determine if the review has less than 4 stars. All these facts are necessary to identify the pending reviews with less than 4 stars for deletion.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1-nano",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790450182-JFNwbg8PPb53SwjagIcJ"
+  }
+}

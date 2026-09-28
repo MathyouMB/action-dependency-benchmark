@@ -1,0 +1,31 @@
+{
+  "instance_id": "webarena_000774_v0005",
+  "config_name": "gpt-oss-20b-medium",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-21T01:54:07Z",
+  "predicted_ids": null,
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12"
+  ],
+  "total_duration_s": null,
+  "load_duration_s": null,
+  "prompt_eval_count": null,
+  "prompt_eval_cached_count": null,
+  "prompt_eval_duration_s": null,
+  "eval_count": null,
+  "eval_duration_s": null,
+  "error": "JSONDecodeError: Unterminated string starting at: line 1 column 302 (char 301)",
+  "precision": 0.0,
+  "recall": 0.0,
+  "f1": 0.0,
+  "meta": {}
+}

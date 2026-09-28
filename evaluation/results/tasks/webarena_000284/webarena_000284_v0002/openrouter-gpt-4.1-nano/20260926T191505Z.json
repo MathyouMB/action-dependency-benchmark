@@ -1,0 +1,44 @@
+{
+  "instance_id": "webarena_000284_v0002",
+  "config_name": "openrouter-gpt-4.1-nano",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T19:15:09Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8"
+  ],
+  "total_duration_s": 2.304241292004008,
+  "load_duration_s": null,
+  "prompt_eval_count": 751,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 235,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 0.875,
+  "recall": 1.0,
+  "f1": 0.9333,
+  "meta": {
+    "why": "The requirement check confirms all options meet the minimum storage capacity of 12 pairs. The comparison read is only performed on options that pass the requirement check, i.e., those with at least 12 pairs. The costs are read only for the eligible options, and the decision to open the StepStack page depends on comparing these costs among the eligible options.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1-nano",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790450107-t3ZEe8nDCkKPz9nc6h1r"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "instance_id": "webarena_000238_v0001",
+  "config_name": "qwen3-8b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-20T20:50:14Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f13",
+    "f15",
+    "f17",
+    "f18",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f13",
+    "f15",
+    "f17"
+  ],
+  "total_duration_s": 22.540663875,
+  "load_duration_s": 3.071057459,
+  "prompt_eval_count": 1102,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": 2.747697,
+  "eval_count": 432,
+  "eval_duration_s": 16.716772,
+  "error": null,
+  "precision": 0.9231,
+  "recall": 1.0,
+  "f1": 0.96,
+  "meta": {
+    "why": "The requirement is to select from the 'PS4 Accessories' category. Only PowerA DualShock 4 Charging Station, HORI Mini Wired Gamepad, ASTRO Gaming A50 Wireless Headset + Base Station Gen 4, and Elgato Stream Deck are in the correct category. The comparison is to select the most expensive. The prices of the eligible options are read, and ASTRO Gaming A50 Wireless Headset + Base Station Gen 4 is the most expensive.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:8b"
+  }
+}

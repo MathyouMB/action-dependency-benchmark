@@ -1,0 +1,44 @@
+{
+  "instance_id": "webarena_000771_v0002",
+  "config_name": "gpt-oss-20b-low",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-21T00:00:25Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "total_duration_s": 19.049603792,
+  "load_duration_s": 0.005571458,
+  "prompt_eval_count": 885,
+  "prompt_eval_cached_count": 74,
+  "prompt_eval_duration_s": 1.053138999,
+  "eval_count": 571,
+  "eval_duration_s": 17.970414,
+  "error": null,
+  "precision": 0.7778,
+  "recall": 0.875,
+  "f1": 0.8235,
+  "meta": {
+    "why": "Status read for all five reviews; rating read only for the four pending ones. The already approved review 895 is excluded from rating comparison, and its status fact is still read to determine failure.",
+    "thinking": "We need options: reviews 347,953,352,895,821. Requirement: status Pending? Actually approve only pending. So requirement fact: status Pending. For 895 already Approved so fails. Also rating >=4. So requirement includes rating >=4. So need both. Step2: list each option with fact id for requirement. For each option, we need fact id that gives requirement attribute. Which fact id? For status: f2,f4,f6,f8,f10. For rating: f1,f3,f5,f7,f9. But requirement is two conditions: status Pending AND rating >=4. We need fact ids for both? The instruction: \"name the fact id that gives its REQUIREMENT attribute\". Might need one fact id? But requirement has two attributes. In example, they used one fact id per option. But here requirement is composite. We can list both? Probably list the fact id that gives requirement attribute; maybe combine? Might need two fact ids per option. But format expects list of strings like \"Alba g1 pass\". So we can include both? Maybe combine as \"347 f2,f1 pass\"? But unclear.\n\nSimpler: requirement attribute is status Pending. rating is comparison? But rating threshold is part of requirement. So maybe requirement is status Pending. Comparison is rating. But rating threshold is requirement too. But we can treat rating as comparison. Let's do: requirement: status Pending. comparison: rating. Then rating threshold is implicit. So step2: for each option, fact id for status. Step3: for eligible ones, fact id for rating. Let's do that.\n\nOptions order: 347,953,352,895,821.\n\nStep2:\n347 f2 pass\n953 f4 pass\n352 f6 pass\n895 f8 fail\n821 f10 pass\n\nStep3 eligible: 347,953,352,821. Their rating facts: f1,f3,f5,f9.\n\nDependencies: f2,f4,f6,f8,f10,f1,f3,f5,f9.\n\nReturn JSON.",
+    "think": "low",
+    "model": "gpt-oss:20b"
+  }
+}

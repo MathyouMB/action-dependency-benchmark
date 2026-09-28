@@ -1,0 +1,42 @@
+{
+  "instance_id": "webarena_000431_v0003",
+  "config_name": "openrouter-llama-4-maverick",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T19:27:45Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "total_duration_s": 3.926251916003821,
+  "load_duration_s": null,
+  "prompt_eval_count": 789,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 212,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "All products are considered for the per unit price comparison. The per unit price is derived from cost and units, so both are required for comparison.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "meta-llama/llama-4-maverick",
+    "provider": "DeepInfra",
+    "generation_id": "gen-1790450861-DCG6O3tujM3l2EzWc6bQ"
+  }
+}

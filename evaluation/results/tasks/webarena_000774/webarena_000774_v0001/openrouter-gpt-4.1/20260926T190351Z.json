@@ -1,0 +1,47 @@
+{
+  "instance_id": "webarena_000774_v0001",
+  "config_name": "openrouter-gpt-4.1",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T19:03:53Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 1.5560101669980213,
+  "load_duration_s": null,
+  "prompt_eval_count": 829,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 196,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Status facts (f1, f3, f5, f7, f9) are read for all reviews to check if they are pending. Star ratings (f2, f4, f8, f10) are read only for those that are pending. Review 699's rating (f6) is not read because it is not pending.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790449432-jXRjHpoNMjk98Ti3Uzqw"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "instance_id": "webarena_000238_v0001",
+  "config_name": "openrouter-claude-opus-5.5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:00:34Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f13",
+    "f15",
+    "f17",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f13",
+    "f15",
+    "f17"
+  ],
+  "total_duration_s": 8.48669979198894,
+  "load_duration_s": null,
+  "prompt_eval_count": 1640,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 628,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "The category was checked for all nine products, and only three are PS4 Accessories. Prices were compared only among those three: $134.66, $146.38 and $285.08. The ASTRO A50 is the most expensive of them. Prices of products outside the category (f2, f6, f12, f14, f16, f18) are never consulted.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-opus-5.5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790528426-OACyJpzCXGlV0gBTPp3O"
+  }
+}

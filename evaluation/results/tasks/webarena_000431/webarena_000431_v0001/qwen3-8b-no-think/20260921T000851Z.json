@@ -1,0 +1,39 @@
+{
+  "instance_id": "webarena_000431_v0001",
+  "config_name": "qwen3-8b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T00:09:00Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "total_duration_s": 8.776561792,
+  "load_duration_s": 0.008847708,
+  "prompt_eval_count": 810,
+  "prompt_eval_cached_count": 25,
+  "prompt_eval_duration_s": 1.866319,
+  "eval_count": 184,
+  "eval_duration_s": 6.861792,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "All options are eligible as they all have units. The per unit price is compared for all three options to determine the cheapest one.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:8b"
+  }
+}

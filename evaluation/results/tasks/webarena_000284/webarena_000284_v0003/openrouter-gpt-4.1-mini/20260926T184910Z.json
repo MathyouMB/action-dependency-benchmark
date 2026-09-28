@@ -1,0 +1,43 @@
+{
+  "instance_id": "webarena_000284_v0003",
+  "config_name": "openrouter-gpt-4.1-mini",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T18:49:16Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8"
+  ],
+  "total_duration_s": 1.738033749999886,
+  "load_duration_s": null,
+  "prompt_eval_count": 751,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 171,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Storage capacity read for all options to check the minimum 12 pairs requirement. ClosetTower fails the requirement and its price f6 is not read. Prices f2, f4, and f8 are read only for the eligible options to find the least expensive. All these facts are necessary to decide to open SlimTower.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790448554-PQep0giQupcuesHuX7ai"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "instance_id": "webarena_000431_v0004",
+  "config_name": "openrouter-gpt-4.1-mini",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T18:49:56Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "total_duration_s": 1.8623846249975031,
+  "load_duration_s": null,
+  "prompt_eval_count": 782,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 196,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "All three products are eligible since they have units available (f2, f4, f6). The per unit price is calculated by dividing cost by units, so the cost facts (f1, f3, f5) are read for all eligible options to find the lowest per unit price.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790448594-JfF3RZrB93Rsxn7brZ5L"
+  }
+}

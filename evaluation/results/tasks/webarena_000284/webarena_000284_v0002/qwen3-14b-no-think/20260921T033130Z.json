@@ -1,0 +1,41 @@
+{
+  "instance_id": "webarena_000284_v0002",
+  "config_name": "qwen3-14b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T03:31:57Z",
+  "predicted_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8"
+  ],
+  "total_duration_s": 13.638831958,
+  "load_duration_s": 0.004773166,
+  "prompt_eval_count": 783,
+  "prompt_eval_cached_count": 54,
+  "prompt_eval_duration_s": 3.179826,
+  "eval_count": 173,
+  "eval_duration_s": 10.43017,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Requirement check for each option determines eligibility based on storage capacity. Comparison reads are only for options that meet the requirement (minimum 12 pairs). StackRack is excluded due to insufficient capacity, so its cost (f2) is not considered.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:14b"
+  }
+}

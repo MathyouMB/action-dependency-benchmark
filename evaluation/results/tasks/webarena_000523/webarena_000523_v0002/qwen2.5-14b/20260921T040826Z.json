@@ -1,0 +1,52 @@
+{
+  "instance_id": "webarena_000523_v0002",
+  "config_name": "qwen2.5-14b",
+  "runner": "ollama",
+  "timestamp": "2026-09-21T04:09:18Z",
+  "predicted_ids": [
+    "f1",
+    "f11",
+    "f13",
+    "f15",
+    "f17",
+    "f19",
+    "f3",
+    "f5",
+    "f7",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f13",
+    "f14",
+    "f15",
+    "f16",
+    "f17",
+    "f19"
+  ],
+  "total_duration_s": 28.2969875,
+  "load_duration_s": 0.005577917,
+  "prompt_eval_count": 1102,
+  "prompt_eval_cached_count": 67,
+  "prompt_eval_duration_s": 6.508808,
+  "eval_count": 347,
+  "eval_duration_s": 21.734504,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.6667,
+  "f1": 0.8,
+  "meta": {
+    "why": "Stars read for all options; only starred status of options that have less than 44 stars is irrelevant. The starred status of options with 44 or more stars is relevant for the decision.",
+    "thinking": null,
+    "think": null,
+    "model": "qwen2.5:14b"
+  }
+}

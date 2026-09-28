@@ -1,0 +1,49 @@
+{
+  "instance_id": "webarena_000404_v0002",
+  "config_name": "qwen3-14b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T03:34:51Z",
+  "predicted_ids": [
+    "f1",
+    "f11",
+    "f12",
+    "f13",
+    "f14",
+    "f15",
+    "f16",
+    "f3",
+    "f5",
+    "f7",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f7",
+    "f9",
+    "f11",
+    "f12",
+    "f13",
+    "f14",
+    "f15",
+    "f16"
+  ],
+  "total_duration_s": 22.879305167,
+  "load_duration_s": 0.005572292,
+  "prompt_eval_count": 1091,
+  "prompt_eval_cached_count": 44,
+  "prompt_eval_duration_s": 4.601319,
+  "eval_count": 297,
+  "eval_duration_s": 18.232969,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Only posts in the 'books' forum are eligible. Among these, the 'What are you reading this week?' post is the newest, so its date is compared to determine the winner.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:14b"
+  }
+}

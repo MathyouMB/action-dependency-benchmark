@@ -1,0 +1,46 @@
+{
+  "instance_id": "webarena_000298_v0003",
+  "config_name": "openrouter-claude-opus-5.5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:01:43Z",
+  "predicted_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f9"
+  ],
+  "total_duration_s": 4.388565083005233,
+  "load_duration_s": null,
+  "prompt_eval_count": 1198,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 253,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "The status had to be read for all five orders. Only 706 and 657 are completed, so only their dates were compared. June 5 is later than May 1, so 706 is the most recent completed order. The dates of the cancelled, processing and pending orders (f2, f8, f10) are never consulted.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-opus-5.5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790528499-RxFRwrjE1wOYd5x3mCSD"
+  }
+}

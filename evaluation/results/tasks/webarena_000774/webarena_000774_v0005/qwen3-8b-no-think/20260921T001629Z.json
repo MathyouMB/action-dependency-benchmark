@@ -1,0 +1,47 @@
+{
+  "instance_id": "webarena_000774_v0005",
+  "config_name": "qwen3-8b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T00:17:26Z",
+  "predicted_ids": [
+    "f10",
+    "f11",
+    "f12",
+    "f2",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12"
+  ],
+  "total_duration_s": 10.636378042,
+  "load_duration_s": 0.006016083,
+  "prompt_eval_count": 918,
+  "prompt_eval_cached_count": 46,
+  "prompt_eval_duration_s": 2.154136,
+  "eval_count": 227,
+  "eval_duration_s": 8.453692999,
+  "error": null,
+  "precision": 0.8,
+  "recall": 0.8,
+  "f1": 0.8,
+  "meta": {
+    "why": "The requirement is to delete pending reviews with less than 4 stars. All options are pending reviews. The comparison is to delete those with less than 4 stars. The decision depends on the rating and status of each review.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:8b"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "instance_id": "webarena_000284_v0004",
+  "config_name": "openrouter-llama-4-maverick",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T19:24:52Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7"
+  ],
+  "total_duration_s": 16.92514316699817,
+  "load_duration_s": null,
+  "prompt_eval_count": 755,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 163,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 0.8571,
+  "recall": 1.0,
+  "f1": 0.9231,
+  "meta": {
+    "why": "Storage capacity read for all four options; cost read for the two eligible ones. The task requires checking the storage capacity of all options to determine eligibility, and then comparing the costs of the eligible ones.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "meta-llama/llama-4-maverick",
+    "provider": "DigitalOcean",
+    "generation_id": "gen-1790450675-Xc6Aag6F8Rp14dH4vUHU"
+  }
+}

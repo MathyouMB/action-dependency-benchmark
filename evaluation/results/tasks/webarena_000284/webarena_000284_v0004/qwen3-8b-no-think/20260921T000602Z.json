@@ -1,0 +1,39 @@
+{
+  "instance_id": "webarena_000284_v0004",
+  "config_name": "qwen3-8b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T00:06:35Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7"
+  ],
+  "total_duration_s": 8.137800083,
+  "load_duration_s": 0.0061105,
+  "prompt_eval_count": 781,
+  "prompt_eval_cached_count": 58,
+  "prompt_eval_duration_s": 1.744352,
+  "eval_count": 169,
+  "eval_duration_s": 6.343253,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Storage capacity read for all four options; price read only for the two eligible ones. MiniStack and StepStack failed the capacity requirement, so their prices are not compared. StackRack's price f6 is compared, but CedarBox's price f2 is the only valid comparison for the task.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:8b"
+  }
+}

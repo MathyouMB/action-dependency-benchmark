@@ -1,0 +1,49 @@
+{
+  "instance_id": "webarena_000404_v0005",
+  "config_name": "gpt-oss-20b-low",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-20T23:50:48Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f12",
+    "f2",
+    "f3",
+    "f4",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12",
+    "f13"
+  ],
+  "total_duration_s": 17.223686375,
+  "load_duration_s": 0.006164958,
+  "prompt_eval_count": 1033,
+  "prompt_eval_cached_count": 90,
+  "prompt_eval_duration_s": 1.512976,
+  "eval_count": 439,
+  "eval_duration_s": 15.684,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.8333,
+  "f1": 0.9091,
+  "meta": {
+    "why": "All posts belong to the books forum, so the requirement (being in the books forum) is satisfied for every option, requiring reads of f1, f3, f7, f9, and f11. The task is to upvote the newest post, so the comparison is based on the posted timestamps, requiring reads of f2, f4, f8, f10, and f12. No other facts are needed.",
+    "thinking": "We need options: posts in books forum. List all posts belonging to books forum: f1, f3, f7, f9, f11. Order as appear: f1, f3, f7, f9, f11. Requirement: must be in books forum. All satisfy. So requirement fact ids: f1, f3, f7, f9, f11 all pass. Comparison: most recent. Need posted time. Fact ids: f2, f4, f8, f10, f12. All options pass, so all comparison reads. Dependencies: all requirement and comparison ids: f1,f3,f7,f9,f11,f2,f4,f8,f10,f12. Justification.",
+    "think": "low",
+    "model": "gpt-oss:20b"
+  }
+}

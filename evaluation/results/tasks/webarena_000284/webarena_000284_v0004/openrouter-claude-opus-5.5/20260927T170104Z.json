@@ -1,0 +1,44 @@
+{
+  "instance_id": "webarena_000284_v0004",
+  "config_name": "openrouter-claude-opus-5.5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:01:24Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7"
+  ],
+  "total_duration_s": 4.736565291997977,
+  "load_duration_s": null,
+  "prompt_eval_count": 1175,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 282,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "I read the capacity of all four products to check the 12-pair minimum. Only CedarBox (21) and StackRack (23) qualify, so their prices are the only ones compared. CedarBox at $28.17 is cheaper than StackRack at $93.03. The prices of MiniStack (f4) and StepStack (f8) are never consulted because both fail the capacity requirement.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-opus-5.5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790528479-r19n3P3foRlbk6Y4DgCV"
+  }
+}

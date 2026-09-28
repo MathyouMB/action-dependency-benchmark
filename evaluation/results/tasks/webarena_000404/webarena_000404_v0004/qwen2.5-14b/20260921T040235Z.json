@@ -1,0 +1,48 @@
+{
+  "instance_id": "webarena_000404_v0004",
+  "config_name": "qwen2.5-14b",
+  "runner": "ollama",
+  "timestamp": "2026-09-21T04:03:51Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f12",
+    "f2",
+    "f3",
+    "f4",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12"
+  ],
+  "total_duration_s": 18.761786708,
+  "load_duration_s": 0.004312708,
+  "prompt_eval_count": 999,
+  "prompt_eval_cached_count": 65,
+  "prompt_eval_duration_s": 4.747034,
+  "eval_count": 215,
+  "eval_duration_s": 13.963309,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.9091,
+  "f1": 0.9524,
+  "meta": {
+    "why": "Posts in the books forum are considered for eligibility; the most recent post in the books forum is selected for upvoting.",
+    "thinking": null,
+    "think": null,
+    "model": "qwen2.5:14b"
+  }
+}

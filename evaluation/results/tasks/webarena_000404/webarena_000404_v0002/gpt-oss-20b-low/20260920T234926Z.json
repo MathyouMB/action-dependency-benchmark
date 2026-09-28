@@ -1,0 +1,44 @@
+{
+  "instance_id": "webarena_000404_v0002",
+  "config_name": "gpt-oss-20b-low",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-20T23:49:58Z",
+  "predicted_ids": [
+    "f11",
+    "f12",
+    "f13",
+    "f14",
+    "f15",
+    "f16"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f7",
+    "f9",
+    "f11",
+    "f12",
+    "f13",
+    "f14",
+    "f15",
+    "f16"
+  ],
+  "total_duration_s": 12.814520666,
+  "load_duration_s": 0.005467,
+  "prompt_eval_count": 1075,
+  "prompt_eval_cached_count": 92,
+  "prompt_eval_duration_s": 1.311588,
+  "eval_count": 330,
+  "eval_duration_s": 11.466119,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.5455,
+  "f1": 0.7059,
+  "meta": {
+    "why": "All three posts belong to the books forum, so the requirement fact ids f11, f13, f15 are read and all pass. The comparison is the most recent post, so the posted timestamps f12, f14, f16 are read for the eligible options. No other facts are needed.",
+    "thinking": "We need options: posts in books forum. f11, f13, f15. Step1 list in order: f11, f13, f15. Step2 requirement: belongs to books forum. f11 fact id f11 passes, f13 passes, f15 passes. Step3 comparison: most recent. Need posted times: f11 2023-06-13 18:44, f13 2023-06-14 12:13, f15 2023-06-15 11:00. So comparison facts f12, f14, f16. Dependencies: f11, f13, f15, f12, f14, f16. Provide justification.",
+    "think": "low",
+    "model": "gpt-oss:20b"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "instance_id": "webarena_000774_v0002",
+  "config_name": "gpt-oss-20b-low",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-21T00:01:36Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f12",
+    "f13",
+    "f14",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f11",
+    "f12",
+    "f13",
+    "f14"
+  ],
+  "total_duration_s": 24.149859417,
+  "load_duration_s": 0.007820208,
+  "prompt_eval_count": 958,
+  "prompt_eval_cached_count": 69,
+  "prompt_eval_duration_s": 1.208855,
+  "eval_count": 644,
+  "eval_duration_s": 22.905921,
+  "error": null,
+  "precision": 0.7857,
+  "recall": 1.0,
+  "f1": 0.88,
+  "meta": {
+    "why": "Status and rating facts are read for all reviews to evaluate the requirement; only the ratings of the reviews that pass the requirement (351,353,349) are read for comparison. All 14 facts are dependencies.",
+    "thinking": "We need options: reviews 953,351,328,353,857,895,349. Requirement: status Pending? task delete pending reviews with <4 stars. So requirement: status Pending AND rating <4. So for each review, check status fact and rating fact. Step2 list all options with fact ids. For each option, requirement passes if both status Pending and rating <4. Let's list:\n\nReview 953: status Not Approved (f1) fail. rating 2 (f2) <4 but status fails.\n\n351: status Pending (f3) pass status; rating 2 (f4) <4 pass. So passes.\n\n328: status Not Approved (f5) fail; rating 5 (f6) >4.\n\n353: status Pending (f7) pass; rating 3 (f8) <4 pass. So passes.\n\n857: status Not Approved (f9) fail; rating 2 (f10) <4.\n\n895: status Pending (f11) pass; rating 4 (f12) =4 not <4 so fails.\n\n349: status Pending (f13) pass; rating 1 (f14) <4 pass. So passes.\n\nThus options list: 953,351,328,353,857,895,349.\n\nRequirement check facts: f1,f2 for 953; f3,f4 for 351; f5,f6 for 328; f7,f8 for 353; f9,f10 for 857; f11,f12 for 895; f13,f14 for 349. Indicate pass/fail.\n\nComparison attributes: for those that passed: 351 uses rating f4; 353 uses rating f8; 349 uses rating f14. Also maybe need rating for 895? but fails requirement so excluded. So comparison reads: f4,f8,f14.\n\nDependencies: all requirement facts plus comparison facts: f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13,f14. All 14.\n\nReturn JSON.",
+    "think": "low",
+    "model": "gpt-oss:20b"
+  }
+}

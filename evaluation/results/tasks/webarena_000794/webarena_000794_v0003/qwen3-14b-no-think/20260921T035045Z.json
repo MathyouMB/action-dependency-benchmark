@@ -1,0 +1,42 @@
+{
+  "instance_id": "webarena_000794_v0003",
+  "config_name": "qwen3-14b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T03:51:53Z",
+  "predicted_ids": [
+    "f10",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8"
+  ],
+  "expected_ids": [
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 20.908464209,
+  "load_duration_s": 0.004678,
+  "prompt_eval_count": 947,
+  "prompt_eval_cached_count": 79,
+  "prompt_eval_duration_s": 4.12924,
+  "eval_count": 261,
+  "eval_duration_s": 16.741503,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.875,
+  "f1": 0.9333,
+  "meta": {
+    "why": "Only orders with a status that is not 'Canceled' are eligible. Among these, the most recent order is selected. The dates of the eligible orders are read to determine which is the most recent.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:14b"
+  }
+}

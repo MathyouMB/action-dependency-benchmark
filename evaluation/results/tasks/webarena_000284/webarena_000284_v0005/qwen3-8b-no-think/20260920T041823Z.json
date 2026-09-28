@@ -1,0 +1,39 @@
+{
+  "instance_id": "webarena_000284_v0005",
+  "config_name": "qwen3-8b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-20T04:19:07Z",
+  "predicted_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8"
+  ],
+  "total_duration_s": 7.950435375,
+  "load_duration_s": 0.00634725,
+  "prompt_eval_count": 782,
+  "prompt_eval_cached_count": 54,
+  "prompt_eval_duration_s": 1.746508,
+  "eval_count": 159,
+  "eval_duration_s": 6.170288,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Storage capacity read for all four options; price read only for the two eligible ones. ShoeNest and MiniStack failed the capacity requirement, so their prices are not compared. StepStack's price is read but not used since PairKeeper is the cheaper option.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:8b"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "instance_id": "webarena_000714_v0003",
+  "config_name": "gpt-oss-20b-low",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-20T23:58:30Z",
+  "predicted_ids": [
+    "f10",
+    "f11",
+    "f12",
+    "f15",
+    "f16",
+    "f3",
+    "f4",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12",
+    "f13",
+    "f15",
+    "f16"
+  ],
+  "total_duration_s": 12.6965385,
+  "load_duration_s": 0.007025708,
+  "prompt_eval_count": 992,
+  "prompt_eval_cached_count": 82,
+  "prompt_eval_duration_s": 1.222601,
+  "eval_count": 338,
+  "eval_duration_s": 11.441975,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.7692,
+  "f1": 0.8695,
+  "meta": {
+    "why": "All listed posts are in the gadgets forum (f3, f7, f9, f11, f15). The decision compares their all\u2011time scores (f4, f8, f10, f12, f16) to pick the highest. No other facts are read.",
+    "thinking": "We need options: posts in gadgets forum. Which posts are in gadgets? f3 50714, f7 82436, f9 81638, f11 19459, f15 39741. Also maybe others? f1, f5, f13 not gadgets. So options list in order of appearance: 50714, 82436, 81638, 19459, 39741.\n\nRequirement: being in gadgets forum. Fact ids: f3, f7, f9, f11, f15. All pass.\n\nComparison: highest score. Fact ids: f4, f8, f10, f12, f16.\n\nDependencies: all those fact ids.\n\nReturn JSON.",
+    "think": "low",
+    "model": "gpt-oss:20b"
+  }
+}

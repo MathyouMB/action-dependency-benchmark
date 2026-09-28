@@ -1,0 +1,40 @@
+{
+  "instance_id": "webarena_000771_v0002",
+  "config_name": "qwen3-14b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T03:48:17Z",
+  "predicted_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f7",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "total_duration_s": 15.254675125,
+  "load_duration_s": 0.006205292,
+  "prompt_eval_count": 874,
+  "prompt_eval_cached_count": 50,
+  "prompt_eval_duration_s": 3.804388,
+  "eval_count": 179,
+  "eval_duration_s": 11.41673,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.625,
+  "f1": 0.7692,
+  "meta": {
+    "why": "Requirement check for all options; comparison reads only for options that passed the requirement. Reviews with 4-star or higher are eligible, and their ratings are used for comparison. Reviews with 2-star ratings are excluded from comparison.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:14b"
+  }
+}

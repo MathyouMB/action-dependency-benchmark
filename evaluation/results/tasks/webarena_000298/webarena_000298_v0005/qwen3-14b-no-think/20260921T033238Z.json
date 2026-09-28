@@ -1,0 +1,43 @@
+{
+  "instance_id": "webarena_000298_v0005",
+  "config_name": "qwen3-14b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T03:33:59Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "total_duration_s": 17.123143417,
+  "load_duration_s": 0.00515725,
+  "prompt_eval_count": 849,
+  "prompt_eval_cached_count": 47,
+  "prompt_eval_duration_s": 3.602686,
+  "eval_count": 222,
+  "eval_duration_s": 13.487538,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Only completed orders are eligible, so orders 737, 859, and 467 passed the requirement check. The most recent among them was determined by their placement dates, which are given in facts f2, f6, and f8. Other facts are either about ineligible options or unrelated attributes.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:14b"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "instance_id": "webarena_000298_v0001",
+  "config_name": "openrouter-gpt-4.1-nano",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T19:15:18Z",
+  "predicted_ids": [
+    "g1",
+    "g2"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 2.4708075000016834,
+  "load_duration_s": null,
+  "prompt_eval_count": 796,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 184,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 0.0,
+  "recall": 0.0,
+  "f1": 0.0,
+  "meta": {
+    "why": "The decision depends on identifying completed orders, so the requirement check reads the status of each order. Among the completed orders, the most recent one is determined by the placement date, which is read for the eligible options. Orders with non-completed status are excluded from comparison, so their placement dates are not read.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1-nano",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790450115-tTXgHAdczlS0rGCGgzYW"
+  }
+}

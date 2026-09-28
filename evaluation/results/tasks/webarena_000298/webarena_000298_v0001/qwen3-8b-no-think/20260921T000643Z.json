@@ -1,0 +1,43 @@
+{
+  "instance_id": "webarena_000298_v0001",
+  "config_name": "qwen3-8b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T00:06:55Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 11.10240575,
+  "load_duration_s": 0.008293584,
+  "prompt_eval_count": 847,
+  "prompt_eval_cached_count": 25,
+  "prompt_eval_duration_s": 1.987073,
+  "eval_count": 239,
+  "eval_duration_s": 9.059969,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "The requirement is that the order has status completed. Only orders 237, 682, and 882 passed this. The comparison is most recent, so the date of each completed order was read. The date for order 682 (f4) was used to determine it as the most recent completed order.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:8b"
+  }
+}

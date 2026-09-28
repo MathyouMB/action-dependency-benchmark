@@ -1,0 +1,46 @@
+{
+  "instance_id": "webarena_000774_v0001",
+  "config_name": "qwen3-8b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T00:16:40Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 11.317384292,
+  "load_duration_s": 0.008600792,
+  "prompt_eval_count": 875,
+  "prompt_eval_cached_count": 25,
+  "prompt_eval_duration_s": 2.364282,
+  "eval_count": 218,
+  "eval_duration_s": 8.914687,
+  "error": null,
+  "precision": 0.9,
+  "recall": 1.0,
+  "f1": 0.9474,
+  "meta": {
+    "why": "All reviews have status 'Pending' and are eligible. The task compares star ratings to determine which to delete. Reviews with 2-star ratings are deleted, while 3-star and 5-star reviews are not.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:8b"
+  }
+}

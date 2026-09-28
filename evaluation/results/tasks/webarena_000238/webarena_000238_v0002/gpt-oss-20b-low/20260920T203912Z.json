@@ -1,0 +1,51 @@
+{
+  "instance_id": "webarena_000238_v0002",
+  "config_name": "gpt-oss-20b-low",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-20T20:39:50Z",
+  "predicted_ids": [
+    "f10",
+    "f11",
+    "f13",
+    "f15",
+    "f17",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f9",
+    "f10",
+    "f11",
+    "f13",
+    "f15",
+    "f17"
+  ],
+  "total_duration_s": 11.774353,
+  "load_duration_s": 0.008676709,
+  "prompt_eval_count": 1100,
+  "prompt_eval_cached_count": 76,
+  "prompt_eval_duration_s": 1.268306,
+  "eval_count": 347,
+  "eval_duration_s": 10.471529,
+  "error": null,
+  "precision": 0.9167,
+  "recall": 0.9167,
+  "f1": 0.9167,
+  "meta": {
+    "why": "Requirement reads for all products to determine eligibility; only PS4 Accessories pass. Comparison reads only for the eligible ones\u2019 prices. All other facts are irrelevant to the decision.",
+    "thinking": "We need options: all products listed. Requirement: being in PS4 Accessories category. So facts f3,f5,f9. Others fail. Comparison: price. So f6,f10,f4. Return dependencies.",
+    "think": "low",
+    "model": "gpt-oss:20b"
+  }
+}

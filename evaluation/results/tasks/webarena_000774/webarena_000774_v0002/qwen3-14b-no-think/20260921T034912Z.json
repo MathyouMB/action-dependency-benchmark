@@ -1,0 +1,45 @@
+{
+  "instance_id": "webarena_000774_v0002",
+  "config_name": "qwen3-14b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T03:49:49Z",
+  "predicted_ids": [
+    "f10",
+    "f12",
+    "f14",
+    "f2",
+    "f4",
+    "f6",
+    "f8"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f11",
+    "f12",
+    "f13",
+    "f14"
+  ],
+  "total_duration_s": 19.33953725,
+  "load_duration_s": 0.00489525,
+  "prompt_eval_count": 959,
+  "prompt_eval_cached_count": 46,
+  "prompt_eval_duration_s": 4.245883,
+  "eval_count": 235,
+  "eval_duration_s": 15.076855,
+  "error": null,
+  "precision": 0.5714,
+  "recall": 0.3636,
+  "f1": 0.4444,
+  "meta": {
+    "why": "The requirement is to delete reviews with less than 4 stars. Only reviews with a 5-star rating (328) and 4-star rating (895) pass the requirement. The other reviews are excluded because they have less than 4 stars. The comparison reads only apply to the reviews that passed the requirement.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:14b"
+  }
+}

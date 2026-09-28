@@ -1,0 +1,45 @@
+{
+  "instance_id": "webarena_000771_v0003",
+  "config_name": "qwen3-14b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T03:48:36Z",
+  "predicted_ids": [
+    "f1",
+    "f11",
+    "f13",
+    "f3",
+    "f5",
+    "f7",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f11",
+    "f12",
+    "f13"
+  ],
+  "total_duration_s": 18.698317916,
+  "load_duration_s": 0.005100833,
+  "prompt_eval_count": 956,
+  "prompt_eval_cached_count": 49,
+  "prompt_eval_duration_s": 4.256005,
+  "eval_count": 226,
+  "eval_duration_s": 14.425381,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.6364,
+  "f1": 0.7778,
+  "meta": {
+    "why": "Requirement check for each option based on star rating and status. Only options with 4 stars or higher are eligible. Comparison reads include the star ratings of the eligible options. Other facts are excluded as they do not influence the decision.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:14b"
+  }
+}

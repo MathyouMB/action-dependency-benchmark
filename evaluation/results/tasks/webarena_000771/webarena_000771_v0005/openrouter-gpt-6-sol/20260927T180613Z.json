@@ -1,0 +1,48 @@
+{
+  "instance_id": "webarena_000771_v0005",
+  "config_name": "openrouter-gpt-6-sol",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T18:06:38Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 5.841873834011494,
+  "load_duration_s": null,
+  "prompt_eval_count": 827,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 399,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Ratings determine which reviews qualify. Status is then read only for qualifying reviews: 680 is already approved, while 347 and 352 are pending and need approval.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "openai/gpt-6-sol",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790532392-T1XuIRElUaqJ93UAy32V"
+  }
+}

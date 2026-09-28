@@ -1,0 +1,51 @@
+{
+  "instance_id": "webarena_000404_v0004",
+  "config_name": "openrouter-gpt-4.1-mini",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T18:49:44Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f12",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12"
+  ],
+  "total_duration_s": 2.830225000005157,
+  "load_duration_s": null,
+  "prompt_eval_count": 927,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 365,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "All posts except 'Favorite translated novels' belong to the 'books' forum, so only those pass the requirement. The comparison is based on the post date to find the newest post. The dates of all eligible posts are read to determine the newest one, which is 'What are you reading this week?' posted at 2023-06-15 10:00. The 'Favorite translated novels' post is excluded due to being in the 'gaming' forum.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790448581-EKzGLGqdXBlGAabhzgu9"
+  }
+}

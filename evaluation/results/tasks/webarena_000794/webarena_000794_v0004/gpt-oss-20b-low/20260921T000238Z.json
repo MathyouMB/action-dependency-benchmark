@@ -1,0 +1,44 @@
+{
+  "instance_id": "webarena_000794_v0004",
+  "config_name": "gpt-oss-20b-low",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-21T00:03:27Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 12.123725,
+  "load_duration_s": 0.005342334,
+  "prompt_eval_count": 899,
+  "prompt_eval_cached_count": 189,
+  "prompt_eval_duration_s": 0.947845,
+  "eval_count": 349,
+  "eval_duration_s": 11.149615,
+  "error": null,
+  "precision": 0.8889,
+  "recall": 1.0,
+  "f1": 0.9412,
+  "meta": {
+    "why": "Requirement reads status for all five orders (f2,f4,f6,f8,f10). Comparison reads dates only for the eligible orders (f3,f5,f9). The date of the canceled order f1 is not read, and f7 is irrelevant.",
+    "thinking": "We need options: orders. List all orders: #315, #308, #296, #280, #271. Requirement: non-canceled. So check status. f2, f4, f6, f8, f10. Pass for 308,296,271. Comparison: most recent. Need dates: f1, f3, f5, f7, f9. For eligible: f3 (308), f5 (296), f9 (271). So dependencies: f2,f4,f6,f8,f10,f1,f3,f5,f9. Also need status for 315? requirement read f2. Yes. So list all.",
+    "think": "low",
+    "model": "gpt-oss:20b"
+  }
+}

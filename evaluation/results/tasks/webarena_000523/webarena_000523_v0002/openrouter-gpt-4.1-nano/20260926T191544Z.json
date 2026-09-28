@@ -1,0 +1,49 @@
+{
+  "instance_id": "webarena_000523_v0002",
+  "config_name": "openrouter-gpt-4.1-nano",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T19:15:49Z",
+  "predicted_ids": [
+    "g13",
+    "g15",
+    "g4",
+    "g7",
+    "g9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f13",
+    "f14",
+    "f15",
+    "f16",
+    "f17",
+    "f19"
+  ],
+  "total_duration_s": 2.4589027909969445,
+  "load_duration_s": null,
+  "prompt_eval_count": 1049,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 246,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 0.0,
+  "recall": 0.0,
+  "f1": 0.0,
+  "meta": {
+    "why": "The options are filtered based on whether the user has starred them (requirement). The comparison is based on the number of stars for the eligible repositories. 'umano/AndroidSlidingUpPanel' is not starred by the user, so it fails the requirement check and is excluded from comparison.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1-nano",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790450146-p9deU0nLdOLmRx9j6nGh"
+  }
+}

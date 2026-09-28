@@ -1,0 +1,39 @@
+{
+  "instance_id": "webarena_000431_v0003",
+  "config_name": "gpt-oss-20b-low",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-20T23:51:37Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "total_duration_s": 13.812389042,
+  "load_duration_s": 0.004911625,
+  "prompt_eval_count": 841,
+  "prompt_eval_cached_count": 62,
+  "prompt_eval_duration_s": 1.38591,
+  "eval_count": 364,
+  "eval_duration_s": 12.399157,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "All three products are eligible; per\u2011unit price is compared using price and unit facts for each. The lowest per\u2011unit price comes from Spaas White Taper Candles, so its price and unit facts are read. All six facts are dependencies.",
+    "thinking": "We need options: three products. Requirement: none? maybe availability? Not mentioned. So all pass. Comparison: per unit price: need price and units. For each: f1 price, f2 units; f3 price, f4 units; f5 price, f6 units. Compute per unit: f1 13.32/4=3.33; f3 20.20/4=5.05; f5 14.68/2=7.34. Lowest is f1. So dependencies: f1,f2,f3,f4,f5,f6. Also requirement none. So requirement_check all pass. Provide JSON.",
+    "think": "low",
+    "model": "gpt-oss:20b"
+  }
+}

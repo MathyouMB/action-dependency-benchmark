@@ -1,0 +1,39 @@
+{
+  "instance_id": "webarena_000284_v0004",
+  "config_name": "qwen3-14b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T03:32:23Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7"
+  ],
+  "total_duration_s": 13.250889166,
+  "load_duration_s": 0.0049115,
+  "prompt_eval_count": 781,
+  "prompt_eval_cached_count": 58,
+  "prompt_eval_duration_s": 3.18014,
+  "eval_count": 166,
+  "eval_duration_s": 10.040999,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Requirement (minimum storage capacity of 12 pairs) checked for all options. Only CedarBox and StackRack passed the requirement, so their comparison attribute (cost) was read. MiniStack and StepStack failed the requirement and were excluded from the comparison.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:14b"
+  }
+}

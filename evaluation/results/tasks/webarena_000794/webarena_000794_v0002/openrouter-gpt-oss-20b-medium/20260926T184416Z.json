@@ -1,0 +1,47 @@
+{
+  "instance_id": "webarena_000794_v0002",
+  "config_name": "openrouter-gpt-oss-20b-medium",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T18:44:24Z",
+  "predicted_ids": [
+    "f10",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 3.1640912919974653,
+  "load_duration_s": null,
+  "prompt_eval_count": 901,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 746,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "The status fact (f2, f4, f6, f8, f10) is read for all five orders to determine eligibility (non\u2011canceled). Only the dates of the eligible orders (f3 for #308, f5 for #296, f9 for #271) are read to find the most recent. The date of the canceled order (f1) is never consulted.",
+    "thinking": "We need to produce JSON with keys: options, requirement_check, comparison_reads, dependencies, justification.\n\nTask: Change delivery address for most recent non-canceled order to 4000 Forbes Ave, Pittsburgh, PA.\n\nObserved state facts: f1 to f10.\n\nWe need to list every option named anywhere in the state. Options are orders? The options are orders: #000000315, #000000308, #000000296, #000000280, #000000271. They appear in order of appearance: f1 (315), f3 (308), f5 (296), f7 (280), f9 (271). So options list: Order #000000315, Order #000000308, Order #000000296, Order #000000280, Order #000000271.\n\nRequirement: non-canceled. So requirement attribute: status not canceled. For each option, we need fact id that gives its requirement attribute. That is the status fact: f2 for 315, f4 for 308, f6 for 296, f8 for 280, f10 for 271. Determine pass/fail: 315 canceled -> fail. 308 processing -> pass. 296 processing -> pass. 280 canceled -> fail. 271 pending -> pass. So requirement_check: \"315 f2 fail\", \"308 f4 pass\", \"296 f6 pass\", \"280 f8 fail\", \"271 f10 pass\".\n\nComparison: pick most recent among eligible. So we need date fact for each eligible option: f1 for 315, f3 for 308, f5 for 296, f7 for 280, f9 for 271. But only for those that passed requirement: 308, 296, 271. So comparison_reads: f3 for 308, f5 for 296, f9 for 271.\n\nDependencies: all fact ids from step 2 and step 3: f2, f4, f6, f8, f10, f3, f5, f9. Also f1? Wait f1 is date for 315 but not used because 315 failed requirement. So not included. So dependencies list: f2, f4, f6, f8, f10, f3, f5, f9.\n\nJustification: explain that status read for all five orders; date read only for eligible ones. Provide explanation.\n\nReturn JSON.\n\nCheck format: options array of strings. requirement_check array of strings like \"315 f2 fail\". comparison_reads array of fact ids. dependencies array of fact ids. justification string.\n\nLet's craft.\n\nAlso ensure no extra text.",
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "openai/gpt-oss-20b",
+    "provider": "Novita",
+    "generation_id": "gen-1790448261-Wi1qK4Snws5g3zP8qRAU"
+  }
+}

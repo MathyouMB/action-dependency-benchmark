@@ -1,0 +1,47 @@
+{
+  "instance_id": "webarena_000714_v0002",
+  "config_name": "qwen3-14b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T03:44:28Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11"
+  ],
+  "total_duration_s": 19.799114583,
+  "load_duration_s": 0.005472583,
+  "prompt_eval_count": 937,
+  "prompt_eval_cached_count": 48,
+  "prompt_eval_duration_s": 3.957277,
+  "eval_count": 246,
+  "eval_duration_s": 15.820476,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Only posts in the 'gadgets' forum are eligible. The comparison is based on all-time score. Posts in other forums are excluded, and their scores are not considered.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:14b"
+  }
+}

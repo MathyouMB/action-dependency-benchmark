@@ -1,0 +1,48 @@
+{
+  "instance_id": "webarena_000238_v0004",
+  "config_name": "qwen3-8b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T00:05:40Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f13",
+    "f14",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f7",
+    "f9",
+    "f10",
+    "f11",
+    "f13",
+    "f14"
+  ],
+  "total_duration_s": 14.709549708,
+  "load_duration_s": 0.004420833,
+  "prompt_eval_count": 1009,
+  "prompt_eval_cached_count": 58,
+  "prompt_eval_duration_s": 2.259427,
+  "eval_count": 329,
+  "eval_duration_s": 12.390662,
+  "error": null,
+  "precision": 0.8182,
+  "recall": 0.9,
+  "f1": 0.8572,
+  "meta": {
+    "why": "Requirement read for all options; only those in the PS4 Accessories category are eligible. Comparison read for eligible options to find the most expensive. ASUS ROG Strix Gaming Laptop and PlayStation 5 Console are excluded due to category mismatch.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:8b"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "instance_id": "webarena_000284_v0005",
+  "config_name": "openrouter-gpt-6-sol",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T18:04:01Z",
+  "predicted_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8"
+  ],
+  "total_duration_s": 1.9593922920030309,
+  "load_duration_s": null,
+  "prompt_eval_count": 750,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 146,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Capacity is checked for all four options. Only PairKeeper and StepStack hold at least 12 pairs, so only their prices are compared; PairKeeper is cheaper.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "openai/gpt-6-sol",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790532239-kRv9dIVjbzZNc6iutZJv"
+  }
+}

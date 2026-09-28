@@ -1,0 +1,51 @@
+{
+  "instance_id": "webarena_000404_v0005",
+  "config_name": "qwen3-8b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T00:08:51Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f12",
+    "f13",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12",
+    "f13"
+  ],
+  "total_duration_s": 14.699521417,
+  "load_duration_s": 0.005909917,
+  "prompt_eval_count": 1039,
+  "prompt_eval_cached_count": 44,
+  "prompt_eval_duration_s": 2.434496,
+  "eval_count": 326,
+  "eval_duration_s": 12.199169,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "The requirement is that the post belongs to the books forum. Only posts in the books forum are eligible. The comparison is that the post is the newest. The newest post in the books forum is 'What are you reading this week?' which was posted on 2023-06-15 07:00.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:8b"
+  }
+}

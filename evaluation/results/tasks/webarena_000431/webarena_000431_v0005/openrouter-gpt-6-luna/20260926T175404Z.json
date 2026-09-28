@@ -1,0 +1,43 @@
+{
+  "instance_id": "webarena_000431_v0005",
+  "config_name": "openrouter-gpt-6-luna",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T17:54:45Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "total_duration_s": 7.366770916996757,
+  "load_duration_s": null,
+  "prompt_eval_count": 780,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 800,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "All three listed products pass the open-tab requirement. Their per-unit prices are $9.54, $6.92, and $4.68 respectively, so Spaas White Taper Candles has the lowest per-unit price.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "openai/gpt-6-luna",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790445277-OXNEyZyUL3TIfVpXQcib"
+  }
+}

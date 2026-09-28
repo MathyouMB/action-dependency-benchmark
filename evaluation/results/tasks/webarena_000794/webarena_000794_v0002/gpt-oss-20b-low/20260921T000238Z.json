@@ -1,0 +1,43 @@
+{
+  "instance_id": "webarena_000794_v0002",
+  "config_name": "gpt-oss-20b-low",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-21T00:03:01Z",
+  "predicted_ids": [
+    "f10",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 11.770959875,
+  "load_duration_s": 0.008109583,
+  "prompt_eval_count": 899,
+  "prompt_eval_cached_count": 64,
+  "prompt_eval_duration_s": 1.081181,
+  "eval_count": 310,
+  "eval_duration_s": 10.663564,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Requirement reads the status for all five orders; comparison reads the dates only for the eligible ones (308, 296, 271).",
+    "thinking": "We need options: orders. List all orders: #315, #308, #296, #280, #271. Requirement: not canceled. So check status. Facts: f2, f4, f6, f8, f10. Pass for 308,296,271. Comparison: most recent. Need dates: f1, f3, f5, f7, f9. For eligible: f3 (308), f5 (296), f9 (271). Dependencies: all requirement facts plus comparison facts. So list: f2,f4,f6,f8,f10,f3,f5,f9.",
+    "think": "low",
+    "model": "gpt-oss:20b"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "instance_id": "webarena_000284_v0003",
+  "config_name": "openrouter-claude-opus-5.5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:01:19Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8"
+  ],
+  "total_duration_s": 4.801762207993306,
+  "load_duration_s": null,
+  "prompt_eval_count": 1183,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 303,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Capacity was read for all four options. ClosetTower holds only 8 pairs, below the 12-pair minimum, so it is ruled out and its price (f6) is never compared. Among the eligible options, SlimTower at $37.05 is cheaper than ShoeNest at $68.19 and CedarBox at $92.86, so opening SlimTower's page is correct.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-opus-5.5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790528474-S2pLL2lr1K22kMadbJb5"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "instance_id": "webarena_000431_v0005",
+  "config_name": "qwen2.5-14b",
+  "runner": "ollama",
+  "timestamp": "2026-09-21T04:05:31Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "total_duration_s": 15.875587625,
+  "load_duration_s": 0.006381333,
+  "prompt_eval_count": 821,
+  "prompt_eval_cached_count": 73,
+  "prompt_eval_duration_s": 3.970361,
+  "eval_count": 176,
+  "eval_duration_s": 11.851499,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "All products are in stock and have prices; the lowest price is read for all products.",
+    "thinking": null,
+    "think": null,
+    "model": "qwen2.5:14b"
+  }
+}

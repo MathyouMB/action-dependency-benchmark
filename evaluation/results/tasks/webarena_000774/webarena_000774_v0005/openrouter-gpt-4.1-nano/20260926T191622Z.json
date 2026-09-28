@@ -1,0 +1,45 @@
+{
+  "instance_id": "webarena_000774_v0005",
+  "config_name": "openrouter-gpt-4.1-nano",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T19:16:32Z",
+  "predicted_ids": [
+    "f10",
+    "f12",
+    "f2",
+    "f4",
+    "f6",
+    "f8"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12"
+  ],
+  "total_duration_s": 2.031551332998788,
+  "load_duration_s": null,
+  "prompt_eval_count": 864,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 274,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 0.6667,
+  "recall": 0.4,
+  "f1": 0.5,
+  "meta": {
+    "why": "The decision to delete reviews with less than 4 stars depends on the star ratings (f2, f4, f6, f8, f10, f12). The requirement check filters out reviews with ratings 4 or higher; only those with less than 4 stars are considered for deletion. The comparison reads are the star ratings themselves, which determine eligibility. The action is based on reviews with ratings below 4 stars, so the relevant facts are these star ratings.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1-nano",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790450190-yrMn38h6QjkYha5xtk6w"
+  }
+}

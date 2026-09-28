@@ -1,0 +1,53 @@
+{
+  "instance_id": "webarena_000404_v0005",
+  "config_name": "qwen2.5-14b",
+  "runner": "ollama",
+  "timestamp": "2026-09-21T04:04:13Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f12",
+    "f13",
+    "f14",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12",
+    "f13"
+  ],
+  "total_duration_s": 21.721800667,
+  "load_duration_s": 0.006193292,
+  "prompt_eval_count": 1052,
+  "prompt_eval_cached_count": 65,
+  "prompt_eval_duration_s": 4.563283,
+  "eval_count": 273,
+  "eval_duration_s": 17.110088,
+  "error": null,
+  "precision": 0.8571,
+  "recall": 1.0,
+  "f1": 0.9231,
+  "meta": {
+    "why": "Forum and posting date read for all options; only posts in the 'books' forum and the most recent one are considered. 'Favorite short story collections' and 'Thoughts on classic Russian literature' are excluded due to forum requirement.",
+    "thinking": null,
+    "think": null,
+    "model": "qwen2.5:14b"
+  }
+}

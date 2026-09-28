@@ -1,0 +1,39 @@
+{
+  "instance_id": "webarena_000431_v0004",
+  "config_name": "qwen3-14b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T03:37:18Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "total_duration_s": 16.11061,
+  "load_duration_s": 0.004649833,
+  "prompt_eval_count": 808,
+  "prompt_eval_cached_count": 52,
+  "prompt_eval_duration_s": 3.370687,
+  "eval_count": 204,
+  "eval_duration_s": 12.709626,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "All options are eligible as they are all present in the state. The per unit price is calculated by dividing the total cost by the number of units, so all cost and unit facts are consulted for comparison.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:14b"
+  }
+}

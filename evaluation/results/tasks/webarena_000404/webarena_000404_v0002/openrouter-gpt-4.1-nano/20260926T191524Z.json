@@ -1,0 +1,42 @@
+{
+  "instance_id": "webarena_000404_v0002",
+  "config_name": "openrouter-gpt-4.1-nano",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T19:15:28Z",
+  "predicted_ids": [
+    "f15",
+    "f16"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f7",
+    "f9",
+    "f11",
+    "f12",
+    "f13",
+    "f14",
+    "f15",
+    "f16"
+  ],
+  "total_duration_s": 1.1989291249992675,
+  "load_duration_s": null,
+  "prompt_eval_count": 1015,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 98,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.1818,
+  "f1": 0.3077,
+  "meta": {
+    "why": "The post \"What are you reading this week?\" is the newest post in the books forum, and it is the latest post overall, making it the target for upvoting.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1-nano",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790450127-rmzEvjmO6bbKbWwXFCsw"
+  }
+}

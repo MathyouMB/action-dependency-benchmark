@@ -1,0 +1,44 @@
+{
+  "instance_id": "webarena_000284_v0001",
+  "config_name": "openrouter-claude-opus-5.5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:01:09Z",
+  "predicted_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7"
+  ],
+  "total_duration_s": 4.65416995799751,
+  "load_duration_s": null,
+  "prompt_eval_count": 1178,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 291,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Capacity was read for all four products. Only ShoeNest (20 pairs) and StackRack (18 pairs) hold at least 12 pairs. Their prices were compared, and ShoeNest at $55.14 is cheaper than StackRack at $82.04. The prices of MiniStack (f2) and StepStack (f8) are never consulted because both fail the 9-pair capacity check.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-opus-5.5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790528465-E8YugPSprHhlMAMFTi7X"
+  }
+}

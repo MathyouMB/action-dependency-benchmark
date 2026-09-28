@@ -1,0 +1,39 @@
+{
+  "instance_id": "webarena_000284_v0005",
+  "config_name": "gpt-oss-20b-low",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-20T23:48:37Z",
+  "predicted_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8"
+  ],
+  "total_duration_s": 9.406497208,
+  "load_duration_s": 0.006358,
+  "prompt_eval_count": 811,
+  "prompt_eval_cached_count": 70,
+  "prompt_eval_duration_s": 0.965988,
+  "eval_count": 279,
+  "eval_duration_s": 8.415902,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "The requirement is the minimum storage capacity of 12 pairs, read from f1, f3, f5, and f7 for all options. Only PairKeeper and StepStack pass. The comparison is cheapest, so their prices f4 and f8 are read. Prices for the failed options (f2, f6) are not consulted.",
+    "thinking": "We need to list options: ShoeNest, PairKeeper, MiniStack, StepStack. Requirement: holds at least 12 pairs. Facts: f1, f3, f5, f7. Pass: PairKeeper (13), StepStack (21). Others fail. Comparison: cheapest. Prices: f2, f4, f6, f8. For eligible: PairKeeper f4, StepStack f8. Dependencies: f1,f3,f5,f7,f4,f8. Also maybe f2,f6 irrelevant. Return JSON.",
+    "think": "low",
+    "model": "gpt-oss:20b"
+  }
+}

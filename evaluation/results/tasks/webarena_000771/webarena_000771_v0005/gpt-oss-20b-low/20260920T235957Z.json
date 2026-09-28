@@ -1,0 +1,40 @@
+{
+  "instance_id": "webarena_000771_v0005",
+  "config_name": "gpt-oss-20b-low",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-21T00:01:00Z",
+  "predicted_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f7",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 9.434068125,
+  "load_duration_s": 0.005004833,
+  "prompt_eval_count": 888,
+  "prompt_eval_cached_count": 71,
+  "prompt_eval_duration_s": 1.080488,
+  "eval_count": 265,
+  "eval_duration_s": 8.327498,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.625,
+  "f1": 0.7692,
+  "meta": {
+    "why": "The requirement is a 4\u2011star or higher rating, so each review\u2019s rating fact is read. Reviews 887 (f1) and 689 (f5) fail the requirement. The remaining three pass, so their rating facts (f3, f7, f9) are read for comparison. No other facts are consulted.",
+    "thinking": "We need options: reviews 887,680,689,347,352. Requirement: rating >=4. So facts f1,f3,f5,f7,f9. Step2: check each. f1 1-star fail. f3 5-star pass. f5 3-star fail. f7 4-star pass. f9 4-star pass. Step3: comparison rating for passed: f3,f7,f9. Dependencies: f1,f3,f5,f7,f9.",
+    "think": "low",
+    "model": "gpt-oss:20b"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "instance_id": "webarena_000714_v0005",
+  "config_name": "openrouter-gpt-6-luna",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T17:55:40Z",
+  "predicted_ids": [
+    "f1",
+    "f11",
+    "f12",
+    "f13",
+    "f15",
+    "f16",
+    "f17",
+    "f19",
+    "f2",
+    "f20",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f11",
+    "f12",
+    "f13",
+    "f15",
+    "f16",
+    "f17",
+    "f19",
+    "f20"
+  ],
+  "total_duration_s": 3.5452448750002077,
+  "load_duration_s": null,
+  "prompt_eval_count": 998,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 403,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "The gadgets forum requirement is checked for every post. All-time scores are compared only for the gadgets posts; post 19459 has the highest score, 1061.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "openai/gpt-6-luna",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790445336-y76qJyIQhq4sbieExDQf"
+  }
+}

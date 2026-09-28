@@ -1,0 +1,43 @@
+{
+  "instance_id": "webarena_000794_v0003",
+  "config_name": "qwen2.5-14b",
+  "runner": "ollama",
+  "timestamp": "2026-09-21T04:17:42Z",
+  "predicted_ids": [
+    "f10",
+    "f2",
+    "f3",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8"
+  ],
+  "expected_ids": [
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 19.941044875,
+  "load_duration_s": 0.007003375,
+  "prompt_eval_count": 960,
+  "prompt_eval_cached_count": 100,
+  "prompt_eval_duration_s": 4.145654,
+  "eval_count": 246,
+  "eval_duration_s": 15.672931,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.875,
+  "f1": 0.9333,
+  "meta": {
+    "why": "Status read for all orders; only processing and pending orders are considered for address change. The most recent processing order is selected for address change.",
+    "thinking": null,
+    "think": null,
+    "model": "qwen2.5:14b"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "instance_id": "webarena_000771_v0001",
+  "config_name": "openrouter-llama-4-maverick",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T19:30:48Z",
+  "predicted_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f7",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 11.912717457998951,
+  "load_duration_s": null,
+  "prompt_eval_count": 832,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 147,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 0.625,
+  "f1": 0.7692,
+  "meta": {
+    "why": "Rating read for all reviews to check if they are four stars or higher; only the ratings of eligible reviews are compared. Status facts are not compared as per task definition.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "meta-llama/llama-4-maverick",
+    "provider": "DigitalOcean",
+    "generation_id": "gen-1790451036-7kVOLeGRUrFgeFVIG8Od"
+  }
+}

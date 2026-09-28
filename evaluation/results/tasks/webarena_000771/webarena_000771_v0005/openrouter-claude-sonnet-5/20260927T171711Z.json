@@ -1,0 +1,48 @@
+{
+  "instance_id": "webarena_000771_v0005",
+  "config_name": "openrouter-claude-sonnet-5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:17:42Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 4.632921750002424,
+  "load_duration_s": null,
+  "prompt_eval_count": 1266,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 415,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "The task requires reviews with 4+ stars, so each review's star rating (f1, f3, f5, f7, f9) is read to determine eligibility. Reviews 887 and 689 fail the star requirement and are excluded. Among the eligible reviews (680, 347, 352), their status (f4, f8, f10) is checked to determine if action is needed: 680 is already Approved, so no action is required, while 347 and 352 are Pending and thus selected for approval.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-sonnet-5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790529458-JZ5uLoUcZlnCovCmAiB8"
+  }
+}

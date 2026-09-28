@@ -1,0 +1,44 @@
+{
+  "instance_id": "webarena_000431_v0003",
+  "config_name": "openrouter-claude-sonnet-5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:15:36Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "total_duration_s": 6.422602790989913,
+  "load_duration_s": null,
+  "prompt_eval_count": 1217,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 517,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "All three products are open tabs (no explicit requirement filters them out), so the comparison must be computed for each: per-unit price = price/units, requiring both the price fact and the units fact for every option. Spaas ($3.33/unit) beats Pink ($5.05/unit) and Starfish ($7.34/unit), so all six facts are needed to determine and confirm the winner.",
+    "thinking": "Calculating per-unit price for each: Spaas is 13.32/4=3.33, Pink is 20.20/4=5.05, and Starfish is 14.68/2=7.34. Spaas has the lowest per-unit price, so that's the correct choice, and I need all six facts since price and units matter for every option.\n\n",
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-sonnet-5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790529330-YdzOj2KBeCfH3E7RU3NS"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "instance_id": "webarena_000771_v0001",
+  "config_name": "openrouter-claude-opus-5.5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:05:10Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f2",
+    "f3",
+    "f5",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 7.732922208000673,
+  "load_duration_s": null,
+  "prompt_eval_count": 1270,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 546,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "The requirement is a rating of four stars or higher, so the star rating was read for all five reviews. Reviews 699 and 756 fail with 2 stars. For the three eligible reviews, status decides which still need approving: 396 is already Approved, so only 352 and 347, both Pending, are selected. The statuses of the ineligible reviews (f4, f6) are never consulted, so they are not dependencies.",
+    "thinking": "I need to filter for reviews rated 4 stars or higher, then only approve the ones still marked pending \u2014 396 is already approved so I'll skip it, leaving 352 and 347 as the ones to approve.\n\n",
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-opus-5.5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790528702-PwlAAJTvpzmHtolfItGv"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "instance_id": "webarena_000284_v0002",
+  "config_name": "gpt-oss-20b-low",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-20T23:48:09Z",
+  "predicted_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8"
+  ],
+  "total_duration_s": 10.506554792,
+  "load_duration_s": 0.00582525,
+  "prompt_eval_count": 811,
+  "prompt_eval_cached_count": 73,
+  "prompt_eval_duration_s": 0.960429,
+  "eval_count": 312,
+  "eval_duration_s": 9.51994,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Capacity read for all four options (f1,f3,f5,f7). Only the eligible ones (StepStack, ClosetTower, MiniStack) have their price read (f4,f6,f8). StackRack\u2019s price f2 is never consulted because it fails the requirement.",
+    "thinking": "We need to list options: StackRack, StepStack, ClosetTower, MiniStack. Requirement: holds at least 12 pairs. Facts: f1, f3, f5, f7 give capacities. Pass: StepStack (15), ClosetTower (12). StackRack fails (11), MiniStack passes (24). Comparison: cheapest among eligible: StepStack cost f4 $36.38, ClosetTower f6 $66.58, MiniStack f8 $72.91. So comparison facts: f4, f6, f8. Dependencies: f1,f3,f5,f7,f4,f6,f8. Also requirement facts for all options: f1,f3,f5,f7. Provide JSON.",
+    "think": "low",
+    "model": "gpt-oss:20b"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "instance_id": "webarena_000771_v0001",
+  "config_name": "openrouter-claude-sonnet-5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:17:16Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f2",
+    "f3",
+    "f5",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 4.86316741599876,
+  "load_duration_s": null,
+  "prompt_eval_count": 1268,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 361,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "The task requires approving pending reviews with 4+ stars, so each review's star rating and current status must be checked to determine eligibility. 396 meets the rating requirement but is already Approved, so no action needed. 699 and 756 fail the rating requirement. 352 and 347 meet both the rating and pending-status requirements, making them the ones approved. No comparison attribute (like recency or helpfulness) is involved since the task only filters by rating and status, not ranks by any metric.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-sonnet-5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790529431-crTUBn1tUK7Chf1PuWFj"
+  }
+}

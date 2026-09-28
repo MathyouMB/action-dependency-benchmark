@@ -1,0 +1,38 @@
+{
+  "instance_id": "webarena_000298_v0003",
+  "config_name": "openrouter-gpt-4.1-nano",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T19:15:21Z",
+  "predicted_ids": [
+    "f3",
+    "f5"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f9"
+  ],
+  "total_duration_s": 1.562836042001436,
+  "load_duration_s": null,
+  "prompt_eval_count": 796,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 214,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.2857,
+  "f1": 0.4444,
+  "meta": {
+    "why": "The decision to open the most recent completed order depends on identifying which orders are completed. Orders 343 and 706 are completed, but 706 is more recent (placed on June 5, 2026, compared to 343 on June 10, 2026). The status of order 706 (f3) and order 657 (f5) are read to determine completion, and the date of order 706 is used to identify it as the most recent completed order. Orders with other statuses are irrelevant for this decision.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1-nano",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790450119-mXJ7OTC3bdWl3PScsgzh"
+  }
+}

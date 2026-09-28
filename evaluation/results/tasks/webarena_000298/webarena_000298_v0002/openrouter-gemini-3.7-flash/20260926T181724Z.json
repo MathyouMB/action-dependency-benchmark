@@ -1,0 +1,45 @@
+{
+  "instance_id": "webarena_000298_v0002",
+  "config_name": "openrouter-gemini-3.7-flash",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T18:17:34Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f3",
+    "f5",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 5.053070417001436,
+  "load_duration_s": null,
+  "prompt_eval_count": 851,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 617,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Status was checked for all orders to determine eligibility. Dates were only read for the completed orders (193 and 186) to find the most recent one. Dates for non-completed orders (f2, f4, f6) were ignored.",
+    "thinking": "**Identifying Order Dependencies**\n\nI am currently focused on pinpointing which specific order is the most recent completed one among the available options. This requires a quick scan to establish that temporal order.\n\n",
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "google/gemini-3.7-flash",
+    "provider": "Google",
+    "generation_id": "gen-1790446649-6hYQJr152cBgSV4F0Op9"
+  }
+}

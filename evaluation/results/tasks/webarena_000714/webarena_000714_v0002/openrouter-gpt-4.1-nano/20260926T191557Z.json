@@ -1,0 +1,45 @@
+{
+  "instance_id": "webarena_000714_v0002",
+  "config_name": "openrouter-gpt-4.1-nano",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T19:16:02Z",
+  "predicted_ids": [
+    "f10",
+    "f12",
+    "f2",
+    "f4",
+    "f6",
+    "f8"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11"
+  ],
+  "total_duration_s": 1.8352753749932162,
+  "load_duration_s": null,
+  "prompt_eval_count": 862,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 233,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 0.6667,
+  "recall": 0.4,
+  "f1": 0.5,
+  "meta": {
+    "why": "All options are in the 'gadgets' forum and pass the requirement check. The comparison attribute for each is the all-time score, which is read for all passing options. The decision to thumbs down post 19459 depends on comparing their scores, specifically favoring the highest score, which is 857 for post 19459.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1-nano",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790450160-rgQARoHnkRgYCwVmuGKg"
+  }
+}

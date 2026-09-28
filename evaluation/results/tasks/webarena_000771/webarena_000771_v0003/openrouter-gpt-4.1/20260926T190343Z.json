@@ -1,0 +1,51 @@
+{
+  "instance_id": "webarena_000771_v0003",
+  "config_name": "openrouter-gpt-4.1",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T19:03:48Z",
+  "predicted_ids": [
+    "f1",
+    "f11",
+    "f12",
+    "f13",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f11",
+    "f12",
+    "f13"
+  ],
+  "total_duration_s": 1.894604666995292,
+  "load_duration_s": null,
+  "prompt_eval_count": 894,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 239,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Star rating facts (f1, f3, f5, f7, f9, f11, f13) are read for all reviews to check eligibility (4 stars or higher). Status facts (f2, f6, f8, f12) are read only for eligible reviews to determine which are already approved and which need approval. Ineligible reviews' statuses are not read.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790449426-XcvOfu6El3vBPUDl66jE"
+  }
+}

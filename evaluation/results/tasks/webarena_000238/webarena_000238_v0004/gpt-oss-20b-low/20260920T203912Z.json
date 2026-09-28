@@ -1,0 +1,43 @@
+{
+  "instance_id": "webarena_000238_v0004",
+  "config_name": "gpt-oss-20b-low",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-20T20:40:20Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f13",
+    "f14",
+    "f2",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f7",
+    "f9",
+    "f10",
+    "f11",
+    "f13",
+    "f14"
+  ],
+  "total_duration_s": 11.468300417,
+  "load_duration_s": 0.005065042,
+  "prompt_eval_count": 1023,
+  "prompt_eval_cached_count": 75,
+  "prompt_eval_duration_s": 1.292852,
+  "eval_count": 305,
+  "eval_duration_s": 10.141546,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.6,
+  "f1": 0.75,
+  "meta": {
+    "why": "All three items are in the PS4 Accessories category, so the requirement fact ids f1, f9, f13 are read and all pass. The comparison is the price, so f2, f10, f14 are read. No other facts are needed.",
+    "thinking": "We need options: items in PS4 Accessories category: ASTRO Gaming A50, Collective Minds Strike Pack, PlayStation 4 Camera. Also maybe others? Only those. Step1 list in order of appearance: f1 product, f9 product, f13 product. Step2 requirement: likely category PS4 Accessories? But requirement is that it's in PS4 Accessories. All are. So pass. Fact ids: f1, f9, f13. Step3 comparison: most expensive. So compare prices: f2, f10, f14. All three eligible. Dependencies: f1,f9,f13,f2,f10,f14. Return JSON.",
+    "think": "low",
+    "model": "gpt-oss:20b"
+  }
+}

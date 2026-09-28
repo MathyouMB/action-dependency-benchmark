@@ -1,0 +1,43 @@
+{
+  "instance_id": "webarena_000298_v0005",
+  "config_name": "qwen2.5-14b",
+  "runner": "ollama",
+  "timestamp": "2026-09-21T04:02:35Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "total_duration_s": 14.726995791,
+  "load_duration_s": 0.007229541,
+  "prompt_eval_count": 862,
+  "prompt_eval_cached_count": 68,
+  "prompt_eval_duration_s": 3.57917,
+  "eval_count": 177,
+  "eval_duration_s": 11.088167,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Completion status read for all orders; date read only for the three eligible ones. Pending and cancelled orders' dates are never compared.",
+    "thinking": null,
+    "think": null,
+    "model": "qwen2.5:14b"
+  }
+}

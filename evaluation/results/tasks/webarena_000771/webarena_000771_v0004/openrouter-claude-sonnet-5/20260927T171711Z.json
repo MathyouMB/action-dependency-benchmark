@@ -1,0 +1,54 @@
+{
+  "instance_id": "webarena_000771_v0004",
+  "config_name": "openrouter-claude-sonnet-5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:17:38Z",
+  "predicted_ids": [
+    "f1",
+    "f11",
+    "f12",
+    "f13",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f11",
+    "f12",
+    "f13"
+  ],
+  "total_duration_s": 4.892909249989316,
+  "load_duration_s": null,
+  "prompt_eval_count": 1365,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 418,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "All reviews' star ratings must be checked against the 4+ requirement (f1,f3,f5,f7,f9,f11,f13). Among those passing the star requirement (360,352,347,862), their status must be checked to see if they are already Approved (f4,f12) or Pending (f6,f8) - only Pending ones need approval action, which explains why only 352 and 347 were selected despite 360 and 862 also having 4+ stars.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-sonnet-5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790529453-LZZThpG2fglqYjgQGJEJ"
+  }
+}

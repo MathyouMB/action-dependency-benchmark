@@ -1,0 +1,39 @@
+{
+  "instance_id": "webarena_000794_v0001",
+  "config_name": "openrouter-gpt-4.1-nano",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T19:16:34Z",
+  "predicted_ids": [
+    "f2",
+    "f4"
+  ],
+  "expected_ids": [
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 2.0378562090045307,
+  "load_duration_s": null,
+  "prompt_eval_count": 839,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 261,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 0.25,
+  "f1": 0.4,
+  "meta": {
+    "why": "The task requires changing the address for the most recent non-canceled order. Order #000000315 is canceled, so it is excluded. Orders #000000280 is canceled, so it is excluded. Orders #000000308 and #000000296 are both processing, but #000000308 is more recent (placed on 2023-06-03 vs. 2023-05-17). The decision depends on the status and date of these orders, specifically the status (f2) to determine eligibility and the date (f4) to identify the most recent eligible order.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1-nano",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790450192-KLVtic0HvlXYfqqYliVC"
+  }
+}

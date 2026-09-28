@@ -1,0 +1,48 @@
+{
+  "instance_id": "webarena_000771_v0002",
+  "config_name": "openrouter-claude-opus-5.5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:05:17Z",
+  "predicted_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "total_duration_s": 7.541454709004029,
+  "load_duration_s": null,
+  "prompt_eval_count": 1272,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 462,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "The requirement is a rating of four stars or higher, so all five ratings were read. This task has no winner to pick. Instead, the status of each eligible review decides whether it still needs approval. 347 and 352 are Pending, so they are approved. 895 is already Approved, so it is left out. The statuses of the failing reviews (f4 for 953 and f10 for 821) were never consulted.",
+    "thinking": "I need to filter for reviews rated 4+ stars, then check which are still pending since 895 is already approved and should be excluded. That leaves 347, 352, and 895 as candidates, but I need to verify status by checking fields f2, f6, f8 alongside f1, f3, f5, f7, f9.\n\n",
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-opus-5.5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790528710-rbR4Drdp3z695xDgRTm4"
+  }
+}

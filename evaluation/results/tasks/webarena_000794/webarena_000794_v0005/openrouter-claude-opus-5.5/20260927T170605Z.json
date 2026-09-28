@@ -1,0 +1,48 @@
+{
+  "instance_id": "webarena_000794_v0005",
+  "config_name": "openrouter-claude-opus-5.5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:06:30Z",
+  "predicted_ids": [
+    "f10",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 4.804696874998626,
+  "load_duration_s": null,
+  "prompt_eval_count": 1272,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 278,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "The non-canceled status was read for all five orders, which rules out 315 and 280. Placement dates were then compared only among the eligible orders 308, 296 and 271. Order 308 has the latest date among them (2023-06-03). The dates of the canceled orders (f1, f7) are never consulted.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-opus-5.5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790528786-61pOgKvra0hjUnCZLRmk"
+  }
+}

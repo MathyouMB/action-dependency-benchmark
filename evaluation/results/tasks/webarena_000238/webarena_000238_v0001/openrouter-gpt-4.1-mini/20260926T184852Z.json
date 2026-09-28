@@ -1,0 +1,53 @@
+{
+  "instance_id": "webarena_000238_v0001",
+  "config_name": "openrouter-gpt-4.1-mini",
+  "runner": "openrouter",
+  "timestamp": "2026-09-26T18:48:56Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f11",
+    "f13",
+    "f15",
+    "f17",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f13",
+    "f15",
+    "f17"
+  ],
+  "total_duration_s": 3.2007743750000373,
+  "load_duration_s": null,
+  "prompt_eval_count": 1041,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 430,
+  "eval_duration_s": null,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Requirement is being in the 'PS4 Accessories' category, checked for all options. Only PowerA DualShock 4 Charging Station, HORI Mini Wired Gamepad, and ASTRO Gaming A50 Wireless Headset + Base Station Gen 4 pass. The comparison is the cost among these eligible options, so their prices are read. Other options fail the category requirement and their prices are not considered.",
+    "thinking": null,
+    "reasoning": null,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "generation_id": "gen-1790448533-02BeuYBt9XTVqTF9QbGu"
+  }
+}

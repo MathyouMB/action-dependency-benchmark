@@ -1,0 +1,43 @@
+{
+  "instance_id": "webarena_000298_v0001",
+  "config_name": "gpt-oss-20b-low",
+  "runner": "gpt_oss_ollama",
+  "timestamp": "2026-09-20T23:14:22Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 18.046470709,
+  "load_duration_s": 7.884500542,
+  "prompt_eval_count": 856,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": 1.00995,
+  "eval_count": 300,
+  "eval_duration_s": 9.131281,
+  "error": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "The requirement is that the order status is completed, so f1, f3, f5, f7, and f9 are read for all options. Only orders 237, 682, and 882 pass. The comparison is the most recent placement date, so f2, f4, and f10 are read for the eligible orders. The cancelled orders\u2019 dates are never consulted. The dependency list includes all requirement facts and the comparison facts for the eligible options.",
+    "thinking": "We need options: orders 237,682,967,921,882. Requirement: status completed. So facts f1,f3,f5,f7,f9. Pass for 237,682,882. Comparison: most recent placed date. So dates f2,f4,f6,f8,f10. For passed ones: f2,f4,f10. Dependencies: f1,f3,f5,f7,f9,f2,f4,f10.",
+    "think": "low",
+    "model": "gpt-oss:20b"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "instance_id": "webarena_000774_v0005",
+  "config_name": "qwen3-14b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T03:50:45Z",
+  "predicted_ids": [
+    "f10",
+    "f12",
+    "f2",
+    "f4",
+    "f6",
+    "f8"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12"
+  ],
+  "total_duration_s": 15.339666583,
+  "load_duration_s": 0.004821833,
+  "prompt_eval_count": 918,
+  "prompt_eval_cached_count": 46,
+  "prompt_eval_duration_s": 4.084142,
+  "eval_count": 175,
+  "eval_duration_s": 11.238036,
+  "error": null,
+  "precision": 0.6667,
+  "recall": 0.4,
+  "f1": 0.5,
+  "meta": {
+    "why": "Requirement check for all options; comparison reads only for options that passed the requirement check. Facts that determine eligibility and comparison attributes are included.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:14b"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "instance_id": "webarena_000298_v0002",
+  "config_name": "openrouter-claude-opus-5.5",
+  "runner": "openrouter",
+  "timestamp": "2026-09-27T17:01:39Z",
+  "predicted_ids": [
+    "f1",
+    "f10",
+    "f3",
+    "f5",
+    "f7",
+    "f8",
+    "f9"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 4.337291332994937,
+  "load_duration_s": null,
+  "prompt_eval_count": 1196,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration_s": null,
+  "eval_count": 261,
+  "eval_duration_s": null,
+  "error": null,
+  "answers": null,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "meta": {
+    "why": "Status was read for all five orders, and only 193 and 186 are completed. Their dates were then compared: 193 (May 29, 2026) is later than 186 (April 21, 2026), so 193 is the most recent completed order. The dates of the non-completed orders (f2, f4, f6) are never consulted.",
+    "thinking": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "model": "anthropic/claude-opus-5.5",
+    "provider": "Claude Platform on AWS",
+    "generation_id": "gen-1790528494-h0WdBizpsTCHsJnFLFdQ"
+  }
+}

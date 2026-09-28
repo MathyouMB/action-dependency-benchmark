@@ -1,0 +1,41 @@
+{
+  "instance_id": "webarena_000774_v0003",
+  "config_name": "qwen3-8b-no-think",
+  "runner": "qwen3_ollama",
+  "timestamp": "2026-09-21T00:17:05Z",
+  "predicted_ids": [
+    "f10",
+    "f2",
+    "f4",
+    "f6",
+    "f8"
+  ],
+  "expected_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "total_duration_s": 13.099120083,
+  "load_duration_s": 0.007183,
+  "prompt_eval_count": 878,
+  "prompt_eval_cached_count": 46,
+  "prompt_eval_duration_s": 2.186199,
+  "eval_count": 276,
+  "eval_duration_s": 10.855512,
+  "error": null,
+  "precision": 0.8,
+  "recall": 0.4444,
+  "f1": 0.5714,
+  "meta": {
+    "why": "The requirement is that the review has a status of 'Pending' and a rating less than 4 stars. Reviews 351, 353, and 780 are pending, but only 349, 351, and 353 have ratings less than 4 stars. Reviews 351 and 353 have 3-star ratings, so they are eligible for deletion. Review 780 has a 5-star rating and is not deleted. The dependency includes the status and rating facts for all relevant reviews.",
+    "thinking": null,
+    "think": false,
+    "model": "qwen3:8b"
+  }
+}
