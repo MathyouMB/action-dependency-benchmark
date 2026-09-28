@@ -10,13 +10,15 @@ Actions Depend On?*"
 <hr/>
 
 A long-running agent often acts on state it observed earlier, which may have
-changed by the time the action runs. It's costly and time consuming to revalidate everything when only some of its state matters on whether the action is still justified.
+changed by the time the action runs. It's costly and time consuming to revalidate everything when only some of its state will determine whether the action is still justified.
+
 **Action dependency identification** is the task of picking out that subset:
 given a user task, the observed state as a list of atomic facts, and a proposed
 action, name the facts that should be rechecked before executing.
-    
-Each benchmark instance gives a model exactly that, and is scored against a
-hand-annotated question set with precision, recall, and F1.
+
+This project is a benchmark that evaluates how well models can identify the dependencies of an action.
+
+For each task, the benchmark provides a populates a prompt with a task, the observed state, and the proposed action, and asks the model to return a list of fact IDs that the action depends on.
 
 ## Setup
 
@@ -26,8 +28,7 @@ Requires Python 3.13 and [uv](https://docs.astral.sh/uv/).
 uv sync
 ```
 
-API keys go in a `.env` file at the repo root (loaded by
-[env.py](src/benchmark/env.py)); only the keys for the models you intend to run
+API keys go in a `.env` file at the repo root. Only the keys for the models you intend to run
 are needed:
 
 ```
