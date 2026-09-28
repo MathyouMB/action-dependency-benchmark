@@ -4,8 +4,8 @@
 
 <hr/>
 
-This repository contains the code and model configurations for "*Can AI Agents Identify What State Their
-Actions Depend On?*"
+This repository contains the source code used in the "*Can AI Agents Identify What State Their
+Actions Depend On?*" paper.
 
 <hr/>
 
