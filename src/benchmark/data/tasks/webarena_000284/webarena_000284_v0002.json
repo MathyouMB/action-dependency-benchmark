@@ -1,0 +1,126 @@
+{
+  "instance_id": "webarena_000284_v0002",
+  "scenario_id": "webarena_000284",
+  "proposed_action": {
+    "template": "Open the product page for {{selected_product}}",
+    "arguments": {
+      "selected_product": "StepStack"
+    },
+    "text": "Open the product page for StepStack"
+  },
+  "state": [
+    {
+      "id": "f1",
+      "text": "StackRack holds 11 pairs",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f2",
+      "text": "StackRack costs $77.56",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f3",
+      "text": "StepStack holds 15 pairs",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f4",
+      "text": "StepStack costs $36.38",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f5",
+      "text": "ClosetTower holds 12 pairs",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f6",
+      "text": "ClosetTower costs $66.58",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f7",
+      "text": "MiniStack holds 24 pairs",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f8",
+      "text": "MiniStack costs $72.91",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    }
+  ],
+  "supporting_fact_ids": ["f1", "f3", "f4", "f5", "f6", "f7", "f8"],
+  "webarena_data": {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 284,
+    "intent_template_id": 207,
+    "start_urls": [
+      "__SHOPPING__"
+    ],
+    "intent": "View the product page for the least expensive shoe storage with a minimum storage capacity of 12 pairs.",
+    "intent_template": "View the product page for the least expensive {{product}} with a minimum storage capacity of {{min_storage}}.",
+    "instantiation_dict": {
+      "product": "shoe storage",
+      "min_storage": "12 pairs"
+    },
+    "eval": [
+      {
+        "evaluator": "AgentResponseEvaluator",
+        "results_schema": {
+          "type": "null"
+        },
+        "expected": {
+          "task_type": "navigate",
+          "status": "SUCCESS",
+          "retrieved_data": null
+        }
+      },
+      {
+        "evaluator": "NetworkEventEvaluator",
+        "expected": {
+          "url": "__SHOPPING__/onlyeasy-over-the-door-shoe-storage-organizer-hanging-shoe-rack-holder-with-24-large-fabric-pockets-22-1-x-61-4-herringbone-grey-mxrodsb1p.html"
+        }
+      }
+    ],
+    "revision": 2
+  },
+  "generation": {
+    "seed": 2,
+    "variant_index": 2
+  }
+}

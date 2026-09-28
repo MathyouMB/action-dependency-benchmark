@@ -1,0 +1,195 @@
+{
+  "instance_id": "webarena_000774_v0005",
+  "scenario_id": "webarena_000774",
+  "task": "Delete all pending reviews with less than 4 stars",
+  "state": [
+    {
+      "id": "f1",
+      "text": "Review \"689\" for \"Helios Endurance Tank\" has status \"Approved\"",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f2",
+      "text": "Review \"689\" has a 3-star rating",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f3",
+      "text": "Review \"313\" for \"Cassia Funnel Sweatshirt\" has status \"Not Approved\"",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f4",
+      "text": "Review \"313\" has a 4-star rating",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f5",
+      "text": "Review \"351\" for \"Argus All-Weather Tank\" has status \"Pending\"",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f6",
+      "text": "Review \"351\" has a 3-star rating",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f7",
+      "text": "Review \"680\" for \"Antonia Racer Tank\" has status \"Pending\"",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f8",
+      "text": "Review \"680\" has a 5-star rating",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f9",
+      "text": "Review \"353\" for \"Electra Bra Top\" has status \"Pending\"",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f10",
+      "text": "Review \"353\" has a 1-star rating",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f11",
+      "text": "Review \"349\" for \"Breathe Easy Tank\" has status \"Pending\"",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f12",
+      "text": "Review \"349\" has a 1-star rating",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    }
+  ],
+  "proposed_action": {
+    "template": "Delete reviews {{selected_reviews}}",
+    "arguments": {
+      "selected_reviews": [
+        "349",
+        "351",
+        "353"
+      ]
+    },
+    "text": "Delete reviews ['349', '351', '353']"
+  },
+  "supporting_fact_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12"
+  ],
+  "webarena_data": {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 774,
+    "intent_template_id": 246,
+    "start_urls": [
+      "__SHOPPING_ADMIN__"
+    ],
+    "intent": "Delete all pending reviews with less than 4 stars",
+    "intent_template": "Delete all {{review_type}}",
+    "instantiation_dict": {
+      "review_type": "pending reviews with less than 4 stars"
+    },
+    "eval": [
+      {
+        "evaluator": "AgentResponseEvaluator",
+        "results_schema": {
+          "type": "null"
+        },
+        "expected": {
+          "task_type": "mutate",
+          "status": "SUCCESS",
+          "retrieved_data": null
+        }
+      },
+      {
+        "evaluator": "NetworkEventEvaluator",
+        "expected": {
+          "url": "__SHOPPING_ADMIN__/review/product/delete/id/351/",
+          "response_status": 302,
+          "http_method": "POST"
+        }
+      },
+      {
+        "evaluator": "NetworkEventEvaluator",
+        "expected": {
+          "url": "__SHOPPING_ADMIN__/review/product/delete/id/353/",
+          "response_status": 302,
+          "http_method": "POST"
+        }
+      },
+      {
+        "evaluator": "NetworkEventEvaluator",
+        "expected": {
+          "url": "__SHOPPING_ADMIN__/review/product/delete/id/349/",
+          "response_status": 302,
+          "http_method": "POST"
+        }
+      }
+    ],
+    "revision": 2
+  },
+  "generation": {
+    "seed": 5,
+    "variant_index": 5
+  }
+}

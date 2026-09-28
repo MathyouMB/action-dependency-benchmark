@@ -1,0 +1,170 @@
+{
+  "instance_id": "webarena_000771_v0001",
+  "scenario_id": "webarena_000771",
+  "task": "Approve reviews with four stars or higher to display in our store.",
+  "state": [
+    {
+      "id": "f1",
+      "text": "Review \"396\" for \"Breathe Easy Tank\" has a 5-star rating",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f2",
+      "text": "Review \"396\" has status \"Approved\"",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f3",
+      "text": "Review \"699\" for \"Selene Yoga Hoodie\" has a 2-star rating",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f4",
+      "text": "Review \"699\" has status \"Pending\"",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f5",
+      "text": "Review \"756\" for \"Helios Endurance Tank\" has a 2-star rating",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f6",
+      "text": "Review \"756\" has status \"Approved\"",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f7",
+      "text": "Review \"352\" for \"Electra Bra Top\" has a 5-star rating",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f8",
+      "text": "Review \"352\" has status \"Pending\"",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f9",
+      "text": "Review \"347\" for \"Argus All-Weather Tank\" has a 5-star rating",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f10",
+      "text": "Review \"347\" has status \"Pending\"",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    }
+  ],
+  "proposed_action": {
+    "template": "Approve reviews {{selected_reviews}}",
+    "arguments": {
+      "selected_reviews": [
+        "347",
+        "352"
+      ]
+    },
+    "text": "Approve reviews ['347', '352']"
+  },
+  "supporting_fact_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "webarena_data": {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 771,
+    "intent_template_id": 243,
+    "start_urls": [
+      "__SHOPPING_ADMIN__"
+    ],
+    "intent": "Approve reviews with four stars or higher to display in our store.",
+    "intent_template": "Approve reviews with four stars or higher to display in our store.",
+    "instantiation_dict": {},
+    "eval": [
+      {
+        "evaluator": "AgentResponseEvaluator",
+        "results_schema": {
+          "type": "null"
+        },
+        "expected": {
+          "task_type": "mutate",
+          "status": "SUCCESS",
+          "retrieved_data": null
+        }
+      },
+      {
+        "evaluator": "NetworkEventEvaluator",
+        "expected": {
+          "http_method": "POST",
+          "url": "__SHOPPING_ADMIN__/review/product/save/id/352",
+          "post_data": {
+            "status_id": "1"
+          },
+          "response_status": 302
+        }
+      },
+      {
+        "evaluator": "NetworkEventEvaluator",
+        "expected": {
+          "http_method": "POST",
+          "url": "__SHOPPING_ADMIN__/review/product/save/id/347",
+          "post_data": {
+            "status_id": "1"
+          },
+          "response_status": 302
+        }
+      }
+    ],
+    "revision": 2
+  },
+  "generation": {
+    "seed": 1,
+    "variant_index": 1
+  }
+}

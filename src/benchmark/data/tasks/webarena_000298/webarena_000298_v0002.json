@@ -1,0 +1,151 @@
+{
+  "instance_id": "webarena_000298_v0002",
+  "scenario_id": "webarena_000298",
+  "proposed_action": {
+    "template": "Open the order details page for order {{selected_order_id}}",
+    "arguments": {
+      "selected_order_id": 193
+    },
+    "text": "Open the order details page for order 193"
+  },
+  "state": [
+    {
+      "id": "f1",
+      "text": "Order 983 has status processing",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f2",
+      "text": "Order 983 was placed on February 13, 2026",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "temporal",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f3",
+      "text": "Order 969 has status processing",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f4",
+      "text": "Order 969 was placed on March 6, 2026",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "temporal",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f5",
+      "text": "Order 157 has status pending",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f6",
+      "text": "Order 157 was placed on June 5, 2026",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "temporal",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f7",
+      "text": "Order 193 has status completed",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f8",
+      "text": "Order 193 was placed on May 29, 2026",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "temporal",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f9",
+      "text": "Order 186 has status completed",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f10",
+      "text": "Order 186 was placed on April 21, 2026",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "temporal",
+        "polarity": "positive"
+      }
+    }
+  ],
+  "supporting_fact_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "webarena_data": {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 298,
+    "intent_template_id": 180,
+    "start_urls": [
+      "__SHOPPING__"
+    ],
+    "intent": "Open the order details page for the most recent completed order",
+    "intent_template": "Open the order details page for the most recent {{status}} order",
+    "instantiation_dict": {
+      "status": "completed"
+    },
+    "eval": [
+      {
+        "evaluator": "AgentResponseEvaluator",
+        "results_schema": {
+          "type": "null"
+        },
+        "expected": {
+          "task_type": "navigate",
+          "status": "SUCCESS",
+          "retrieved_data": null
+        }
+      },
+      {
+        "evaluator": "NetworkEventEvaluator",
+        "expected": {
+          "url": "__SHOPPING__/sales/order/view/order_id/180/"
+        }
+      }
+    ],
+    "revision": 2
+  },
+  "generation": {
+    "seed": 2,
+    "variant_index": 2
+  }
+}

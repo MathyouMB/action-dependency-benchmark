@@ -1,0 +1,339 @@
+{
+  "instance_id": "webarena_000238_v0003",
+  "scenario_id": "webarena_000238",
+  "task": "I am doing a market survey for one stop market, go to the product page for the most expensive PS4 accessories",
+  "state": [
+    {
+      "id": "f1",
+      "text": "\"PDP Gaming LVL50 Headset\" is in the \"PS4 Accessories\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f2",
+      "text": "\"PDP Gaming LVL50 Headset\" costs $258.88",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f3",
+      "text": "\"HyperX Cloud Gaming Headset for PS4\" is in the \"PS4 Accessories\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f4",
+      "text": "\"HyperX Cloud Gaming Headset for PS4\" costs $179.18",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f5",
+      "text": "\"ASTRO Gaming A50 Wireless Headset + Base Station Gen 4\" is in the \"PS4 Accessories\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f6",
+      "text": "\"ASTRO Gaming A50 Wireless Headset + Base Station Gen 4\" costs $292.85",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f7",
+      "text": "\"Samsung Odyssey Gaming Monitor\" is in the \"Gaming Monitors\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f8",
+      "text": "\"Samsung Odyssey Gaming Monitor\" costs $1730.16",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f9",
+      "text": "\"PlayStation 5 Console\" is in the \"Video Game Consoles\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f10",
+      "text": "\"PlayStation 5 Console\" costs $1468.46",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f11",
+      "text": "\"HORI Mini Wired Gamepad\" is in the \"PS4 Accessories\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f12",
+      "text": "\"HORI Mini Wired Gamepad\" costs $70.40",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f13",
+      "text": "\"PlayStation 4 Camera\" is in the \"PS4 Accessories\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f14",
+      "text": "\"PlayStation 4 Camera\" costs $143.34",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f15",
+      "text": "\"SteelSeries Arctis Nova Pro\" is in the \"PC Gaming Headsets\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f16",
+      "text": "\"SteelSeries Arctis Nova Pro\" costs $124.44",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f17",
+      "text": "\"DualShock 4 Wireless Controller\" is in the \"PS4 Accessories\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f18",
+      "text": "\"DualShock 4 Wireless Controller\" costs $208.50",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f19",
+      "text": "\"Razer BlackWidow Mechanical Keyboard\" is in the \"Gaming Keyboards\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f20",
+      "text": "\"Razer BlackWidow Mechanical Keyboard\" costs $1464.27",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f21",
+      "text": "\"Elgato Stream Deck\" is in the \"Streaming Accessories\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f22",
+      "text": "\"Elgato Stream Deck\" costs $541.49",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f23",
+      "text": "\"Vertical Stand for PS4\" is in the \"PS4 Accessories\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f24",
+      "text": "\"Vertical Stand for PS4\" costs $164.77",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    }
+  ],
+  "proposed_action": {
+    "template": "Open the product page for {{selected_product}}",
+    "arguments": {
+      "selected_product": "ASTRO Gaming A50 Wireless Headset + Base Station Gen 4"
+    },
+    "text": "Open the product page for ASTRO Gaming A50 Wireless Headset + Base Station Gen 4"
+  },
+  "supporting_fact_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f9",
+    "f11",
+    "f12",
+    "f13",
+    "f14",
+    "f15",
+    "f17",
+    "f18",
+    "f19",
+    "f21",
+    "f23",
+    "f24"
+  ],
+  "irrelevant_facts": [
+    "f8",
+    "f10",
+    "f16",
+    "f20",
+    "f22"
+  ],
+  "perturbations": [
+    {
+      "id": "p1",
+      "change": "\"PDP Gaming LVL50 Headset\" rises in price to $306.75",
+      "type": "relevant_invalidating",
+      "changed_facts": [
+        "f2"
+      ],
+      "action_still_valid": false,
+      "reason": "d2 breaks: another product in the PS4 Accessories category is now more expensive than the selected product."
+    },
+    {
+      "id": "p2",
+      "change": "\"ASTRO Gaming A50 Wireless Headset + Base Station Gen 4\" rises in price to $306.93",
+      "type": "relevant_noninvalidating",
+      "changed_facts": [
+        "f6"
+      ],
+      "action_still_valid": true,
+      "reason": "d2 still holds: the selected product remains the most expensive PS4 accessory."
+    },
+    {
+      "id": "p3",
+      "change": "\"Samsung Odyssey Gaming Monitor\" rises in price to $1916.95",
+      "type": "irrelevant",
+      "changed_facts": [
+        "f8"
+      ],
+      "action_still_valid": true,
+      "reason": "The product is outside the PS4 Accessories category, so its price is ignored."
+    },
+    {
+      "id": "p4",
+      "change": "\"Samsung Odyssey Gaming Monitor\" changes category to \"PS4 Accessories\"",
+      "type": "relevant_invalidating",
+      "changed_facts": [
+        "f7"
+      ],
+      "action_still_valid": false,
+      "reason": "Changing the category makes this product enter the PS4 Accessories comparison set. Whether that invalidates the action depends on its existing price relative to the selected product."
+    }
+  ],
+  "webarena_data": {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 238,
+    "intent_template_id": 138,
+    "start_urls": [
+      "__SHOPPING__"
+    ],
+    "intent": "I am doing a market survey for one stop market, go to the product page for the most expensive PS4 accessories",
+    "intent_template": "I am doing a market survey for one stop market, go to the product page for the most expensive {{product_category}}",
+    "instantiation_dict": {
+      "product_category": "PS4 accessories"
+    },
+    "eval": [
+      {
+        "evaluator": "AgentResponseEvaluator",
+        "results_schema": {
+          "type": "null"
+        },
+        "expected": {
+          "task_type": "navigate",
+          "status": "SUCCESS",
+          "retrieved_data": null
+        }
+      },
+      {
+        "evaluator": "NetworkEventEvaluator",
+        "expected": {
+          "url": "__SHOPPING__/astro-gaming-a50-wireless-headset-base-station-gen-4-compatible-with-ps5-ps4-pc-mac-black-silver.html"
+        }
+      }
+    ],
+    "revision": 2
+  },
+  "generation": {
+    "seed": 3,
+    "variant_index": 3
+  }
+}

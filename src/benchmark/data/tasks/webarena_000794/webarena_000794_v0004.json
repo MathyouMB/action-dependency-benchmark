@@ -1,0 +1,155 @@
+{
+  "instance_id": "webarena_000794_v0004",
+  "scenario_id": "webarena_000794",
+  "task": "Change the delivery address of the most recent order that was not cancelled to 4000 Forbes Ave, Pittsburgh, PA.",
+  "state": [
+    {
+      "id": "f1",
+      "text": "Order #000000315 was placed 2023-06-11",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "temporal",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f2",
+      "text": "Order #000000315's status is Canceled",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f3",
+      "text": "Order #000000308 was placed 2023-06-03",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "temporal",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f4",
+      "text": "Order #000000308's status is Processing",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f5",
+      "text": "Order #000000296 was placed 2023-05-22",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "temporal",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f6",
+      "text": "Order #000000296's status is Processing",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f7",
+      "text": "Order #000000280 was placed 2023-05-09",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "temporal",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f8",
+      "text": "Order #000000280's status is Canceled",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f9",
+      "text": "Order #000000271 was placed 2023-04-12",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "temporal",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f10",
+      "text": "Order #000000271's status is Pending",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    }
+  ],
+  "proposed_action": {
+    "template": "Change the delivery address of order {{selected_order}} to {{target_address}}",
+    "arguments": {
+      "selected_order": "#000000308",
+      "target_address": "4000 Forbes Ave, Pittsburgh, PA"
+    },
+    "text": "Change the delivery address of order #000000308 to 4000 Forbes Ave, Pittsburgh, PA"
+  },
+  "supporting_fact_ids": [
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9",
+    "f10"
+  ],
+  "webarena_data": {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 794,
+    "intent_template_id": 191,
+    "start_urls": [
+      "__SHOPPING__"
+    ],
+    "intent": "Change the delivery address for my most recent non canceled order to 4000 Forbes Ave, Pittsburgh, PA.",
+    "intent_template": "Change the delivery address for {{order_selector}} to {{address}}.",
+    "instantiation_dict": {
+      "order_selector": "my most recent non canceled order",
+      "address": "4000 Forbes Ave, Pittsburgh, PA"
+    },
+    "eval": [
+      {
+        "evaluator": "AgentResponseEvaluator",
+        "results_schema": {
+          "type": "null"
+        },
+        "expected": {
+          "task_type": "mutate",
+          "status": "ACTION_NOT_ALLOWED_ERROR",
+          "retrieved_data": null
+        }
+      },
+      {
+        "evaluator": "NetworkEventEvaluator",
+        "expected": {
+          "url": "__SHOPPING__/sales/order/history/"
+        }
+      }
+    ],
+    "revision": 2
+  },
+  "generation": {
+    "seed": 4,
+    "variant_index": 4
+  }
+}

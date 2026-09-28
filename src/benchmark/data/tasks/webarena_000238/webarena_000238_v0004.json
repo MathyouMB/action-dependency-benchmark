@@ -1,0 +1,239 @@
+{
+  "instance_id": "webarena_000238_v0004",
+  "scenario_id": "webarena_000238",
+  "task": "I am doing a market survey for one stop market, go to the product page for the most expensive PS4 accessories",
+  "state": [
+    {
+      "id": "f1",
+      "text": "\"ASTRO Gaming A50 Wireless Headset + Base Station Gen 4\" is in the \"PS4 Accessories\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f2",
+      "text": "\"ASTRO Gaming A50 Wireless Headset + Base Station Gen 4\" costs $292.70",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f3",
+      "text": "\"ASUS ROG Strix Gaming Laptop\" is in the \"Gaming Laptops\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f4",
+      "text": "\"ASUS ROG Strix Gaming Laptop\" costs $1708.57",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f5",
+      "text": "\"Elgato Stream Deck\" is in the \"Streaming Accessories\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f6",
+      "text": "\"Elgato Stream Deck\" costs $849.06",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f7",
+      "text": "\"Logitech G Pro Wireless Mouse\" is in the \"Gaming Mice\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f8",
+      "text": "\"Logitech G Pro Wireless Mouse\" costs $241.35",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f9",
+      "text": "\"Collective Minds Strike Pack\" is in the \"PS4 Accessories\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f10",
+      "text": "\"Collective Minds Strike Pack\" costs $60.71",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f11",
+      "text": "\"PlayStation 5 Console\" is in the \"Video Game Consoles\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f12",
+      "text": "\"PlayStation 5 Console\" costs $1262.72",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f13",
+      "text": "\"PlayStation 4 Camera\" is in the \"PS4 Accessories\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f14",
+      "text": "\"PlayStation 4 Camera\" costs $37.47",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    }
+  ],
+  "proposed_action": {
+    "template": "Open the product page for {{selected_product}}",
+    "arguments": {
+      "selected_product": "ASTRO Gaming A50 Wireless Headset + Base Station Gen 4"
+    },
+    "text": "Open the product page for ASTRO Gaming A50 Wireless Headset + Base Station Gen 4"
+  },
+  "supporting_fact_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f5",
+    "f7",
+    "f9",
+    "f10",
+    "f11",
+    "f13",
+    "f14"
+  ],
+  "irrelevant_facts": [
+    "f4",
+    "f6",
+    "f8",
+    "f12"
+  ],
+  "perturbations": [
+    {
+      "id": "p1",
+      "change": "\"Collective Minds Strike Pack\" rises in price to $327.78",
+      "type": "relevant_invalidating",
+      "changed_facts": [
+        "f10"
+      ],
+      "action_still_valid": false,
+      "reason": "d2 breaks: another product in the PS4 Accessories category is now more expensive than the selected product."
+    },
+    {
+      "id": "p2",
+      "change": "\"ASTRO Gaming A50 Wireless Headset + Base Station Gen 4\" rises in price to $324.66",
+      "type": "relevant_noninvalidating",
+      "changed_facts": [
+        "f2"
+      ],
+      "action_still_valid": true,
+      "reason": "d2 still holds: the selected product remains the most expensive PS4 accessory."
+    },
+    {
+      "id": "p3",
+      "change": "\"ASUS ROG Strix Gaming Laptop\" rises in price to $2150.43",
+      "type": "irrelevant",
+      "changed_facts": [
+        "f4"
+      ],
+      "action_still_valid": true,
+      "reason": "The product is outside the PS4 Accessories category, so its price is ignored."
+    },
+    {
+      "id": "p4",
+      "change": "\"ASUS ROG Strix Gaming Laptop\" changes category to \"PS4 Accessories\"",
+      "type": "relevant_invalidating",
+      "changed_facts": [
+        "f3"
+      ],
+      "action_still_valid": false,
+      "reason": "Changing the category makes this product enter the PS4 Accessories comparison set. Whether that invalidates the action depends on its existing price relative to the selected product."
+    }
+  ],
+  "webarena_data": {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 238,
+    "intent_template_id": 138,
+    "start_urls": [
+      "__SHOPPING__"
+    ],
+    "intent": "I am doing a market survey for one stop market, go to the product page for the most expensive PS4 accessories",
+    "intent_template": "I am doing a market survey for one stop market, go to the product page for the most expensive {{product_category}}",
+    "instantiation_dict": {
+      "product_category": "PS4 accessories"
+    },
+    "eval": [
+      {
+        "evaluator": "AgentResponseEvaluator",
+        "results_schema": {
+          "type": "null"
+        },
+        "expected": {
+          "task_type": "navigate",
+          "status": "SUCCESS",
+          "retrieved_data": null
+        }
+      },
+      {
+        "evaluator": "NetworkEventEvaluator",
+        "expected": {
+          "url": "__SHOPPING__/astro-gaming-a50-wireless-headset-base-station-gen-4-compatible-with-ps5-ps4-pc-mac-black-silver.html"
+        }
+      }
+    ],
+    "revision": 2
+  },
+  "generation": {
+    "seed": 4,
+    "variant_index": 4
+  }
+}

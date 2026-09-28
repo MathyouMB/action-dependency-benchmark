@@ -1,0 +1,217 @@
+{
+  "instance_id": "webarena_000714_v0003",
+  "scenario_id": "webarena_000714",
+  "task": "Thumbs down the top 1 post ever in gadgets.",
+  "state": [
+    {
+      "id": "f1",
+      "text": "Post \"21985\" is in the \"hardware\" forum",
+      "annotations": {
+        "structure": "relation",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f2",
+      "text": "Post \"21985\" has an all-time score of 1257",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f3",
+      "text": "Post \"50714\" is in the \"gadgets\" forum",
+      "annotations": {
+        "structure": "relation",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f4",
+      "text": "Post \"50714\" has an all-time score of 1034",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f5",
+      "text": "Post \"25608\" is in the \"apple\" forum",
+      "annotations": {
+        "structure": "relation",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f6",
+      "text": "Post \"25608\" has an all-time score of 706",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f7",
+      "text": "Post \"82436\" is in the \"gadgets\" forum",
+      "annotations": {
+        "structure": "relation",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f8",
+      "text": "Post \"82436\" has an all-time score of 742",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f9",
+      "text": "Post \"81638\" is in the \"gadgets\" forum",
+      "annotations": {
+        "structure": "relation",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f10",
+      "text": "Post \"81638\" has an all-time score of 920",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f11",
+      "text": "Post \"19459\" is in the \"gadgets\" forum",
+      "annotations": {
+        "structure": "relation",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f12",
+      "text": "Post \"19459\" has an all-time score of 1043",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f13",
+      "text": "Post \"28392\" is in the \"electronics\" forum",
+      "annotations": {
+        "structure": "relation",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f14",
+      "text": "Post \"28392\" has an all-time score of 1230",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f15",
+      "text": "Post \"39741\" is in the \"gadgets\" forum",
+      "annotations": {
+        "structure": "relation",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f16",
+      "text": "Post \"39741\" has an all-time score of 815",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    }
+  ],
+  "proposed_action": {
+    "template": "Thumbs down post {{selected_post}}",
+    "arguments": {
+      "selected_post": "19459"
+    },
+    "text": "Thumbs down post 19459"
+  },
+  "supporting_fact_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12",
+    "f13",
+    "f15",
+    "f16"
+  ],
+  "webarena_data": {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 714,
+    "intent_template_id": 24,
+    "start_urls": [
+      "__REDDIT__"
+    ],
+    "intent": "Thumbs down the top 1 post ever in gadgets.",
+    "intent_template": "Thumbs down the top {{k}} post ever in {{forum}}.",
+    "instantiation_dict": {
+      "k": "1",
+      "forum": "gadgets"
+    },
+    "eval": [
+      {
+        "evaluator": "AgentResponseEvaluator",
+        "results_schema": {
+          "type": "null"
+        },
+        "expected": {
+          "task_type": "mutate",
+          "status": "SUCCESS",
+          "retrieved_data": null
+        }
+      },
+      {
+        "evaluator": "NetworkEventEvaluator",
+        "expected": {
+          "url": "__REDDIT__/sv/19459.json",
+          "http_method": "POST",
+          "post_data": {
+            "choice": "-1"
+          }
+        }
+      }
+    ],
+    "revision": 2
+  },
+  "generation": {
+    "seed": 3,
+    "variant_index": 3
+  }
+}

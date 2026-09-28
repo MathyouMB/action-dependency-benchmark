@@ -1,0 +1,178 @@
+{
+  "instance_id": "webarena_000404_v0004",
+  "scenario_id": "webarena_000404",
+  "task": "Upvote the newest post in books forum",
+  "state": [
+    {
+      "id": "f1",
+      "text": "Post \"Which book deserves a reread?\" belongs to the \"books\" forum",
+      "annotations": {
+        "structure": "relation",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f2",
+      "text": "Post \"Which book deserves a reread?\" was posted 2023-06-13 19:09",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "temporal",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f3",
+      "text": "Post \"Books that changed how you think\" belongs to the \"books\" forum",
+      "annotations": {
+        "structure": "relation",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f4",
+      "text": "Post \"Books that changed how you think\" was posted 2023-06-12 10:02",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "temporal",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f5",
+      "text": "Post \"Favorite translated novels\" belongs to the \"gaming\" forum",
+      "annotations": {
+        "structure": "relation",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f6",
+      "text": "Post \"Favorite translated novels\" was posted 2023-06-15 16:52",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "temporal",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f7",
+      "text": "Post \"Thoughts on classic Russian literature\" belongs to the \"books\" forum",
+      "annotations": {
+        "structure": "relation",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f8",
+      "text": "Post \"Thoughts on classic Russian literature\" was posted 2023-06-14 21:56",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "temporal",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f9",
+      "text": "Post \"Best mystery novels for beginners\" belongs to the \"books\" forum",
+      "annotations": {
+        "structure": "relation",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f10",
+      "text": "Post \"Best mystery novels for beginners\" was posted 2023-06-15 06:35",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "temporal",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f11",
+      "text": "Post \"What are you reading this week?\" belongs to the \"books\" forum",
+      "annotations": {
+        "structure": "relation",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f12",
+      "text": "Post \"What are you reading this week?\" was posted 2023-06-15 10:00",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "temporal",
+        "polarity": "positive"
+      }
+    }
+  ],
+  "proposed_action": {
+    "template": "Upvote the post {{selected_post}}",
+    "arguments": {
+      "selected_post": "What are you reading this week?"
+    },
+    "text": "Upvote the post What are you reading this week?"
+  },
+  "supporting_fact_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12"
+  ],
+  "webarena_data": {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 404,
+    "intent_template_id": 22,
+    "start_urls": [
+      "__REDDIT__"
+    ],
+    "intent": "Upvote the newest post in books forum",
+    "intent_template": "Upvote the newest post in {{forum}} forum",
+    "instantiation_dict": {
+      "forum": "books"
+    },
+    "eval": [
+      {
+        "evaluator": "AgentResponseEvaluator",
+        "results_schema": {
+          "type": "null"
+        },
+        "expected": {
+          "task_type": "mutate",
+          "status": "SUCCESS",
+          "retrieved_data": null
+        }
+      },
+      {
+        "evaluator": "NetworkEventEvaluator",
+        "expected": {
+          "url": "__REDDIT__/sv/124260.json",
+          "http_method": "POST",
+          "post_data": {
+            "choice": "1"
+          }
+        }
+      }
+    ],
+    "revision": 2
+  },
+  "generation": {
+    "seed": 4,
+    "variant_index": 4
+  }
+}

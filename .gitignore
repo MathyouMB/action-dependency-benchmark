@@ -6,8 +6,6 @@ __pycache__/
 
 
 # temporary files
-src/benchmark/prompts/demo.md
-src/benchmark/data/tasks/
 results
 src/tools
 tests/tools

@@ -1,0 +1,319 @@
+{
+  "instance_id": "webarena_000523_v0004",
+  "scenario_id": "webarena_000523",
+  "task": "Star the top five most stared repos in Gitlab",
+  "state": [
+    {
+      "id": "f1",
+      "text": "Repository \"mitsuhiko/rye\" has 34 stars",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f2",
+      "text": "Repository \"mitsuhiko/rye\" is currently not starred by the user",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f3",
+      "text": "Repository \"facebook/react\" has 24 stars",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f4",
+      "text": "Repository \"facebook/react\" is currently starred by the user",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f5",
+      "text": "Repository \"umano/AndroidSlidingUpPanel\" has 60 stars",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f6",
+      "text": "Repository \"umano/AndroidSlidingUpPanel\" is currently not starred by the user",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f7",
+      "text": "Repository \"tiangolo/fastapi\" has 25 stars",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f8",
+      "text": "Repository \"tiangolo/fastapi\" is currently not starred by the user",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f9",
+      "text": "Repository \"psf/requests\" has 40 stars",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f10",
+      "text": "Repository \"psf/requests\" is currently not starred by the user",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f11",
+      "text": "Repository \"kkroening/ffmpeg-python\" has 48 stars",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f12",
+      "text": "Repository \"kkroening/ffmpeg-python\" is currently not starred by the user",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f13",
+      "text": "Repository \"facebook/create-react-app\" has 55 stars",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f14",
+      "text": "Repository \"facebook/create-react-app\" is currently not starred by the user",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f15",
+      "text": "Repository \"mk-j/PHP_XLSXWriter\" has 46 stars",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f16",
+      "text": "Repository \"mk-j/PHP_XLSXWriter\" is currently not starred by the user",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f17",
+      "text": "Repository \"scrapy/scrapy\" has 20 stars",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f18",
+      "text": "Repository \"scrapy/scrapy\" is currently not starred by the user",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f19",
+      "text": "Repository \"koush/AndroidAsync\" has 42 stars",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f20",
+      "text": "Repository \"koush/AndroidAsync\" is currently not starred by the user",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f21",
+      "text": "Repository \"kennethreitz/records\" has 23 stars",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f22",
+      "text": "Repository \"kennethreitz/records\" is currently not starred by the user",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    }
+  ],
+  "proposed_action": {
+    "template": "Star repositories {{selected_repositories}}",
+    "arguments": {
+      "selected_repositories": [
+        "umano/AndroidSlidingUpPanel",
+        "facebook/create-react-app",
+        "kkroening/ffmpeg-python",
+        "mk-j/PHP_XLSXWriter",
+        "koush/AndroidAsync"
+      ]
+    },
+    "text": "Star repositories ['umano/AndroidSlidingUpPanel', 'facebook/create-react-app', 'kkroening/ffmpeg-python', 'mk-j/PHP_XLSXWriter', 'koush/AndroidAsync']"
+  },
+  "supporting_fact_ids": [
+    "f1",
+    "f3",
+    "f5",
+    "f6",
+    "f7",
+    "f9",
+    "f11",
+    "f12",
+    "f13",
+    "f14",
+    "f15",
+    "f16",
+    "f17",
+    "f19",
+    "f20",
+    "f21"
+  ],
+  "webarena_data": {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 523,
+    "intent_template_id": 354,
+    "start_urls": [
+      "__GITLAB__"
+    ],
+    "intent": "Star the top five most stared repos in Gitlab",
+    "intent_template": "Star the top {{number}} most stared repos in Gitlab",
+    "instantiation_dict": {
+      "number": "five"
+    },
+    "eval": [
+      {
+        "evaluator": "AgentResponseEvaluator",
+        "results_schema": {
+          "type": "null"
+        },
+        "expected": {
+          "task_type": "mutate",
+          "status": "SUCCESS",
+          "retrieved_data": null
+        }
+      },
+      {
+        "evaluator": "NetworkEventEvaluator",
+        "expected": {
+          "url": "__GITLAB__/umano/AndroidSlidingUpPanel/toggle_star.json",
+          "http_method": "POST",
+          "response_content": {
+            "star_count": 56
+          }
+        }
+      },
+      {
+        "evaluator": "NetworkEventEvaluator",
+        "expected": {
+          "url": "__GITLAB__/facebook/create-react-app/toggle_star.json",
+          "http_method": "POST",
+          "response_content": {
+            "star_count": 53
+          }
+        }
+      },
+      {
+        "evaluator": "NetworkEventEvaluator",
+        "expected": {
+          "url": "__GITLAB__/kkroening/ffmpeg-python/toggle_star.json",
+          "http_method": "POST",
+          "response_content": {
+            "star_count": 52
+          }
+        }
+      },
+      {
+        "evaluator": "NetworkEventEvaluator",
+        "expected": {
+          "url": "__GITLAB__/mk-j/PHP_XLSXWriter/toggle_star.json",
+          "http_method": "POST",
+          "response_content": {
+            "star_count": 48
+          }
+        }
+      },
+      {
+        "evaluator": "NetworkEventEvaluator",
+        "expected": {
+          "url": "__GITLAB__/koush/AndroidAsync/toggle_star.json",
+          "http_method": "POST",
+          "response_content": {
+            "star_count": 47
+          }
+        }
+      }
+    ],
+    "revision": 2
+  },
+  "generation": {
+    "seed": 4,
+    "variant_index": 4
+  }
+}

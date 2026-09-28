@@ -1,0 +1,120 @@
+{
+  "instance_id": "webarena_000431_v0003",
+  "scenario_id": "webarena_000431",
+  "task": "Add the product with the lowest per unit price from my open tabs to the shopping cart",
+  "state": [
+    {
+      "id": "f1",
+      "text": "\"Spaas White Taper Candles\" costs $13.32",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f2",
+      "text": "\"Spaas White Taper Candles\" contains 4 units",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f3",
+      "text": "\"Tall Pink Taper Candles Gradient Candle Set\" costs $20.20",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f4",
+      "text": "\"Tall Pink Taper Candles Gradient Candle Set\" contains 4 units",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f5",
+      "text": "\"White Starfish Wall Candle Sconces\" costs $14.68",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f6",
+      "text": "\"White Starfish Wall Candle Sconces\" contains 2 units",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    }
+  ],
+  "proposed_action": {
+    "template": "Add {{selected_product}} to the shopping cart",
+    "arguments": {
+      "selected_product": "Spaas White Taper Candles"
+    },
+    "text": "Add Spaas White Taper Candles to the shopping cart"
+  },
+  "supporting_fact_ids": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6"
+  ],
+  "webarena_data": {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 431,
+    "intent_template_id": 145,
+    "start_urls": [
+      "__SHOPPING__/tall-pink-taper-candles-4-piece-orange-colored-tapered-candles-gradient-candles-10-6-inches-tall-tie-dye-candle-set-large-dripless-long-burning-candlesticks-two-color-taper-candles-candlesticks.html",
+      "__SHOPPING__/spaas-white-taper-candles-4-pack-10-inch-tall-candles-scent-free-premium-wax-candle-sticks-8-hour-long-burning-white-candlesticks-for-home-decoration-wedding-holiday-and-parties.html",
+      "__SHOPPING__/white-starfish-wall-candle-sconces-set-of-2-beach-decor-ocean-themed-wall-mount-candleholders-nautical-style-beach-bathroom-decor-coastal-farmhouse-seashell-candle-holders.html"
+    ],
+    "intent": "Add the product with the lowest per unit price from my open tabs to the shopping cart",
+    "intent_template": "Add the product with the lowest per unit price from my open tabs to the shopping cart",
+    "instantiation_dict": {},
+    "eval": [
+      {
+        "evaluator": "AgentResponseEvaluator",
+        "results_schema": {
+          "type": "null"
+        },
+        "expected": {
+          "task_type": "mutate",
+          "status": "SUCCESS",
+          "retrieved_data": null
+        }
+      },
+      {
+        "evaluator": "NetworkEventEvaluator",
+        "expected": {
+          "url": "^__SHOPPING__/checkout/cart/add/uenc/.*/product/32202$",
+          "http_method": "POST",
+          "post_data": {
+            "qty": "1",
+            "item": "32202"
+          }
+        }
+      }
+    ],
+    "revision": 2
+  },
+  "generation": {
+    "seed": 3,
+    "variant_index": 3
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "instance_id": "webarena_000238_v0001",
+  "scenario_id": "webarena_000238",
+  "task": "I am doing a market survey for one stop market, go to the product page for the most expensive PS4 accessories",
+  "state": [
+    {
+      "id": "f1",
+      "text": "\"Nintendo Switch OLED\" is in the \"Video Game Consoles\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f2",
+      "text": "\"Nintendo Switch OLED\" costs $967.03",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f3",
+      "text": "\"PowerA DualShock 4 Charging Station\" is in the \"PS4 Accessories\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f4",
+      "text": "\"PowerA DualShock 4 Charging Station\" costs $134.66",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f5",
+      "text": "\"Meta Quest VR Headset\" is in the \"Virtual Reality\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f6",
+      "text": "\"Meta Quest VR Headset\" costs $1695.33",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f7",
+      "text": "\"HORI Mini Wired Gamepad\" is in the \"PS4 Accessories\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f8",
+      "text": "\"HORI Mini Wired Gamepad\" costs $146.38",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f9",
+      "text": "\"ASTRO Gaming A50 Wireless Headset + Base Station Gen 4\" is in the \"PS4 Accessories\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f10",
+      "text": "\"ASTRO Gaming A50 Wireless Headset + Base Station Gen 4\" costs $285.08",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f11",
+      "text": "\"PlayStation 5 Console\" is in the \"Video Game Consoles\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f12",
+      "text": "\"PlayStation 5 Console\" costs $79.50",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f13",
+      "text": "\"ASUS ROG Strix Gaming Laptop\" is in the \"Gaming Laptops\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f14",
+      "text": "\"ASUS ROG Strix Gaming Laptop\" costs $347.61",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f15",
+      "text": "\"Razer BlackWidow Mechanical Keyboard\" is in the \"Gaming Keyboards\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f16",
+      "text": "\"Razer BlackWidow Mechanical Keyboard\" costs $1434.44",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f17",
+      "text": "\"Elgato Stream Deck\" is in the \"Streaming Accessories\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f18",
+      "text": "\"Elgato Stream Deck\" costs $254.44",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    }
+  ],
+  "proposed_action": {
+    "template": "Open the product page for {{selected_product}}",
+    "arguments": {
+      "selected_product": "ASTRO Gaming A50 Wireless Headset + Base Station Gen 4"
+    },
+    "text": "Open the product page for ASTRO Gaming A50 Wireless Headset + Base Station Gen 4"
+  },
+  "supporting_fact_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f13",
+    "f15",
+    "f17"
+  ],
+  "webarena_data": {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 238,
+    "intent_template_id": 138,
+    "start_urls": [
+      "__SHOPPING__"
+    ],
+    "intent": "I am doing a market survey for one stop market, go to the product page for the most expensive PS4 accessories",
+    "intent_template": "I am doing a market survey for one stop market, go to the product page for the most expensive {{product_category}}",
+    "instantiation_dict": {
+      "product_category": "PS4 accessories"
+    },
+    "eval": [
+      {
+        "evaluator": "AgentResponseEvaluator",
+        "results_schema": {
+          "type": "null"
+        },
+        "expected": {
+          "task_type": "navigate",
+          "status": "SUCCESS",
+          "retrieved_data": null
+        }
+      },
+      {
+        "evaluator": "NetworkEventEvaluator",
+        "expected": {
+          "url": "__SHOPPING__/astro-gaming-a50-wireless-headset-base-station-gen-4-compatible-with-ps5-ps4-pc-mac-black-silver.html"
+        }
+      }
+    ],
+    "revision": 2
+  },
+  "generation": {
+    "seed": 1,
+    "variant_index": 1
+  }
+}

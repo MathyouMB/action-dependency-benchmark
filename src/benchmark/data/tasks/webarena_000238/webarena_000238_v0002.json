@@ -1,0 +1,229 @@
+{
+  "instance_id": "webarena_000238_v0002",
+  "scenario_id": "webarena_000238",
+  "task": "I am doing a market survey for one stop market, go to the product page for the most expensive PS4 accessories",
+  "state": [
+    {
+      "id": "f1",
+      "text": "\"ASUS ROG Strix Gaming Laptop\" is in the \"Gaming Laptops\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f2",
+      "text": "\"ASUS ROG Strix Gaming Laptop\" costs $1700.98",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f3",
+      "text": "\"PS4 Controller Charging Dock\" is in the \"PS4 Accessories\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f4",
+      "text": "\"PS4 Controller Charging Dock\" costs $73.55",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f5",
+      "text": "\"ASTRO Gaming A50 Wireless Headset + Base Station Gen 4\" is in the \"PS4 Accessories\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f6",
+      "text": "\"ASTRO Gaming A50 Wireless Headset + Base Station Gen 4\" costs $346.70",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f7",
+      "text": "\"Razer BlackWidow Mechanical Keyboard\" is in the \"Gaming Keyboards\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f8",
+      "text": "\"Razer BlackWidow Mechanical Keyboard\" costs $137.10",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f9",
+      "text": "\"PowerA DualShock 4 Charging Station\" is in the \"PS4 Accessories\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f10",
+      "text": "\"PowerA DualShock 4 Charging Station\" costs $134.35",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f11",
+      "text": "\"Meta Quest VR Headset\" is in the \"Virtual Reality\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f12",
+      "text": "\"Meta Quest VR Headset\" costs $278.54",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f13",
+      "text": "\"Logitech G Pro Wireless Mouse\" is in the \"Gaming Mice\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f14",
+      "text": "\"Logitech G Pro Wireless Mouse\" costs $341.61",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f15",
+      "text": "\"Elgato Stream Deck\" is in the \"Streaming Accessories\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f16",
+      "text": "\"Elgato Stream Deck\" costs $1751.87",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f17",
+      "text": "\"Nintendo Switch OLED\" is in the \"Video Game Consoles\" category",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "categorical",
+        "polarity": "positive"
+      }
+    },
+    {
+      "id": "f18",
+      "text": "\"Nintendo Switch OLED\" costs $183.77",
+      "annotations": {
+        "structure": "attribute",
+        "domain": "numeric",
+        "polarity": "positive"
+      }
+    }
+  ],
+  "proposed_action": {
+    "template": "Open the product page for {{selected_product}}",
+    "arguments": {
+      "selected_product": "ASTRO Gaming A50 Wireless Headset + Base Station Gen 4"
+    },
+    "text": "Open the product page for ASTRO Gaming A50 Wireless Headset + Base Station Gen 4"
+  },
+  "supporting_fact_ids": [
+    "f1",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f9",
+    "f10",
+    "f11",
+    "f13",
+    "f15",
+    "f17"
+  ],
+  "webarena_data": {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 238,
+    "intent_template_id": 138,
+    "start_urls": [
+      "__SHOPPING__"
+    ],
+    "intent": "I am doing a market survey for one stop market, go to the product page for the most expensive PS4 accessories",
+    "intent_template": "I am doing a market survey for one stop market, go to the product page for the most expensive {{product_category}}",
+    "instantiation_dict": {
+      "product_category": "PS4 accessories"
+    },
+    "eval": [
+      {
+        "evaluator": "AgentResponseEvaluator",
+        "results_schema": {
+          "type": "null"
+        },
+        "expected": {
+          "task_type": "navigate",
+          "status": "SUCCESS",
+          "retrieved_data": null
+        }
+      },
+      {
+        "evaluator": "NetworkEventEvaluator",
+        "expected": {
+          "url": "__SHOPPING__/astro-gaming-a50-wireless-headset-base-station-gen-4-compatible-with-ps5-ps4-pc-mac-black-silver.html"
+        }
+      }
+    ],
+    "revision": 2
+  },
+  "generation": {
+    "seed": 2,
+    "variant_index": 2
+  }
+}
