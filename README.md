@@ -1,7 +1,13 @@
-# Action Dependency Identification — Research Artifact
+# Action Dependency Benchmark
 
-Code and model configurations for "*Can AI Agents Identify What State Their
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/afa2d39c-8691-4975-85ab-6540cb4c70e1" />
+
+<hr/>
+
+This repository contains the code and model configurations for "*Can AI Agents Identify What State Their
 Actions Depend On?*"
+
+<hr/>
 
 A long-running agent often acts on state it observed earlier, which may have
 changed by the time the action runs. It's costly and time consuming to revalidate everything when only some of its state matters on whether the action is still justified.
