@@ -20,6 +20,8 @@ This project is a benchmark that evaluates how well models can identify the depe
 
 For each task, the benchmark provides a populates a prompt with a task, the observed state, and the proposed action, and asks the model to return a list of fact IDs that the action depends on.
 
+The code and data used in the results section of the paper are found in the [evaluation](evaluation/) directory.
+
 ## Setup
 
 Requires Python 3.13 and [uv](https://docs.astral.sh/uv/).
